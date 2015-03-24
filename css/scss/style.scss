@@ -11,13 +11,10 @@ body {
 :focus {
   outline: none;
 }
-.row {
-  margin-right: 0;
-  margin-left: 0;
-}
 
 // Navbar 
 .navbar {
+  z-index: 10001;
   & > .container, & > .container-fluid {
     .navbar-brand {
       margin-left: -10px;
@@ -44,12 +41,17 @@ body {
 }
 // Side Menu Lib
 .content-container {
+
+  margin-right: 0;
+  margin-left: 0;
   .side-menu {
+    z-index: 10000;
     position: fixed;
     width: 50px;
     height: 100%;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
 
     .navbar-header {
       width: 100%;
@@ -136,6 +138,10 @@ body {
   margin-right: -15px;
 }
 
+.page-title {
+  font-family: 'Lato', sans-serif;
+}
+
 /* Main body section */
 .content-container .side-body {
   margin-left: 60px;
@@ -143,6 +149,7 @@ body {
 .content-container.expanded .side-body {
   margin-left: 260px;
 }
+
 /* small screen */
 @media (max-width: 768px) {
   .side-menu {
@@ -333,5 +340,40 @@ body {
   /* Dropdown tweek */
   #dropdown .panel-body .navbar-nav {
     margin: 0;
+  }
+}
+
+/* Card */
+.card {
+  background-color: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  .card-body {
+    padding: 5px;
+  }
+}
+
+.card.summary-inline {
+  .card-body {
+    padding: 20px;
+    .icon {
+    }
+    .content {
+      float: right;
+
+      .title {
+        font-family: 'Lato', sans-serif;
+        margin-top: -0.3em;
+        font-size: 3.5em;
+        text-align: right;
+      }
+
+      .sub-title {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8em;
+        text-align: right;
+        margin-top: -10px;
+      }
+    }
   }
 }

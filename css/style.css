@@ -6,108 +6,116 @@ body {
 :focus {
   outline: none; }
 
-/* line 14, scss/style.scss */
-.row {
+/* line 16, scss/style.scss */
+.navbar {
+  z-index: 10001; }
+  /* line 19, scss/style.scss */
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: -10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400; }
+  /* line 25, scss/style.scss */
+  .navbar > .container .navbar-expand-toggle, .navbar > .container-fluid .navbar-expand-toggle {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0px;
+    float: left;
+    -moz-transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
+  /* line 37, scss/style.scss */
+  .navbar > .container .navbar-expand-toggle .icon, .navbar > .container-fluid .navbar-expand-toggle .icon {
+    font-size: 1.4em; }
+
+/* line 43, scss/style.scss */
+.content-container {
   margin-right: 0;
   margin-left: 0; }
-
-/* line 22, scss/style.scss */
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-  margin-left: -10px;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400; }
-/* line 28, scss/style.scss */
-.navbar > .container .navbar-expand-toggle, .navbar > .container-fluid .navbar-expand-toggle {
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: 0px;
-  float: left;
-  -moz-transition: all 0.25s linear;
-  -webkit-transition: all 0.25s linear;
-  transition: all 0.25s linear; }
-/* line 40, scss/style.scss */
-.navbar > .container .navbar-expand-toggle .icon, .navbar > .container-fluid .navbar-expand-toggle .icon {
-  font-size: 1.4em; }
-
-/* line 47, scss/style.scss */
-.content-container .side-menu {
-  position: fixed;
-  width: 50px;
-  height: 100%;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s; }
-  /* line 54, scss/style.scss */
-  .content-container .side-menu .navbar-header {
-    width: 100%;
-    border-bottom: 1px solid #e7e7e7; }
-  /* line 59, scss/style.scss */
-  .content-container .side-menu .navbar {
-    border: none; }
-  /* line 64, scss/style.scss */
-  .content-container .side-menu .navbar-nav li {
-    display: block;
-    width: 100%; }
-    /* line 68, scss/style.scss */
-    .content-container .side-menu .navbar-nav li a {
-      font-family: 'Roboto Condensed', sans-serif;
-      padding: 10px;
+  /* line 47, scss/style.scss */
+  .content-container .side-menu {
+    z-index: 10000;
+    position: fixed;
+    width: 50px;
+    height: 100%;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08); }
+    /* line 56, scss/style.scss */
+    .content-container .side-menu .navbar-header {
+      width: 100%;
+      border-bottom: 1px solid #e7e7e7; }
+    /* line 61, scss/style.scss */
+    .content-container .side-menu .navbar {
+      border: none; }
+    /* line 66, scss/style.scss */
+    .content-container .side-menu .navbar-nav li {
       display: block;
-      white-space: nowrap; }
-      /* line 74, scss/style.scss */
-      .content-container .side-menu .navbar-nav li a .icon {
-        width: 28px;
-        text-align: center;
-        display: inline-block; }
-      /* line 80, scss/style.scss */
-      .content-container .side-menu .navbar-nav li a .title {
-        width: 0px;
-        white-space: nowrap;
-        padding-left: 6px;
-        display: none; }
-  /* line 89, scss/style.scss */
-  .content-container .side-menu .navbar-nav li.dropdown {
-    border: 0;
-    margin-bottom: 0;
-    border-radius: 0; }
-  /* line 95, scss/style.scss */
-  .content-container .side-menu .navbar-nav .panel-collapse.in {
-    display: none; }
-/* line 101, scss/style.scss */
-.content-container .side-menu:hover {
-  width: 250px; }
-  /* line 106, scss/style.scss */
-  .content-container .side-menu:hover .navbar-nav li a .title {
-    width: 192px;
-    display: inline-block; }
-  /* line 113, scss/style.scss */
-  .content-container .side-menu:hover .panel-collapse.in {
-    display: block; }
+      width: 100%; }
+      /* line 70, scss/style.scss */
+      .content-container .side-menu .navbar-nav li a {
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 10px;
+        display: block;
+        white-space: nowrap; }
+        /* line 76, scss/style.scss */
+        .content-container .side-menu .navbar-nav li a .icon {
+          width: 28px;
+          text-align: center;
+          display: inline-block; }
+        /* line 82, scss/style.scss */
+        .content-container .side-menu .navbar-nav li a .title {
+          width: 0px;
+          white-space: nowrap;
+          padding-left: 6px;
+          display: none; }
+    /* line 91, scss/style.scss */
+    .content-container .side-menu .navbar-nav li.dropdown {
+      border: 0;
+      margin-bottom: 0;
+      border-radius: 0; }
+    /* line 97, scss/style.scss */
+    .content-container .side-menu .navbar-nav .panel-collapse.in {
+      display: none; }
+  /* line 103, scss/style.scss */
+  .content-container .side-menu:hover {
+    width: 250px; }
+    /* line 108, scss/style.scss */
+    .content-container .side-menu:hover .navbar-nav li a .title {
+      width: 192px;
+      display: inline-block; }
+    /* line 115, scss/style.scss */
+    .content-container .side-menu:hover .panel-collapse.in {
+      display: block; }
 
-/* line 119, scss/style.scss */
+/* line 121, scss/style.scss */
 .content-container.expanded .side-menu {
   width: 250px; }
-  /* line 125, scss/style.scss */
+  /* line 127, scss/style.scss */
   .content-container.expanded .side-menu .navbar-nav li a .title {
     display: inline-block; }
 
-/* line 134, scss/style.scss */
+/* line 136, scss/style.scss */
 .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
   margin-left: -15px;
   margin-right: -15px; }
 
+/* line 141, scss/style.scss */
+.page-title {
+  font-family: 'Lato', sans-serif; }
+
 /* Main body section */
-/* line 140, scss/style.scss */
+/* line 146, scss/style.scss */
 .content-container .side-body {
   margin-left: 60px; }
 
-/* line 143, scss/style.scss */
+/* line 149, scss/style.scss */
 .content-container.expanded .side-body {
   margin-left: 260px; }
 
 /* small screen */
 @media (max-width: 768px) {
-  /* line 148, scss/style.scss */
+  /* line 155, scss/style.scss */
   .side-menu {
     position: relative;
     width: 100%;
@@ -115,7 +123,7 @@ body {
     border-right: 0;
     border-bottom: 1px solid #e7e7e7; }
 
-  /* line 155, scss/style.scss */
+  /* line 162, scss/style.scss */
   .side-menu .brand-name-wrapper .navbar-brand {
     display: inline-block; }
 
@@ -152,7 +160,7 @@ body {
       left: -300px; } }
   /* Slide side menu*/
   /* Add .absolute-wrapper.slide-in for scrollable menu -> see top comment */
-  /* line 209, scss/style.scss */
+  /* line 216, scss/style.scss */
   .side-menu-container > .navbar-nav.slide-in {
     -moz-animation: slidein 300ms forwards;
     -o-animation: slidein 300ms forwards;
@@ -161,7 +169,7 @@ body {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d; }
 
-  /* line 217, scss/style.scss */
+  /* line 224, scss/style.scss */
   .side-menu-container > .navbar-nav {
     /* Add position:absolute for scrollable menu -> see top comment */
     position: fixed;
@@ -219,7 +227,7 @@ body {
     100% {
       left: 0; } }
   /* Slide side body*/
-  /* line 292, scss/style.scss */
+  /* line 299, scss/style.scss */
   .side-body {
     margin-left: 5px;
     margin-top: 70px;
@@ -231,7 +239,7 @@ body {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d; }
 
-  /* line 303, scss/style.scss */
+  /* line 310, scss/style.scss */
   .body-slide-in {
     -moz-animation: bodyslidein 300ms forwards;
     -o-animation: bodyslidein 300ms forwards;
@@ -241,7 +249,7 @@ body {
     transform-style: preserve-3d; }
 
   /* Hamburger */
-  /* line 312, scss/style.scss */
+  /* line 319, scss/style.scss */
   .navbar-toggle {
     border: 0;
     float: left;
@@ -251,15 +259,15 @@ body {
     background-color: #f3f3f3; }
 
   /* Search */
-  /* line 321, scss/style.scss */
+  /* line 328, scss/style.scss */
   #search .panel-body .navbar-form {
     border-bottom: 0; }
 
-  /* line 324, scss/style.scss */
+  /* line 331, scss/style.scss */
   #search .panel-body .navbar-form .form-group {
     margin: 0; }
 
-  /* line 327, scss/style.scss */
+  /* line 334, scss/style.scss */
   .navbar-header {
     /* this is probably redundant */
     position: fixed;
@@ -267,6 +275,34 @@ body {
     background-color: #f8f8f8; }
 
   /* Dropdown tweek */
-  /* line 334, scss/style.scss */
+  /* line 341, scss/style.scss */
   #dropdown .panel-body .navbar-nav {
     margin: 0; } }
+/* Card */
+/* line 347, scss/style.scss */
+.card {
+  background-color: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08); }
+  /* line 351, scss/style.scss */
+  .card .card-body {
+    padding: 5px; }
+
+/* line 357, scss/style.scss */
+.card.summary-inline .card-body {
+  padding: 20px; }
+  /* line 361, scss/style.scss */
+  .card.summary-inline .card-body .content {
+    float: right; }
+    /* line 364, scss/style.scss */
+    .card.summary-inline .card-body .content .title {
+      font-family: 'Lato', sans-serif;
+      margin-top: -0.3em;
+      font-size: 3.5em;
+      text-align: right; }
+    /* line 371, scss/style.scss */
+    .card.summary-inline .card-body .content .sub-title {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.8em;
+      text-align: right;
+      margin-top: -10px; }

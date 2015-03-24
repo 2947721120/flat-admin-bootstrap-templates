@@ -5,6 +5,10 @@
   $theme-menu-bg-color: #D4D4D4;
   $theme-inverse-color: #3E4651;
   $theme-primary-color: #F64747;
+  $theme-success-color: #00B16A;
+  $theme-warning-color: #FF9704;
+  $theme-blue-color: #22A7F0;
+
 
   $white-color: #FFF;
 
@@ -72,5 +76,26 @@
       }
 
     }
+  }
+
+  // Card
+  .card.red {
+    background-color: $theme-primary-color;
+    color: $white-color;
+  }
+
+  .card.yellow {
+    background-color: $theme-warning-color;
+    color: $white-color;
+  }
+
+  .card.green {
+    background-color: $theme-success-color;
+    color: $white-color;
+  }
+
+  .card.blue {
+    background-color: $theme-blue-color;
+    color: $white-color;
   }
 }
