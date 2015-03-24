@@ -1,0 +1,47 @@
+/* line 2, scss/themes.scss */
+.flat-red {
+  background-color: #F9F9F9; }
+  /* line 14, scss/themes.scss */
+  .flat-red .navbar {
+    background-color: #3E4651;
+    border-bottom: 0px;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+    /* line 24, scss/themes.scss */
+    .flat-red .navbar .navbar-header .navbar-brand {
+      color: #F9F9F9; }
+    /* line 28, scss/themes.scss */
+    .flat-red .navbar .navbar-header .navbar-expand-toggle {
+      color: #F64747; }
+  /* line 35, scss/themes.scss */
+  .flat-red .side-menu {
+    background-color: #F64747; }
+    /* line 38, scss/themes.scss */
+    .flat-red .side-menu .navbar-nav {
+      width: 100%; }
+    /* line 42, scss/themes.scss */
+    .flat-red .side-menu .navbar {
+      background-color: #F64747;
+      border-bottom: 0px;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      /* line 50, scss/themes.scss */
+      .flat-red .side-menu .navbar li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        /* line 53, scss/themes.scss */
+        .flat-red .side-menu .navbar li > a {
+          color: #FFF; }
+      /* line 58, scss/themes.scss */
+      .flat-red .side-menu .navbar li.dropdown {
+        background-color: #F64747; }
+        /* line 61, scss/themes.scss */
+        .flat-red .side-menu .navbar li.dropdown > .panel-collapse {
+          background-color: rgba(0, 0, 0, 0.1); }
+        /* line 65, scss/themes.scss */
+        .flat-red .side-menu .navbar li.dropdown .panel-body {
+          padding: 0; }
+      /* line 70, scss/themes.scss */
+      .flat-red .side-menu .navbar li:hover {
+        background-color: rgba(0, 0, 0, 0.1); }

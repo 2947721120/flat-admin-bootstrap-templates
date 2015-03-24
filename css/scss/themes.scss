@@ -1,0 +1,76 @@
+// Blue Themes
+.flat-red {
+
+  $theme-color: #F9F9F9;
+  $theme-menu-bg-color: #D4D4D4;
+  $theme-inverse-color: #3E4651;
+  $theme-primary-color: #F64747;
+
+  $white-color: #FFF;
+
+  background-color: $theme-color;
+  
+  // Navbar
+  .navbar {
+    background-color: $theme-inverse-color;
+    border-bottom: 0px;
+
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+    .navbar-header {
+
+      .navbar-brand {
+        color: $theme-color;
+      }
+
+      .navbar-expand-toggle {
+        color: $theme-primary-color;
+      }
+    }
+  }
+
+  // Menu Bar
+  .side-menu {
+    background-color: $theme-primary-color;
+
+    .navbar-nav {
+      width: 100%;
+    }
+
+    .navbar {
+      background-color: $theme-primary-color;
+      border-bottom: 0px;
+
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+
+      li {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+
+        & > a {
+        color: $white-color;
+        }
+      }
+
+      li.dropdown {
+
+        background-color: $theme-primary-color;
+        & > .panel-collapse {
+          background-color: rgba(0,0,0,0.1);
+        }
+
+        .panel-body {
+          padding: 0;
+        }
+      }
+
+      li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+
+    }
+  }
+}
