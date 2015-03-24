@@ -12,6 +12,18 @@ body {
   outline: none;
 }
 
+.row {
+  margin-bottom: 30px;
+}
+
+.row.no-margin {
+  margin-bottom: 10px;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
 // Navbar 
 .navbar {
   z-index: 10001;
@@ -145,6 +157,7 @@ body {
 /* Main body section */
 .content-container .side-body {
   margin-left: 60px;
+  margin-right: 10px;
 }
 .content-container.expanded .side-body {
   margin-left: 260px;
