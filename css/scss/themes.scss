@@ -2,12 +2,14 @@
 .flat-red {
 
   $theme-color: #F9F9F9;
+  $theme-grey-color: #CCC;
   $theme-menu-bg-color: #D4D4D4;
   $theme-inverse-color: #3E4651;
   $theme-primary-color: #F64747;
   $theme-success-color: #00B16A;
   $theme-warning-color: #FF9704;
   $theme-blue-color: #22A7F0;
+  $theme-danger-color: #F64747;
 
 
   $white-color: #FFF;
@@ -33,6 +35,68 @@
         color: $theme-primary-color;
       }
     }
+    .navbar-nav {
+      & > li {
+        & > a {
+          color: $white-color;
+        }
+      }
+      & > li:hover {
+        & > a {
+          color: $theme-primary-color;
+        }
+      }
+      & > li.open {
+        
+        & > a {
+          background-color: transparent;
+          color: $theme-primary-color;
+        }
+      }
+      & > li.danger {
+        
+        & > a {
+          background-color: $theme-danger-color;
+          color: $white-color;
+        }
+      }
+      .dropdown-menu {
+        background-color: $theme-color;
+        border-color: $theme-inverse-color;
+        .title {
+          background-color: $white-color;
+          .badge {
+            background-color: $theme-inverse-color;
+          }
+        }
+      }
+      .dropdown-menu.danger {
+        border-color: $theme-danger-color;
+        .title {
+          background-color: $theme-danger-color;
+          color: $white-color;
+
+          .badge {
+            background-color: $white-color;
+            color: $theme-danger-color;
+          }
+        }
+      }
+      .dropdown.profile {
+        .dropdown-menu {
+          border-color: $theme-blue-color;
+          li.profile-img {
+            background-color: $theme-blue-color;
+          }
+        }
+      }
+      .dropdown.profile.open {
+        & > a {
+          background-color: $theme-blue-color;
+          color: $white-color;
+        }
+      }
+    }
   }
 
   // Menu Bar
@@ -55,7 +119,12 @@
         border-bottom: 1px solid rgba(255,255,255,0.1);
 
         & > a {
-        color: $white-color;
+          color: $white-color;
+        }
+      }
+      li:hover {
+        & > a {
+          color: $white-color;
         }
       }
 
@@ -97,5 +166,27 @@
   .card.blue {
     background-color: $theme-blue-color;
     color: $white-color;
+  }
+
+  .card.dark {
+    background-color: $theme-inverse-color;
+    color: $white-color;
+    .card-header {
+      .title {
+       color: $white-color;
+      }
+    }
+  }
+
+  .card {
+    .card-header {
+      .title {
+        color: $theme-inverse-color;
+      }
+    }
+  }
+
+  .page-title {
+    background-color: $white-color;
   }
 }
