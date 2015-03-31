@@ -1,72 +1,86 @@
 // Blue Themes
-.flat-red {
+.flat-green {
 
-  $theme-color: #F9F9F9;
-  $theme-grey-color: #CCC;
+  $color-white: #FFF;
+  $color-light-grey: #F9F9F9;
+  $color-grey: #DDD;
+
+  $color-dark-blue: #3E4651;
+  $color-dark-blue-hover: #363c46;
+
+  $color-dark-black: #232323;
+
+  $color-light-red: #FF003C;
+  $color-red: #FA2A00;
+
+  $color-light-green: #88F159;
+
+  $color-yellow: #FABE28;
+  $color-dark-yellow: #ffb400;
+
+  $color-bgreen: #88C100;
+
+  $color-green-sea: #1ABC9C;
+  $color-dark-green-sea: #16A085;
+
+  $color-light-gblue: #00B9BD;
+  $color-gblue: #007E80;
+  $color-dark-gblue: #004853;
+
   $theme-menu-bg-color: #D4D4D4;
-  $theme-inverse-color: #3E4651;
-  $theme-primary-color: #F64747;
   $theme-success-color: #00B16A;
-  $theme-warning-color: #FF9704;
-  $theme-blue-color: #22A7F0;
-  $theme-danger-color: #F64747;
+  $color-blue: #22A7F0;
+  $theme-danger-color: $color-red;
 
-
-  $white-color: #FFF;
-
-  background-color: $theme-color;
+  background-color: $color-light-grey;
   
   // Navbar
   .navbar {
-    background-color: $theme-inverse-color;
+    background-color: $color-dark-blue;
     border-bottom: 0px;
-
-    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 
     .navbar-header {
 
       .navbar-brand {
-        color: $theme-color;
+        color: $color-light-grey;
       }
 
       .navbar-expand-toggle {
-        color: $theme-primary-color;
+        color: $color-white;
       }
     }
     .navbar-nav {
       & > li {
         & > a {
-          color: $white-color;
+          color: $color-white;
         }
       }
       & > li:hover {
         & > a {
-          color: $theme-primary-color;
+          color: $color-red;
         }
       }
       & > li.open {
         
         & > a {
           background-color: transparent;
-          color: $theme-primary-color;
+          color: $color-red;
         }
       }
       & > li.danger {
         
         & > a {
           background-color: $theme-danger-color;
-          color: $white-color;
+          color: $color-white;
         }
       }
       .dropdown-menu {
-        background-color: $theme-color;
-        border-color: $theme-inverse-color;
+        background-color: $color-light-grey;
+        border-color: $color-dark-blue;
         .title {
-          background-color: $white-color;
+          background-color: $color-white;
           .badge {
-            background-color: $theme-inverse-color;
+            background-color: $color-dark-blue;
           }
         }
       }
@@ -74,26 +88,26 @@
         border-color: $theme-danger-color;
         .title {
           background-color: $theme-danger-color;
-          color: $white-color;
+          color: $color-white;
 
           .badge {
-            background-color: $white-color;
+            background-color: $color-white;
             color: $theme-danger-color;
           }
         }
       }
       .dropdown.profile {
         .dropdown-menu {
-          border-color: $theme-blue-color;
+          border-color: $color-blue;
           li.profile-img {
-            background-color: $theme-blue-color;
+            background-color: $color-blue;
           }
         }
       }
       .dropdown.profile.open {
         & > a {
-          background-color: $theme-blue-color;
-          color: $white-color;
+          background-color: $color-blue;
+          color: $color-white;
         }
       }
     }
@@ -101,14 +115,21 @@
 
   // Menu Bar
   .side-menu {
-    background-color: $theme-primary-color;
+    background-color: $color-grey;
+
+    .navbar-header {
+      background-color: $color-dark-blue-hover;
+      .navbar-brand {
+        color: $color-light-red;
+      }
+    }
 
     .navbar-nav {
       width: 100%;
     }
 
     .navbar {
-      background-color: $theme-primary-color;
+      background-color: $color-grey;
       border-bottom: 0px;
 
       -moz-box-shadow: none;
@@ -119,18 +140,19 @@
         border-bottom: 1px solid rgba(255,255,255,0.1);
 
         & > a {
-          color: $white-color;
+          color: $color-dark-blue-hover;
         }
       }
       li:hover {
         & > a {
-          color: $white-color;
+          background-color: $color-red;
+          color: $color-white;
         }
       }
 
       li.dropdown {
 
-        background-color: $theme-primary-color;
+        background-color: $color-grey;
         & > .panel-collapse {
           background-color: rgba(0,0,0,0.1);
         }
@@ -149,31 +171,31 @@
 
   // Card
   .card.red {
-    background-color: $theme-primary-color;
-    color: $white-color;
+    background-color: $color-red;
+    color: $color-white;
   }
 
   .card.yellow {
-    background-color: $theme-warning-color;
-    color: $white-color;
+    background-color: $color-dark-yellow;
+    color: $color-white;
   }
 
   .card.green {
-    background-color: $theme-success-color;
-    color: $white-color;
+    background-color: $color-green-sea;
+    color: $color-white;
   }
 
   .card.blue {
-    background-color: $theme-blue-color;
-    color: $white-color;
+    background-color: $color-blue;
+    color: $color-white;
   }
 
   .card.dark {
-    background-color: $theme-inverse-color;
-    color: $white-color;
+    background-color: $color-dark-blue;
+    color: $color-white;
     .card-header {
       .title {
-       color: $white-color;
+       color: $color-white;
       }
     }
   }
@@ -181,12 +203,11 @@
   .card {
     .card-header {
       .title {
-        color: $theme-inverse-color;
+        color: $color-dark-blue;
       }
     }
   }
 
   .page-title {
-    background-color: $white-color;
   }
 }

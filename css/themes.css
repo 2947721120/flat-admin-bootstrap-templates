@@ -1,124 +1,125 @@
 /* line 2, scss/themes.scss */
-.flat-red {
+.flat-green {
   background-color: #F9F9F9; }
-  /* line 20, scss/themes.scss */
-  .flat-red .navbar {
+  /* line 38, scss/themes.scss */
+  .flat-green .navbar {
     background-color: #3E4651;
-    border-bottom: 0px;
-    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
-    /* line 30, scss/themes.scss */
-    .flat-red .navbar .navbar-header .navbar-brand {
+    border-bottom: 0px; }
+    /* line 44, scss/themes.scss */
+    .flat-green .navbar .navbar-header .navbar-brand {
       color: #F9F9F9; }
-    /* line 34, scss/themes.scss */
-    .flat-red .navbar .navbar-header .navbar-expand-toggle {
-      color: #F64747; }
-    /* line 40, scss/themes.scss */
-    .flat-red .navbar .navbar-nav > li > a {
+    /* line 48, scss/themes.scss */
+    .flat-green .navbar .navbar-header .navbar-expand-toggle {
       color: #FFF; }
-    /* line 45, scss/themes.scss */
-    .flat-red .navbar .navbar-nav > li:hover > a {
-      color: #F64747; }
-    /* line 51, scss/themes.scss */
-    .flat-red .navbar .navbar-nav > li.open > a {
+    /* line 54, scss/themes.scss */
+    .flat-green .navbar .navbar-nav > li > a {
+      color: #FFF; }
+    /* line 59, scss/themes.scss */
+    .flat-green .navbar .navbar-nav > li:hover > a {
+      color: #FA2A00; }
+    /* line 65, scss/themes.scss */
+    .flat-green .navbar .navbar-nav > li.open > a {
       background-color: transparent;
-      color: #F64747; }
-    /* line 58, scss/themes.scss */
-    .flat-red .navbar .navbar-nav > li.danger > a {
-      background-color: #F64747;
+      color: #FA2A00; }
+    /* line 72, scss/themes.scss */
+    .flat-green .navbar .navbar-nav > li.danger > a {
+      background-color: #FA2A00;
       color: #FFF; }
-    /* line 63, scss/themes.scss */
-    .flat-red .navbar .navbar-nav .dropdown-menu {
+    /* line 77, scss/themes.scss */
+    .flat-green .navbar .navbar-nav .dropdown-menu {
       background-color: #F9F9F9;
       border-color: #3E4651; }
-      /* line 66, scss/themes.scss */
-      .flat-red .navbar .navbar-nav .dropdown-menu .title {
+      /* line 80, scss/themes.scss */
+      .flat-green .navbar .navbar-nav .dropdown-menu .title {
         background-color: #FFF; }
-        /* line 68, scss/themes.scss */
-        .flat-red .navbar .navbar-nav .dropdown-menu .title .badge {
+        /* line 82, scss/themes.scss */
+        .flat-green .navbar .navbar-nav .dropdown-menu .title .badge {
           background-color: #3E4651; }
-    /* line 73, scss/themes.scss */
-    .flat-red .navbar .navbar-nav .dropdown-menu.danger {
-      border-color: #F64747; }
-      /* line 75, scss/themes.scss */
-      .flat-red .navbar .navbar-nav .dropdown-menu.danger .title {
-        background-color: #F64747;
+    /* line 87, scss/themes.scss */
+    .flat-green .navbar .navbar-nav .dropdown-menu.danger {
+      border-color: #FA2A00; }
+      /* line 89, scss/themes.scss */
+      .flat-green .navbar .navbar-nav .dropdown-menu.danger .title {
+        background-color: #FA2A00;
         color: #FFF; }
-        /* line 79, scss/themes.scss */
-        .flat-red .navbar .navbar-nav .dropdown-menu.danger .title .badge {
+        /* line 93, scss/themes.scss */
+        .flat-green .navbar .navbar-nav .dropdown-menu.danger .title .badge {
           background-color: #FFF;
-          color: #F64747; }
-    /* line 86, scss/themes.scss */
-    .flat-red .navbar .navbar-nav .dropdown.profile .dropdown-menu {
+          color: #FA2A00; }
+    /* line 100, scss/themes.scss */
+    .flat-green .navbar .navbar-nav .dropdown.profile .dropdown-menu {
       border-color: #22A7F0; }
-      /* line 88, scss/themes.scss */
-      .flat-red .navbar .navbar-nav .dropdown.profile .dropdown-menu li.profile-img {
+      /* line 102, scss/themes.scss */
+      .flat-green .navbar .navbar-nav .dropdown.profile .dropdown-menu li.profile-img {
         background-color: #22A7F0; }
-    /* line 94, scss/themes.scss */
-    .flat-red .navbar .navbar-nav .dropdown.profile.open > a {
+    /* line 108, scss/themes.scss */
+    .flat-green .navbar .navbar-nav .dropdown.profile.open > a {
       background-color: #22A7F0;
       color: #FFF; }
-  /* line 103, scss/themes.scss */
-  .flat-red .side-menu {
-    background-color: #F64747; }
-    /* line 106, scss/themes.scss */
-    .flat-red .side-menu .navbar-nav {
+  /* line 117, scss/themes.scss */
+  .flat-green .side-menu {
+    background-color: #DDD; }
+    /* line 120, scss/themes.scss */
+    .flat-green .side-menu .navbar-header {
+      background-color: #363c46; }
+      /* line 122, scss/themes.scss */
+      .flat-green .side-menu .navbar-header .navbar-brand {
+        color: #FF003C; }
+    /* line 127, scss/themes.scss */
+    .flat-green .side-menu .navbar-nav {
       width: 100%; }
-    /* line 110, scss/themes.scss */
-    .flat-red .side-menu .navbar {
-      background-color: #F64747;
+    /* line 131, scss/themes.scss */
+    .flat-green .side-menu .navbar {
+      background-color: #DDD;
       border-bottom: 0px;
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
-      /* line 118, scss/themes.scss */
-      .flat-red .side-menu .navbar li {
+      /* line 139, scss/themes.scss */
+      .flat-green .side-menu .navbar li {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-        /* line 121, scss/themes.scss */
-        .flat-red .side-menu .navbar li > a {
-          color: #FFF; }
-      /* line 126, scss/themes.scss */
-      .flat-red .side-menu .navbar li:hover > a {
+        /* line 142, scss/themes.scss */
+        .flat-green .side-menu .navbar li > a {
+          color: #363c46; }
+      /* line 147, scss/themes.scss */
+      .flat-green .side-menu .navbar li:hover > a {
+        background-color: #FA2A00;
         color: #FFF; }
-      /* line 131, scss/themes.scss */
-      .flat-red .side-menu .navbar li.dropdown {
-        background-color: #F64747; }
-        /* line 134, scss/themes.scss */
-        .flat-red .side-menu .navbar li.dropdown > .panel-collapse {
+      /* line 153, scss/themes.scss */
+      .flat-green .side-menu .navbar li.dropdown {
+        background-color: #DDD; }
+        /* line 156, scss/themes.scss */
+        .flat-green .side-menu .navbar li.dropdown > .panel-collapse {
           background-color: rgba(0, 0, 0, 0.1); }
-        /* line 138, scss/themes.scss */
-        .flat-red .side-menu .navbar li.dropdown .panel-body {
+        /* line 160, scss/themes.scss */
+        .flat-green .side-menu .navbar li.dropdown .panel-body {
           padding: 0; }
-      /* line 143, scss/themes.scss */
-      .flat-red .side-menu .navbar li:hover {
+      /* line 165, scss/themes.scss */
+      .flat-green .side-menu .navbar li:hover {
         background-color: rgba(0, 0, 0, 0.1); }
-  /* line 151, scss/themes.scss */
-  .flat-red .card.red {
-    background-color: #F64747;
+  /* line 173, scss/themes.scss */
+  .flat-green .card.red {
+    background-color: #FA2A00;
     color: #FFF; }
-  /* line 156, scss/themes.scss */
-  .flat-red .card.yellow {
-    background-color: #FF9704;
+  /* line 178, scss/themes.scss */
+  .flat-green .card.yellow {
+    background-color: #ffb400;
     color: #FFF; }
-  /* line 161, scss/themes.scss */
-  .flat-red .card.green {
-    background-color: #00B16A;
+  /* line 183, scss/themes.scss */
+  .flat-green .card.green {
+    background-color: #1ABC9C;
     color: #FFF; }
-  /* line 166, scss/themes.scss */
-  .flat-red .card.blue {
+  /* line 188, scss/themes.scss */
+  .flat-green .card.blue {
     background-color: #22A7F0;
     color: #FFF; }
-  /* line 171, scss/themes.scss */
-  .flat-red .card.dark {
+  /* line 193, scss/themes.scss */
+  .flat-green .card.dark {
     background-color: #3E4651;
     color: #FFF; }
-    /* line 175, scss/themes.scss */
-    .flat-red .card.dark .card-header .title {
+    /* line 197, scss/themes.scss */
+    .flat-green .card.dark .card-header .title {
       color: #FFF; }
-  /* line 183, scss/themes.scss */
-  .flat-red .card .card-header .title {
+  /* line 205, scss/themes.scss */
+  .flat-green .card .card-header .title {
     color: #3E4651; }
-  /* line 189, scss/themes.scss */
-  .flat-red .page-title {
-    background-color: #FFF; }

@@ -1,6 +1,6 @@
 /* line 6, scss/style.scss */
 body {
-  padding-top: 50px; }
+  padding-top: 0px; }
 
 /* line 11, scss/style.scss */
 :focus {
@@ -20,181 +20,223 @@ body {
 
 /* line 28, scss/style.scss */
 .navbar {
-  z-index: 10001; }
-  /* line 31, scss/style.scss */
+  z-index: 10001;
+  padding-left: 50px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s; }
+  /* line 35, scss/style.scss */
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    margin-left: -10px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 0px;
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400; }
-  /* line 37, scss/style.scss */
+    font-weight: 400;
+    padding: 0;
+    font-size: 1.5em; }
+  /* line 45, scss/style.scss */
   .navbar > .container .navbar-expand-toggle, .navbar > .container-fluid .navbar-expand-toggle {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: transparent;
     border: 0px;
     float: left;
     -moz-transition: all 0.25s linear;
     -webkit-transition: all 0.25s linear;
-    transition: all 0.25s linear; }
-  /* line 49, scss/style.scss */
+    transition: all 0.25s linear;
+    opacity: 0.75; }
+  /* line 59, scss/style.scss */
   .navbar > .container .navbar-expand-toggle .icon, .navbar > .container-fluid .navbar-expand-toggle .icon {
     font-size: 1.4em; }
-  /* line 55, scss/style.scss */
+  /* line 65, scss/style.scss */
   .navbar .navbar-nav > li > a {
-    font-family: 'Roboto Condensed', sans-serif; }
-  /* line 61, scss/style.scss */
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 15px 0px 15px; }
+  /* line 74, scss/style.scss */
   .navbar .dropdown-menu {
     padding: 0;
     border-top: 0;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px; }
-    /* line 66, scss/style.scss */
+    /* line 79, scss/style.scss */
     .navbar .dropdown-menu .title {
       font-family: 'Roboto Condensed', sans-serif;
       padding: 5px 10px;
       -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
       -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
-    /* line 76, scss/style.scss */
+    /* line 89, scss/style.scss */
     .navbar .dropdown-menu .message {
       font-family: 'Roboto Condensed', sans-serif;
       text-align: center;
       padding: 10px 20px; }
-  /* line 83, scss/style.scss */
+  /* line 96, scss/style.scss */
   .navbar .dropdown.profile .dropdown-menu {
     width: 305px;
     padding-bottom: 0px;
     text-align: center; }
-    /* line 88, scss/style.scss */
+    /* line 101, scss/style.scss */
     .navbar .dropdown.profile .dropdown-menu li.profile-img {
       padding: 10px; }
-      /* line 91, scss/style.scss */
+      /* line 104, scss/style.scss */
       .navbar .dropdown.profile .dropdown-menu li.profile-img img.profile-img {
         width: 100px;
         height: 100px;
         margin: 8px;
         border: 3px solid #FFF; }
-    /* line 98, scss/style.scss */
+    /* line 111, scss/style.scss */
     .navbar .dropdown.profile .dropdown-menu .profile-info {
       font-family: 'Roboto Condensed', sans-serif;
       padding: 15px; }
-      /* line 102, scss/style.scss */
+      /* line 115, scss/style.scss */
       .navbar .dropdown.profile .dropdown-menu .profile-info .username {
         font-size: 1.8em; }
 
-/* line 110, scss/style.scss */
+/* line 123, scss/style.scss */
 .content-container {
   margin-right: 0;
   margin-left: 0; }
-  /* line 114, scss/style.scss */
+  /* line 127, scss/style.scss */
   .content-container .side-menu {
-    z-index: 10000;
+    z-index: 100000;
     position: fixed;
     width: 50px;
     height: 100%;
     -webkit-transition: all 0.25s;
-    transition: all 0.25s;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08); }
-    /* line 123, scss/style.scss */
+    transition: all 0.25s; }
+    /* line 135, scss/style.scss */
     .content-container .side-menu .navbar-header {
       width: 100%;
-      border-bottom: 1px solid #e7e7e7; }
-    /* line 128, scss/style.scss */
+      border-bottom: 0px solid #e7e7e7; }
+      /* line 139, scss/style.scss */
+      .content-container .side-menu .navbar-header .navbar-brand {
+        width: 50px;
+        line-height: 60px;
+        height: 60px;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        font-family: 'Roboto Condensed', sans-serif; }
+        /* line 148, scss/style.scss */
+        .content-container .side-menu .navbar-header .navbar-brand .icon {
+          width: 50px;
+          text-align: center;
+          display: inline-block; }
+        /* line 154, scss/style.scss */
+        .content-container .side-menu .navbar-header .navbar-brand .title {
+          display: none; }
+    /* line 160, scss/style.scss */
     .content-container .side-menu .navbar {
-      border: none; }
-    /* line 133, scss/style.scss */
+      border: none;
+      padding-left: 0px; }
+    /* line 166, scss/style.scss */
     .content-container .side-menu .navbar-nav li {
       display: block;
-      width: 100%; }
-      /* line 137, scss/style.scss */
+      width: 100%;
+      overflow: hidden; }
+      /* line 171, scss/style.scss */
       .content-container .side-menu .navbar-nav li a {
         font-family: 'Roboto Condensed', sans-serif;
-        padding: 10px;
+        padding: 0 10px 0 10px;
+        height: 60px;
+        line-height: 60px;
         display: block;
         white-space: nowrap; }
-        /* line 143, scss/style.scss */
+        /* line 179, scss/style.scss */
         .content-container .side-menu .navbar-nav li a .icon {
           width: 28px;
           text-align: center;
+          font-size: 1.1em;
           display: inline-block; }
-        /* line 149, scss/style.scss */
+        /* line 186, scss/style.scss */
         .content-container .side-menu .navbar-nav li a .title {
           width: 0px;
           white-space: nowrap;
           padding-left: 6px;
           display: none; }
-    /* line 158, scss/style.scss */
+    /* line 195, scss/style.scss */
     .content-container .side-menu .navbar-nav li.dropdown {
       border: 0;
       margin-bottom: 0;
-      border-radius: 0; }
-    /* line 164, scss/style.scss */
+      border-radius: 0;
+      box-shadow: none; }
+    /* line 203, scss/style.scss */
     .content-container .side-menu .navbar-nav .panel-collapse.in {
       display: none; }
-  /* line 170, scss/style.scss */
+  /* line 209, scss/style.scss */
   .content-container .side-menu:hover {
     width: 250px; }
-    /* line 175, scss/style.scss */
+    /* line 214, scss/style.scss */
+    .content-container .side-menu:hover .navbar-header .navbar-brand .title {
+      display: inline-block; }
+    /* line 223, scss/style.scss */
     .content-container .side-menu:hover .navbar-nav li a .title {
       width: 192px;
       display: inline-block; }
-    /* line 182, scss/style.scss */
+    /* line 230, scss/style.scss */
     .content-container .side-menu:hover .panel-collapse.in {
       display: block; }
+  /* line 235, scss/style.scss */
+  .content-container .side-body {
+    padding-top: 84px; }
 
-/* line 188, scss/style.scss */
+/* line 240, scss/style.scss */
+.content-container.expanded .navbar-top {
+  padding-left: 250px; }
+/* line 243, scss/style.scss */
 .content-container.expanded .side-menu {
   width: 250px; }
-  /* line 194, scss/style.scss */
+  /* line 249, scss/style.scss */
+  .content-container.expanded .side-menu .navbar-header .navbar-brand .title {
+    display: inline-block; }
+  /* line 258, scss/style.scss */
   .content-container.expanded .side-menu .navbar-nav li a .title {
     display: inline-block; }
 
-/* line 203, scss/style.scss */
+/* line 267, scss/style.scss */
 .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
   margin-left: -15px;
   margin-right: -15px; }
 
-/* line 208, scss/style.scss */
+/* line 272, scss/style.scss */
 .page-title {
   font-family: 'Roboto Condensed', sans-serif;
   margin-left: -25px;
   margin-right: -25px;
-  margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+  margin-bottom: 10px; }
 
-/* line 221, scss/style.scss */
+/* line 281, scss/style.scss */
 .sub-title {
   font-family: 'Roboto Condensed', sans-serif; }
-  /* line 223, scss/style.scss */
+  /* line 283, scss/style.scss */
   .sub-title > * {
     display: inline-block; }
-  /* line 227, scss/style.scss */
+  /* line 287, scss/style.scss */
   .sub-title h3 {
     margin-right: 10px; }
-  /* line 231, scss/style.scss */
+  /* line 291, scss/style.scss */
   .sub-title .description {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 0.9em; }
 
 /* Main body section */
-/* line 238, scss/style.scss */
+/* line 298, scss/style.scss */
 .content-container .side-body {
   margin-left: 60px;
   margin-right: 10px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s; }
 
-/* line 245, scss/style.scss */
+/* line 305, scss/style.scss */
 .content-container.expanded .side-body {
   margin-left: 260px; }
 
 /* small screen */
 @media (max-width: 768px) {
-  /* line 251, scss/style.scss */
+  /* line 311, scss/style.scss */
   .side-menu {
     position: relative;
     width: 100%;
@@ -202,7 +244,7 @@ body {
     border-right: 0;
     border-bottom: 1px solid #e7e7e7; }
 
-  /* line 258, scss/style.scss */
+  /* line 318, scss/style.scss */
   .side-menu .brand-name-wrapper .navbar-brand {
     display: inline-block; }
 
@@ -239,7 +281,7 @@ body {
       left: -300px; } }
   /* Slide side menu*/
   /* Add .absolute-wrapper.slide-in for scrollable menu -> see top comment */
-  /* line 312, scss/style.scss */
+  /* line 372, scss/style.scss */
   .side-menu-container > .navbar-nav.slide-in {
     -moz-animation: slidein 300ms forwards;
     -o-animation: slidein 300ms forwards;
@@ -248,7 +290,7 @@ body {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d; }
 
-  /* line 320, scss/style.scss */
+  /* line 380, scss/style.scss */
   .side-menu-container > .navbar-nav {
     /* Add position:absolute for scrollable menu -> see top comment */
     position: fixed;
@@ -306,7 +348,7 @@ body {
     100% {
       left: 0; } }
   /* Slide side body*/
-  /* line 395, scss/style.scss */
+  /* line 455, scss/style.scss */
   .side-body {
     margin-left: 5px;
     margin-top: 70px;
@@ -318,7 +360,7 @@ body {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d; }
 
-  /* line 406, scss/style.scss */
+  /* line 466, scss/style.scss */
   .body-slide-in {
     -moz-animation: bodyslidein 300ms forwards;
     -o-animation: bodyslidein 300ms forwards;
@@ -328,7 +370,7 @@ body {
     transform-style: preserve-3d; }
 
   /* Hamburger */
-  /* line 415, scss/style.scss */
+  /* line 475, scss/style.scss */
   .navbar-toggle {
     border: 0;
     float: left;
@@ -338,15 +380,15 @@ body {
     background-color: #f3f3f3; }
 
   /* Search */
-  /* line 424, scss/style.scss */
+  /* line 484, scss/style.scss */
   #search .panel-body .navbar-form {
     border-bottom: 0; }
 
-  /* line 427, scss/style.scss */
+  /* line 487, scss/style.scss */
   #search .panel-body .navbar-form .form-group {
     margin: 0; }
 
-  /* line 430, scss/style.scss */
+  /* line 490, scss/style.scss */
   .navbar-header {
     /* this is probably redundant */
     position: fixed;
@@ -354,55 +396,54 @@ body {
     background-color: #f8f8f8; }
 
   /* Dropdown tweek */
-  /* line 437, scss/style.scss */
+  /* line 497, scss/style.scss */
   #dropdown .panel-body .navbar-nav {
     margin: 0; } }
 /* Card */
-/* line 443, scss/style.scss */
+/* line 503, scss/style.scss */
 .card {
   background-color: #FFF;
-  border-radius: 2px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 0px;
   overflow: visible; }
-  /* line 448, scss/style.scss */
+  /* line 508, scss/style.scss */
   .card .card-body {
     padding: 5px; }
-  /* line 452, scss/style.scss */
+  /* line 512, scss/style.scss */
   .card .card-header {
     padding: 1em 1.5em; }
-    /* line 454, scss/style.scss */
+    /* line 514, scss/style.scss */
     .card .card-header .title {
       font-family: 'Roboto Condensed', sans-serif;
       font-size: 1.5em;
       text-decoration: none; }
 
-/* line 464, scss/style.scss */
+/* line 524, scss/style.scss */
 .card:hover .card-header .title {
   text-decoration: none !important; }
 
-/* line 471, scss/style.scss */
+/* line 531, scss/style.scss */
 .card.summary-inline .card-body {
   padding: 20px; }
-  /* line 475, scss/style.scss */
+  /* line 535, scss/style.scss */
   .card.summary-inline .card-body .content {
     float: right; }
-    /* line 478, scss/style.scss */
+    /* line 538, scss/style.scss */
     .card.summary-inline .card-body .content .title {
       font-family: 'Lato', sans-serif;
       margin-top: -0.3em;
       font-size: 3.5em;
       text-align: right; }
-    /* line 485, scss/style.scss */
+    /* line 545, scss/style.scss */
     .card.summary-inline .card-body .content .sub-title {
       font-family: 'Lato', sans-serif;
       font-size: 0.8em;
       text-align: right;
       margin-top: -10px; }
 
-/* line 496, scss/style.scss */
+/* line 556, scss/style.scss */
 .chart {
   padding: 15px; }
 
-/* line 499, scss/style.scss */
+/* line 559, scss/style.scss */
 .chart.no-padding {
   margin-bottom: -5px; }
