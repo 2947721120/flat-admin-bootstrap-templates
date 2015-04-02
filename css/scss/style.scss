@@ -24,6 +24,11 @@ body {
   padding: 0px !important;
 }
 
+// Global Class
+.text-indent {
+  text-indent: 1em;
+}
+
 // Navbar 
 .navbar {
   z-index: 10001;
@@ -40,6 +45,11 @@ body {
       font-weight: 400;
       padding: 0;
       font-size: 1.5em;
+
+      .fa-angle-right {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
     }
 
     .navbar-expand-toggle {
@@ -198,6 +208,16 @@ body {
         border-radius: 0;
 
         box-shadow: none;
+        ul {
+          li {
+            a {
+              height: 44px;
+              line-height: 44px;
+              vertical-align: middle;
+              padding: 0em 1.2em;
+            }
+          }
+        }
       }
 
       .panel-collapse.in {
@@ -233,6 +253,10 @@ body {
   }
 
   .side-body {
+    padding-top: 60px;
+  }
+
+  .side-body.padding-top {
     padding-top: 84px;
   }
 }
@@ -271,11 +295,22 @@ body {
 
 .page-title {
   font-family: 'Roboto Condensed', sans-serif;
-  margin-left: -25px;
-  margin-right: -25px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 15px 10px;
+  margin-bottom: 0px;
+  height: auto;
+
+  .title {
+    font-size: 2em;
+  }
+
+  .page-action {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+  }
 }
 
 .sub-title {
@@ -502,11 +537,22 @@ body {
 /* Card */
 .card {
   background-color: #FFF;
-  border-radius: 0px;
-  // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
   overflow: visible;
   .card-body {
-    padding: 5px;
+    padding: 1em 1.5em;
+
+    .sub-title {
+      font-size: 1.2em;
+      padding: 1.2em 0em 0.4em 0em;
+      margin-bottom: 0.5em;
+
+      .description {
+        padding-left: 0.4em;
+        font-size: 0.8em;
+        opacity: 0.8;
+      }
+    }
   }
 
   .card-header {
@@ -552,10 +598,75 @@ body {
   }
 }
 
+.card.profile {
+  .card-body {
+    padding: 0.5em 0.8em;
+  }
+
+  .card-footer {
+    padding: 0.5em 0.8em;
+  }
+}
+
+// Panel
+.panel {
+  border-radius: 3px;
+
+  .panel-heading {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+}
+
 // Chart
 .chart {
   padding: 15px;
 }
 .chart.no-padding {
   margin-bottom: -5px;
+}
+
+// Button {
+.btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+// Progress Bar
+.progress {
+  border-radius: 3px;
+  box-shadow: none;
+
+  .progress-bar {
+    box-shadow: none;
+  }
+}
+
+// Pagination
+.pagination {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  li:first-child {
+    & > a , span{
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+  }
+
+  li:last-child {
+    & > a , span{
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+}
+
+// Form
+.form-control {
+  border-radius: 3px;
+  box-shadow: none;
 }

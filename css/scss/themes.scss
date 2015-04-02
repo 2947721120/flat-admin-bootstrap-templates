@@ -1,9 +1,10 @@
 // Blue Themes
-.flat-green {
+.flat-red {
 
   $color-white: #FFF;
   $color-light-grey: #F9F9F9;
-  $color-grey: #DDD;
+  $color-lighter-grey: #F0F0F0;
+  $color-grey: #EAEAEA;
 
   $color-dark-blue: #3E4651;
   $color-dark-blue-hover: #363c46;
@@ -38,6 +39,8 @@
   .navbar {
     background-color: $color-dark-blue;
     border-bottom: 0px;
+
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 
     .navbar-header {
 
@@ -137,10 +140,15 @@
       box-shadow: none;
 
       li {
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-
         & > a {
           color: $color-dark-blue-hover;
+        }
+      }
+      li.active {
+
+        & > a {
+          background-color: $color-red;
+          color: $color-white;
         }
       }
       li:hover {
@@ -163,7 +171,7 @@
       }
 
       li:hover {
-        background-color: rgba(0,0,0,0.1);
+        // background-color: rgba(0,0,0,0.1);
       }
 
     }
@@ -193,7 +201,12 @@
   .card.dark {
     background-color: $color-dark-blue;
     color: $color-white;
+  }
+
+  .card.red , .card.yellow , .card.green , .card.blue , .card.dark {
+    border: 0;
     .card-header {
+      border-bottom: 0;
       .title {
        color: $color-white;
       }
@@ -201,13 +214,154 @@
   }
 
   .card {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid $color-grey;
     .card-header {
+      border-bottom: 1px solid $color-grey;
       .title {
         color: $color-dark-blue;
       }
     }
+
+    .card-body {
+      .sub-title {
+        border-bottom: 1px solid $color-light-grey;
+      }
+    }
+
+    .card-header.no-border {
+      border-bottom: 0;
+    }
   }
 
-  .page-title {
+  .card.profile {
+    .card-body {
+    }
+
+    .card-footer {
+      border-top: 1px solid $color-light-grey;
+    }
+  }
+
+  // Panel 
+  .panel.panel-default {
+    border: 1px solid $color-grey;
+    .panel-heading {
+      border-bottom: 1px solid $color-grey;
+      background-color: $color-lighter-grey;
+    }
+  }
+
+  .panel.panel-primary {
+    border: 1px solid $color-dark-blue;
+    .panel-heading {
+      border-bottom: 1px solid $color-dark-blue;
+      background-color: $color-dark-blue;
+      color: $color-white;
+    }
+  }
+
+  .panel.panel-success {
+    border: 1px solid $color-green-sea;
+    .panel-heading {
+      border-bottom: 1px solid $color-green-sea;
+      background-color: $color-green-sea;
+      color: $color-white;
+    }
+  }
+
+  .panel.panel-info {
+    border: 1px solid $color-blue;
+    .panel-heading {
+      border-bottom: 1px solid $color-blue;
+      background-color: $color-blue;
+      color: $color-white;
+    }
+  }
+
+  .panel.panel-warning {
+    border: 1px solid $color-yellow;
+    .panel-heading {
+      border-bottom: 1px solid $color-yellow;
+      background-color: $color-yellow;
+      color: $color-white;
+    }
+  }
+
+  .panel.panel-danger {
+    border: 1px solid $color-red;
+    .panel-heading {
+      border-bottom: 1px solid $color-red;
+      background-color: $color-red;
+      color: $color-white;
+    }
+  }
+
+  // Button
+  .btn.btn-default {
+    background-color: $color-lighter-grey;
+  }
+  .btn.btn-default:hover {
+    background-color: $color-grey;
+  }
+
+  .btn.btn-primary {
+    background-color: $color-dark-blue;
+    color: $color-white;
+  }
+
+  .btn.btn-success {
+    background-color: $color-green-sea;
+    color: $color-white;
+  }
+
+  .btn.btn-warning {
+    background-color: $color-yellow;
+    color: $color-white;
+  }
+
+  .btn.btn-info {
+    background-color: $color-blue;
+    color: $color-white;
+  }
+  .btn.btn-danger {
+    background-color: $color-red;
+    color: $color-white;
+  }
+
+  // Progress Bar
+  .progress {
+    .progress-bar {
+      background-color: $color-dark-blue;
+      color: $color-white;
+    }
+    .progress-bar.progress-bar-success {
+      background-color: $color-green-sea;
+    }
+    .progress-bar.progress-bar-info {
+      background-color: $color-blue;
+    }
+    .progress-bar.progress-bar-warning {
+      background-color: $color-yellow;
+    }
+    .progress-bar.progress-bar-danger {
+      background-color: $color-red;
+    }
+  }
+
+  // Pagination
+  .pagination {
+    & > li {
+      & > a {
+        color: $color-dark-blue;
+      }
+    }
+    .active {
+      & > a , & > a:focus, & > a:hover , span , & > span:focus, & > span:hover {
+        background-color: $color-dark-blue;
+        border-color: $color-dark-blue;
+        color: $color-white;
+      }
+    }
   }
 }

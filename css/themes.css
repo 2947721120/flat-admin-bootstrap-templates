@@ -1,125 +1,243 @@
 /* line 2, scss/themes.scss */
-.flat-green {
+.flat-red {
   background-color: #F9F9F9; }
-  /* line 38, scss/themes.scss */
-  .flat-green .navbar {
+  /* line 39, scss/themes.scss */
+  .flat-red .navbar {
     background-color: #3E4651;
-    border-bottom: 0px; }
-    /* line 44, scss/themes.scss */
-    .flat-green .navbar .navbar-header .navbar-brand {
+    border-bottom: 0px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+    /* line 47, scss/themes.scss */
+    .flat-red .navbar .navbar-header .navbar-brand {
       color: #F9F9F9; }
-    /* line 48, scss/themes.scss */
-    .flat-green .navbar .navbar-header .navbar-expand-toggle {
+    /* line 51, scss/themes.scss */
+    .flat-red .navbar .navbar-header .navbar-expand-toggle {
       color: #FFF; }
-    /* line 54, scss/themes.scss */
-    .flat-green .navbar .navbar-nav > li > a {
+    /* line 57, scss/themes.scss */
+    .flat-red .navbar .navbar-nav > li > a {
       color: #FFF; }
-    /* line 59, scss/themes.scss */
-    .flat-green .navbar .navbar-nav > li:hover > a {
+    /* line 62, scss/themes.scss */
+    .flat-red .navbar .navbar-nav > li:hover > a {
       color: #FA2A00; }
-    /* line 65, scss/themes.scss */
-    .flat-green .navbar .navbar-nav > li.open > a {
+    /* line 68, scss/themes.scss */
+    .flat-red .navbar .navbar-nav > li.open > a {
       background-color: transparent;
       color: #FA2A00; }
-    /* line 72, scss/themes.scss */
-    .flat-green .navbar .navbar-nav > li.danger > a {
+    /* line 75, scss/themes.scss */
+    .flat-red .navbar .navbar-nav > li.danger > a {
       background-color: #FA2A00;
       color: #FFF; }
-    /* line 77, scss/themes.scss */
-    .flat-green .navbar .navbar-nav .dropdown-menu {
+    /* line 80, scss/themes.scss */
+    .flat-red .navbar .navbar-nav .dropdown-menu {
       background-color: #F9F9F9;
       border-color: #3E4651; }
-      /* line 80, scss/themes.scss */
-      .flat-green .navbar .navbar-nav .dropdown-menu .title {
+      /* line 83, scss/themes.scss */
+      .flat-red .navbar .navbar-nav .dropdown-menu .title {
         background-color: #FFF; }
-        /* line 82, scss/themes.scss */
-        .flat-green .navbar .navbar-nav .dropdown-menu .title .badge {
+        /* line 85, scss/themes.scss */
+        .flat-red .navbar .navbar-nav .dropdown-menu .title .badge {
           background-color: #3E4651; }
-    /* line 87, scss/themes.scss */
-    .flat-green .navbar .navbar-nav .dropdown-menu.danger {
+    /* line 90, scss/themes.scss */
+    .flat-red .navbar .navbar-nav .dropdown-menu.danger {
       border-color: #FA2A00; }
-      /* line 89, scss/themes.scss */
-      .flat-green .navbar .navbar-nav .dropdown-menu.danger .title {
+      /* line 92, scss/themes.scss */
+      .flat-red .navbar .navbar-nav .dropdown-menu.danger .title {
         background-color: #FA2A00;
         color: #FFF; }
-        /* line 93, scss/themes.scss */
-        .flat-green .navbar .navbar-nav .dropdown-menu.danger .title .badge {
+        /* line 96, scss/themes.scss */
+        .flat-red .navbar .navbar-nav .dropdown-menu.danger .title .badge {
           background-color: #FFF;
           color: #FA2A00; }
-    /* line 100, scss/themes.scss */
-    .flat-green .navbar .navbar-nav .dropdown.profile .dropdown-menu {
+    /* line 103, scss/themes.scss */
+    .flat-red .navbar .navbar-nav .dropdown.profile .dropdown-menu {
       border-color: #22A7F0; }
-      /* line 102, scss/themes.scss */
-      .flat-green .navbar .navbar-nav .dropdown.profile .dropdown-menu li.profile-img {
+      /* line 105, scss/themes.scss */
+      .flat-red .navbar .navbar-nav .dropdown.profile .dropdown-menu li.profile-img {
         background-color: #22A7F0; }
-    /* line 108, scss/themes.scss */
-    .flat-green .navbar .navbar-nav .dropdown.profile.open > a {
+    /* line 111, scss/themes.scss */
+    .flat-red .navbar .navbar-nav .dropdown.profile.open > a {
       background-color: #22A7F0;
       color: #FFF; }
-  /* line 117, scss/themes.scss */
-  .flat-green .side-menu {
-    background-color: #DDD; }
-    /* line 120, scss/themes.scss */
-    .flat-green .side-menu .navbar-header {
+  /* line 120, scss/themes.scss */
+  .flat-red .side-menu {
+    background-color: #EAEAEA; }
+    /* line 123, scss/themes.scss */
+    .flat-red .side-menu .navbar-header {
       background-color: #363c46; }
-      /* line 122, scss/themes.scss */
-      .flat-green .side-menu .navbar-header .navbar-brand {
+      /* line 125, scss/themes.scss */
+      .flat-red .side-menu .navbar-header .navbar-brand {
         color: #FF003C; }
-    /* line 127, scss/themes.scss */
-    .flat-green .side-menu .navbar-nav {
+    /* line 130, scss/themes.scss */
+    .flat-red .side-menu .navbar-nav {
       width: 100%; }
-    /* line 131, scss/themes.scss */
-    .flat-green .side-menu .navbar {
-      background-color: #DDD;
+    /* line 134, scss/themes.scss */
+    .flat-red .side-menu .navbar {
+      background-color: #EAEAEA;
       border-bottom: 0px;
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
-      /* line 139, scss/themes.scss */
-      .flat-green .side-menu .navbar li {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-        /* line 142, scss/themes.scss */
-        .flat-green .side-menu .navbar li > a {
-          color: #363c46; }
-      /* line 147, scss/themes.scss */
-      .flat-green .side-menu .navbar li:hover > a {
+      /* line 143, scss/themes.scss */
+      .flat-red .side-menu .navbar li > a {
+        color: #363c46; }
+      /* line 149, scss/themes.scss */
+      .flat-red .side-menu .navbar li.active > a {
         background-color: #FA2A00;
         color: #FFF; }
-      /* line 153, scss/themes.scss */
-      .flat-green .side-menu .navbar li.dropdown {
-        background-color: #DDD; }
-        /* line 156, scss/themes.scss */
-        .flat-green .side-menu .navbar li.dropdown > .panel-collapse {
+      /* line 155, scss/themes.scss */
+      .flat-red .side-menu .navbar li:hover > a {
+        background-color: #FA2A00;
+        color: #FFF; }
+      /* line 161, scss/themes.scss */
+      .flat-red .side-menu .navbar li.dropdown {
+        background-color: #EAEAEA; }
+        /* line 164, scss/themes.scss */
+        .flat-red .side-menu .navbar li.dropdown > .panel-collapse {
           background-color: rgba(0, 0, 0, 0.1); }
-        /* line 160, scss/themes.scss */
-        .flat-green .side-menu .navbar li.dropdown .panel-body {
+        /* line 168, scss/themes.scss */
+        .flat-red .side-menu .navbar li.dropdown .panel-body {
           padding: 0; }
-      /* line 165, scss/themes.scss */
-      .flat-green .side-menu .navbar li:hover {
-        background-color: rgba(0, 0, 0, 0.1); }
-  /* line 173, scss/themes.scss */
-  .flat-green .card.red {
+  /* line 181, scss/themes.scss */
+  .flat-red .card.red {
     background-color: #FA2A00;
     color: #FFF; }
-  /* line 178, scss/themes.scss */
-  .flat-green .card.yellow {
+  /* line 186, scss/themes.scss */
+  .flat-red .card.yellow {
     background-color: #ffb400;
     color: #FFF; }
-  /* line 183, scss/themes.scss */
-  .flat-green .card.green {
+  /* line 191, scss/themes.scss */
+  .flat-red .card.green {
     background-color: #1ABC9C;
     color: #FFF; }
-  /* line 188, scss/themes.scss */
-  .flat-green .card.blue {
+  /* line 196, scss/themes.scss */
+  .flat-red .card.blue {
     background-color: #22A7F0;
     color: #FFF; }
-  /* line 193, scss/themes.scss */
-  .flat-green .card.dark {
+  /* line 201, scss/themes.scss */
+  .flat-red .card.dark {
     background-color: #3E4651;
     color: #FFF; }
-    /* line 197, scss/themes.scss */
-    .flat-green .card.dark .card-header .title {
+  /* line 206, scss/themes.scss */
+  .flat-red .card.red, .flat-red .card.yellow, .flat-red .card.green, .flat-red .card.blue, .flat-red .card.dark {
+    border: 0; }
+    /* line 208, scss/themes.scss */
+    .flat-red .card.red .card-header, .flat-red .card.yellow .card-header, .flat-red .card.green .card-header, .flat-red .card.blue .card-header, .flat-red .card.dark .card-header {
+      border-bottom: 0; }
+      /* line 210, scss/themes.scss */
+      .flat-red .card.red .card-header .title, .flat-red .card.yellow .card-header .title, .flat-red .card.green .card-header .title, .flat-red .card.blue .card-header .title, .flat-red .card.dark .card-header .title {
+        color: #FFF; }
+  /* line 216, scss/themes.scss */
+  .flat-red .card {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #EAEAEA; }
+    /* line 219, scss/themes.scss */
+    .flat-red .card .card-header {
+      border-bottom: 1px solid #EAEAEA; }
+      /* line 221, scss/themes.scss */
+      .flat-red .card .card-header .title {
+        color: #3E4651; }
+    /* line 227, scss/themes.scss */
+    .flat-red .card .card-body .sub-title {
+      border-bottom: 1px solid #F9F9F9; }
+    /* line 232, scss/themes.scss */
+    .flat-red .card .card-header.no-border {
+      border-bottom: 0; }
+  /* line 241, scss/themes.scss */
+  .flat-red .card.profile .card-footer {
+    border-top: 1px solid #F9F9F9; }
+  /* line 247, scss/themes.scss */
+  .flat-red .panel.panel-default {
+    border: 1px solid #EAEAEA; }
+    /* line 249, scss/themes.scss */
+    .flat-red .panel.panel-default .panel-heading {
+      border-bottom: 1px solid #EAEAEA;
+      background-color: #F0F0F0; }
+  /* line 255, scss/themes.scss */
+  .flat-red .panel.panel-primary {
+    border: 1px solid #3E4651; }
+    /* line 257, scss/themes.scss */
+    .flat-red .panel.panel-primary .panel-heading {
+      border-bottom: 1px solid #3E4651;
+      background-color: #3E4651;
       color: #FFF; }
-  /* line 205, scss/themes.scss */
-  .flat-green .card .card-header .title {
+  /* line 264, scss/themes.scss */
+  .flat-red .panel.panel-success {
+    border: 1px solid #1ABC9C; }
+    /* line 266, scss/themes.scss */
+    .flat-red .panel.panel-success .panel-heading {
+      border-bottom: 1px solid #1ABC9C;
+      background-color: #1ABC9C;
+      color: #FFF; }
+  /* line 273, scss/themes.scss */
+  .flat-red .panel.panel-info {
+    border: 1px solid #22A7F0; }
+    /* line 275, scss/themes.scss */
+    .flat-red .panel.panel-info .panel-heading {
+      border-bottom: 1px solid #22A7F0;
+      background-color: #22A7F0;
+      color: #FFF; }
+  /* line 282, scss/themes.scss */
+  .flat-red .panel.panel-warning {
+    border: 1px solid #FABE28; }
+    /* line 284, scss/themes.scss */
+    .flat-red .panel.panel-warning .panel-heading {
+      border-bottom: 1px solid #FABE28;
+      background-color: #FABE28;
+      color: #FFF; }
+  /* line 291, scss/themes.scss */
+  .flat-red .panel.panel-danger {
+    border: 1px solid #FA2A00; }
+    /* line 293, scss/themes.scss */
+    .flat-red .panel.panel-danger .panel-heading {
+      border-bottom: 1px solid #FA2A00;
+      background-color: #FA2A00;
+      color: #FFF; }
+  /* line 301, scss/themes.scss */
+  .flat-red .btn.btn-default {
+    background-color: #F0F0F0; }
+  /* line 304, scss/themes.scss */
+  .flat-red .btn.btn-default:hover {
+    background-color: #EAEAEA; }
+  /* line 308, scss/themes.scss */
+  .flat-red .btn.btn-primary {
+    background-color: #3E4651;
+    color: #FFF; }
+  /* line 313, scss/themes.scss */
+  .flat-red .btn.btn-success {
+    background-color: #1ABC9C;
+    color: #FFF; }
+  /* line 318, scss/themes.scss */
+  .flat-red .btn.btn-warning {
+    background-color: #FABE28;
+    color: #FFF; }
+  /* line 323, scss/themes.scss */
+  .flat-red .btn.btn-info {
+    background-color: #22A7F0;
+    color: #FFF; }
+  /* line 327, scss/themes.scss */
+  .flat-red .btn.btn-danger {
+    background-color: #FA2A00;
+    color: #FFF; }
+  /* line 334, scss/themes.scss */
+  .flat-red .progress .progress-bar {
+    background-color: #3E4651;
+    color: #FFF; }
+  /* line 338, scss/themes.scss */
+  .flat-red .progress .progress-bar.progress-bar-success {
+    background-color: #1ABC9C; }
+  /* line 341, scss/themes.scss */
+  .flat-red .progress .progress-bar.progress-bar-info {
+    background-color: #22A7F0; }
+  /* line 344, scss/themes.scss */
+  .flat-red .progress .progress-bar.progress-bar-warning {
+    background-color: #FABE28; }
+  /* line 347, scss/themes.scss */
+  .flat-red .progress .progress-bar.progress-bar-danger {
+    background-color: #FA2A00; }
+  /* line 355, scss/themes.scss */
+  .flat-red .pagination > li > a {
     color: #3E4651; }
+  /* line 360, scss/themes.scss */
+  .flat-red .pagination .active > a, .flat-red .pagination .active > a:focus, .flat-red .pagination .active > a:hover, .flat-red .pagination .active span, .flat-red .pagination .active > span:focus, .flat-red .pagination .active > span:hover {
+    background-color: #3E4651;
+    border-color: #3E4651;
+    color: #FFF; }
