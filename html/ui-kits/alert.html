@@ -11,8 +11,6 @@
     <link rel="stylesheet" type="text/css" href="../../../vendor/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../vendor/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../../vendor/css/typicons.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../vendor/css/bootstrap-switch.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../vendor/css/icheck/skin/flat/_all.css">
     <!-- CSS App -->
     <link rel="stylesheet" type="text/css" href="../../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../../css/themes.css">
@@ -32,7 +30,7 @@
                     <button type="button" class="navbar-expand-toggle">
                         <i class="fa fa-bars icon"></i>
                     </button>
-                    <a class="navbar-brand" href="#">Form <i class="fa fa-angle-right"></i> UI Kits</a>
+                    <a class="navbar-brand" href="#">UI Elements <i class="fa fa-angle-right"></i> Alert & Toast</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -113,7 +111,11 @@
                         </a>
                     </div>
                     <ul class="nav navbar-nav">
-                        <li><a href="../index.html"><div class="icon fa fa-tachometer"></div><div class="title">Dashboard</div></a>
+                        <li>
+                            <a href="../index.html">
+                                <div class="icon fa fa-tachometer"></div>
+                                <div class="title">Dashboard</div>
+                            </a>
                         </li>
                         <li class="panel panel-default dropdown">
                             <a data-toggle="collapse" href="#dropdown-element">
@@ -202,173 +204,103 @@
         <div class="container-fluid">
             <div class="side-body">
                 <div class="page-title">
-                    <span class="title">Form UI Kits</span>
-                    <div class="description">A ui elements use in form, input, select, etc.</div>
+                    <span class="title">Alert & Toast</span>
+                    <div class="description">A element for notification to user action. alert, toasts, etc.</div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="card">
                             <div class="card-header">
-                                <div class="title">Form Elements</div>
+                                <div class="title">Alert</div>
                             </div>
                             <div class="card-body">
-                                Examples of standard form controls. such as input, textarea, select, checkboxes and radios , static control, etc.
-                                <div class="sub-title">Input</div>
-                                <div>
-                                    <input type="text" class="form-control" placeholder="Text input">
-                                </div>
-                                <div class="sub-title">Textarea</div>
-                                <div>
-                                    <textarea class="form-control" rows="3"></textarea>
-                                </div>
-                                <div class="sub-title">Checkboxes and radios <span class="description">( with <a href="https://github.com/fronteed/iCheck">iCheck</a> )</span></div>
-                                <div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" class="input-checkbox" value=""> Option one is this and that&mdash;be sure to include why it's great
-                                        </label>
-                                    </div>
-                                    <div class="checkbox disabled">
-                                        <label>
-                                            <input type="checkbox" class="input-checkbox" value="" disabled> Option two is disabled
-                                        </label>
-                                    </div>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" class="input-radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Option one is this and that&mdash;be sure to include why it's great
-                                        </label>
-                                    </div>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" class="input-radio" name="optionsRadios" id="optionsRadios2" value="option2"> Option two can be something else and selecting it will deselect option one
-                                        </label>
-                                    </div>
-                                    <div class="radio disabled">
-                                        <label>
-                                            <input type="radio" class="input-radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled> Option three is disabled
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" class="input-checkbox" id="inlineCheckbox1" value="option1"> 1
-                                        </label>
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" class="input-checkbox" id="inlineCheckbox2" value="option2"> 2
-                                        </label>
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" class="input-checkbox" id="inlineCheckbox3" value="option3"> 3
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <label class="radio-inline">
-                                            <input type="radio" class="input-radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-                                        </label>
-                                        <label class="radio-inline">
-                                            <input type="radio" class="input-radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-                                        </label>
-                                        <label class="radio-inline">
-                                            <input type="radio" class="input-radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="sub-title">Toggle <span class="description">( with <a href="https://github.com/nostalgiaz/bootstrap-switch">bootstrap-switch</a> )</span></div>
-                                <div>
-                                    <input type="checkbox" class="toggle-checkbox" name="my-checkbox" checked>
-                                </div>
-                                <div class="sub-title">Select <span class="description">( with <a href="http://brianreavis.github.io/selectize.js/">selectize.js</a> )</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="title">Basic example</div>
-                            </div>
-                            <div class="card-body">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputFile">File input</label>
-                                        <input type="file" id="exampleInputFile">
-                                        <p class="help-block">Example block-level help text here.</p>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"  class="input-checkbox"> Check me out
-                                        </label>
-                                    </div>
-                                    <button type="submit" class="btn btn-default">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="title">Inline form</div>
-                            </div>
-                            <div class="card-body">
-                                <form class="form-inline">
-                                    <div class="form-group">
-                                        <label for="exampleInputName2">Name</label>
-                                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail2">Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-                                    </div>
-                                    <button type="submit" class="btn btn-default">Send invitation</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="title">Horizontal form</div>
-                            </div>
-                            <div class="card-body">
-                                <form class="form-horizontal">
-                                    <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                                        <div class="col-sm-10">
-                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                <div>Alert has 2 type of color. Fresh color that has background color with white font color, and transparent color. </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="sub-title">Fresh Color Alert</div>
+                                        <div>
+                                            <div class="alert alert-success" role="alert">
+                                                <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message.</a>
+                                            </div>
+                                            <div class="alert alert-info" role="alert">
+                                                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                                            </div>
+                                            <div class="alert alert-warning" role="alert">
+                                                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                                            </div>
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                                        <div class="col-sm-10">
-                                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                        <div class="sub-title">With Close</div>
+                                        <div>
+                                            <div class="alert alert-warning alert-dismissible" role="alert">
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-offset-2 col-sm-10">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"  class="input-checkbox"> Remember me
-                                                </label>
+                                        <div class="sub-title">Alert Message</div>
+                                        <div>
+                                            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                <h4 id="oh-snap!-you-got-an-error!">Oh snap! You got an error!<a class="anchorjs-link" href="#oh-snap!-you-got-an-error!"><span class="anchorjs-icon"></span></a></h4>
+                                                <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+                                                <p>
+                                                    <button type="button" class="btn btn-default">Take this action</button>
+                                                    <button type="button" class="btn btn-link">Or do this</button>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-offset-2 col-sm-10">
-                                            <button type="submit" class="btn btn-default">Sign in</button>
+                                    <div class="col-sm-6">
+                                        <div class="sub-title">Clear Color Alert</div>
+                                        <div>
+                                            <div class="alert alert-success" role="alert">
+                                                <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message.</a>
+                                            </div>
+                                            <div class="alert alert-info" role="alert">
+                                                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                                            </div>
+                                            <div class="alert alert-warning" role="alert">
+                                                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                                            </div>
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                            </div>
+                                        </div>
+                                        <div class="sub-title">With Close</div>
+                                        <div>
+                                            <div class="alert alert-warning alert-dismissible" role="alert">
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                                            </div>
+                                        </div>
+                                        <div class="sub-title">Alert Message</div>
+                                        <div>
+                                            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                <h4 id="oh-snap!-you-got-an-error!">Oh snap! You got an error!<a class="anchorjs-link" href="#oh-snap!-you-got-an-error!"><span class="anchorjs-icon"></span></a></h4>
+                                                <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+                                                <p>
+                                                    <button type="button" class="btn btn-default">Take this action</button>
+                                                    <button type="button" class="btn btn-link">Or do this</button>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="title">Toasts</div>
+                                <div class="description">Bootstrap Toasts Library with <a href="https://github.com/CodeSeven/toastr" target="_blank">toastr.js</a></div>
+                            </div>
+                            <div class="card-body">
                             </div>
                         </div>
                     </div>
@@ -380,8 +312,6 @@
     <script type="text/javascript" src="../../vendor/js/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="../../vendor/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../vendor/js/Chart.min.js"></script>
-    <script type="text/javascript" src="../../vendor/js/bootstrap-switch.min.js"></script>
-    <script type="text/javascript" src="../../vendor/js/icheck.min.js"></script>
     <script type="text/javascript" src="../../js/app.js"></script>
     <!-- Javascript -->
 </body>

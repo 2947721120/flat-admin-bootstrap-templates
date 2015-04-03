@@ -504,7 +504,7 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 3px;
-  border: 0;
+  border-width: 1px;
   font-family: 'Roboto Condensed', sans-serif; }
 
 /* line 639, scss/style.scss */
@@ -532,3 +532,63 @@ body {
 .form-control {
   border-radius: 3px;
   box-shadow: none; }
+
+/* line 676, scss/style.scss */
+.bs-example-modal .modal {
+  z-index: 100;
+  position: relative;
+  display: block; }
+
+/* line 683, scss/style.scss */
+.modal {
+  z-index: 100001; }
+  /* line 690, scss/style.scss */
+  .modal .modal-dialog .modal-content {
+    border-radius: 3px;
+    box-shadow: none; }
+  /* line 696, scss/style.scss */
+  .modal .modal-dialog .modal-footer .btn {
+    margin-top: 0;
+    margin-bottom: 0; }
+
+/* line 703, scss/style.scss */
+.modal-backdrop {
+  z-index: 100000; }
+
+/* line 706, scss/style.scss */
+.modal-backdrop.in {
+  opacity: 0.8; }
+
+/* line 711, scss/style.scss */
+.alert {
+  border: 0;
+  border-radius: 3px; }
+
+/* line 719, scss/style.scss */
+.list-group .badge {
+  border-radius: 3px; }
+/* line 723, scss/style.scss */
+.list-group .list-group-item:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px; }
+/* line 727, scss/style.scss */
+.list-group .list-group-item:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px; }
+
+/* line 734, scss/style.scss */
+.checkbox, .radio {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+/* line 738, scss/style.scss */
+.checkbox-inline {
+  margin-bottom: 5px; }
+
+/* line 741, scss/style.scss */
+.icheckbox_flat, .iradio_flat {
+  margin-right: 6px; }
+
+/* line 745, scss/style.scss */
+.checkbox label, .radio label, .checkbox-inline, .radio-inline {
+  padding-left: 0px; }

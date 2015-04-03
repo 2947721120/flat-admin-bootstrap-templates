@@ -308,25 +308,30 @@
   .btn.btn-primary {
     background-color: $color-dark-blue;
     color: $color-white;
+    border-color: $color-dark-blue;
   }
 
   .btn.btn-success {
     background-color: $color-green-sea;
     color: $color-white;
+    border-color: $color-green-sea;
   }
 
   .btn.btn-warning {
     background-color: $color-yellow;
     color: $color-white;
+    border-color: $color-yellow;
   }
 
   .btn.btn-info {
     background-color: $color-blue;
     color: $color-white;
+    border-color: $color-blue;
   }
   .btn.btn-danger {
     background-color: $color-red;
     color: $color-white;
+    border-color: $color-red;
   }
 
   // Progress Bar
@@ -361,6 +366,125 @@
         background-color: $color-dark-blue;
         border-color: $color-dark-blue;
         color: $color-white;
+      }
+    }
+  }
+
+  // Modal
+  .modal.modal-primary {
+    .modal-header {
+      background-color: $color-dark-blue;
+      color: $color-white;
+    }
+  }
+
+  .modal.modal-success {
+    .modal-header {
+      background-color: $color-green-sea;
+      color: $color-white;
+    }
+  }
+
+  .modal.modal-info {
+    .modal-header {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+  }
+
+  .modal.modal-warning {
+    .modal-header {
+      background-color: $color-yellow;
+      color: $color-white;
+    }
+  }
+
+  .modal.modal-danger {
+    .modal-header {
+      background-color: $color-red;
+      color: $color-white;
+    }
+  }
+
+  // Alert
+  .alert {
+    color: $color-white;
+    .alert-link {
+      color: $color-white;
+      text-decoration: underline;
+    }
+    .btn-link {
+      color: $color-white;
+    }
+  }
+
+  .alert.alert-success {
+    background-color: $color-green-sea;
+  }
+  .alert.alert-info {
+    background-color: $color-blue;
+  }
+  .alert.alert-warning {
+    background-color: $color-yellow;
+  }
+  .alert.alert-danger {
+    background-color: $color-red;
+  }
+
+
+  // List Group
+  .list-group {
+    .list-group-item.active {
+      background-color: $color-dark-blue;
+      color: $color-white;
+      border-color: $color-dark-blue;
+
+      .badge {
+        color: $color-dark-blue;
+      }
+    }
+
+    .list-group-item.list-group-item-success {
+      background-color: $color-green-sea;
+      color: $color-white;
+      border-color: $color-green-sea;
+
+      .badge {
+        background-color: $color-white;
+        color: $color-green-sea;
+      }
+    }
+
+    .list-group-item.list-group-item-info {
+      background-color: $color-blue;
+      color: $color-white;
+      border-color: $color-blue;
+
+      .badge {
+        background-color: $color-white;
+        color: $color-blue;
+      }
+    }
+
+    .list-group-item.list-group-item-warning {
+      background-color: $color-yellow;
+      color: $color-white;
+      border-color: $color-yellow;
+
+      .badge {
+        background-color: $color-white;
+        color: $color-yellow;
+      }
+    }
+
+    .list-group-item.list-group-item-danger {
+      background-color: $color-red;
+      color: $color-white;
+      border-color: $color-red;
+
+      .badge {
+        background-color: $color-white;
+        color: $color-red;
       }
     }
   }

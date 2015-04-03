@@ -631,7 +631,7 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 3px;
-  border: 0;
+  border-width: 1px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -669,4 +669,79 @@ body {
 .form-control {
   border-radius: 3px;
   box-shadow: none;
+}
+
+// Modal
+.bs-example-modal {
+  .modal {
+    z-index: 100;
+    position: relative;
+    display: block;
+  }
+}
+
+.modal {
+  z-index: 100001;
+
+  .modal-dialog {
+    .modal-header {
+
+    }
+    .modal-content {
+      border-radius: 3px;
+      box-shadow: none;
+    }
+
+    .modal-footer {
+      .btn {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.modal-backdrop {
+  z-index: 100000;
+}
+.modal-backdrop.in {
+  opacity: 0.8;
+}
+
+// Alert 
+.alert {
+  border: 0;
+  border-radius: 3px;
+}
+
+// List Group
+.list-group {
+
+  .badge {
+    border-radius: 3px;
+  }
+
+  .list-group-item:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; 
+  }
+  .list-group-item:first-child {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px; 
+  }
+}
+
+// Checkbox
+.checkbox, .radio {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.checkbox-inline {
+  margin-bottom: 5px;
+}
+.icheckbox_flat , .iradio_flat {
+  margin-right: 6px;
+}
+
+.checkbox label, .radio label , .checkbox-inline, .radio-inline {
+  padding-left: 0px;
 }
