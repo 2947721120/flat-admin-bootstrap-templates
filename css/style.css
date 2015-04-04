@@ -3,32 +3,28 @@ body {
   padding-top: 0px; }
 
 /* line 11, scss/style.scss */
-:focus {
-  outline: none; }
-
-/* line 15, scss/style.scss */
 .row {
   margin-bottom: 30px; }
 
-/* line 19, scss/style.scss */
+/* line 15, scss/style.scss */
 .row.no-margin {
   margin-bottom: 10px; }
 
-/* line 23, scss/style.scss */
+/* line 19, scss/style.scss */
 .no-padding {
   padding: 0px !important; }
 
-/* line 28, scss/style.scss */
+/* line 24, scss/style.scss */
 .text-indent {
   text-indent: 1em; }
 
-/* line 33, scss/style.scss */
+/* line 29, scss/style.scss */
 .navbar {
   z-index: 10001;
   padding-left: 50px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s; }
-  /* line 40, scss/style.scss */
+  /* line 36, scss/style.scss */
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     height: 60px;
     line-height: 60px;
@@ -37,11 +33,11 @@ body {
     font-weight: 400;
     padding: 0;
     font-size: 1.5em; }
-    /* line 49, scss/style.scss */
+    /* line 45, scss/style.scss */
     .navbar > .container .navbar-brand .fa-angle-right, .navbar > .container-fluid .navbar-brand .fa-angle-right {
       margin-left: 5px;
       margin-right: 5px; }
-  /* line 55, scss/style.scss */
+  /* line 51, scss/style.scss */
   .navbar > .container .navbar-expand-toggle, .navbar > .container-fluid .navbar-expand-toggle {
     width: 60px;
     height: 60px;
@@ -52,60 +48,60 @@ body {
     -webkit-transition: all 0.25s linear;
     transition: all 0.25s linear;
     opacity: 0.75; }
-  /* line 69, scss/style.scss */
+  /* line 65, scss/style.scss */
   .navbar > .container .navbar-expand-toggle .icon, .navbar > .container-fluid .navbar-expand-toggle .icon {
     font-size: 1.4em; }
-  /* line 75, scss/style.scss */
+  /* line 71, scss/style.scss */
   .navbar .navbar-nav > li > a {
     font-family: 'Roboto Condensed', sans-serif;
     height: 60px;
     line-height: 60px;
     padding: 0px 15px 0px 15px; }
-  /* line 84, scss/style.scss */
+  /* line 80, scss/style.scss */
   .navbar .dropdown-menu {
     padding: 0;
     border-top: 0;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px; }
-    /* line 89, scss/style.scss */
+    /* line 85, scss/style.scss */
     .navbar .dropdown-menu .title {
       font-family: 'Roboto Condensed', sans-serif;
       padding: 5px 10px;
       -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
       -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
-    /* line 99, scss/style.scss */
+    /* line 95, scss/style.scss */
     .navbar .dropdown-menu .message {
       font-family: 'Roboto Condensed', sans-serif;
       text-align: center;
       padding: 10px 20px; }
-  /* line 106, scss/style.scss */
+  /* line 102, scss/style.scss */
   .navbar .dropdown.profile .dropdown-menu {
     width: 305px;
     padding-bottom: 0px;
     text-align: center; }
-    /* line 111, scss/style.scss */
+    /* line 107, scss/style.scss */
     .navbar .dropdown.profile .dropdown-menu li.profile-img {
       padding: 10px; }
-      /* line 114, scss/style.scss */
+      /* line 110, scss/style.scss */
       .navbar .dropdown.profile .dropdown-menu li.profile-img img.profile-img {
         width: 100px;
-        height: 100px;
+        height: auto;
         margin: 8px;
         border: 3px solid #FFF; }
-    /* line 121, scss/style.scss */
+    /* line 117, scss/style.scss */
     .navbar .dropdown.profile .dropdown-menu .profile-info {
       font-family: 'Roboto Condensed', sans-serif;
       padding: 15px; }
-      /* line 125, scss/style.scss */
+      /* line 121, scss/style.scss */
       .navbar .dropdown.profile .dropdown-menu .profile-info .username {
         font-size: 1.8em; }
 
-/* line 133, scss/style.scss */
+/* line 129, scss/style.scss */
 .content-container {
   margin-right: 0;
   margin-left: 0; }
-  /* line 137, scss/style.scss */
+  /* line 133, scss/style.scss */
   .content-container .side-menu {
     z-index: 100000;
     position: fixed;
@@ -113,11 +109,11 @@ body {
     height: 100%;
     -webkit-transition: all 0.25s;
     transition: all 0.25s; }
-    /* line 145, scss/style.scss */
+    /* line 141, scss/style.scss */
     .content-container .side-menu .navbar-header {
       width: 100%;
       border-bottom: 0px solid #e7e7e7; }
-      /* line 149, scss/style.scss */
+      /* line 145, scss/style.scss */
       .content-container .side-menu .navbar-header .navbar-brand {
         width: 50px;
         line-height: 60px;
@@ -126,24 +122,24 @@ body {
         width: 100%;
         overflow: hidden;
         font-family: 'Roboto Condensed', sans-serif; }
-        /* line 158, scss/style.scss */
+        /* line 154, scss/style.scss */
         .content-container .side-menu .navbar-header .navbar-brand .icon {
           width: 50px;
           text-align: center;
           display: inline-block; }
-        /* line 164, scss/style.scss */
+        /* line 160, scss/style.scss */
         .content-container .side-menu .navbar-header .navbar-brand .title {
           display: none; }
-    /* line 170, scss/style.scss */
+    /* line 166, scss/style.scss */
     .content-container .side-menu .navbar {
       border: none;
       padding-left: 0px; }
-    /* line 176, scss/style.scss */
+    /* line 172, scss/style.scss */
     .content-container .side-menu .navbar-nav li {
       display: block;
       width: 100%;
       overflow: hidden; }
-      /* line 181, scss/style.scss */
+      /* line 177, scss/style.scss */
       .content-container .side-menu .navbar-nav li a {
         font-family: 'Roboto Condensed', sans-serif;
         padding: 0 10px 0 10px;
@@ -151,72 +147,72 @@ body {
         line-height: 60px;
         display: block;
         white-space: nowrap; }
-        /* line 189, scss/style.scss */
+        /* line 185, scss/style.scss */
         .content-container .side-menu .navbar-nav li a .icon {
           width: 28px;
           text-align: center;
           font-size: 1.1em;
           display: inline-block; }
-        /* line 196, scss/style.scss */
+        /* line 192, scss/style.scss */
         .content-container .side-menu .navbar-nav li a .title {
           width: 0px;
           white-space: nowrap;
           padding-left: 6px;
           display: none; }
-    /* line 205, scss/style.scss */
+    /* line 201, scss/style.scss */
     .content-container .side-menu .navbar-nav li.dropdown {
       border: 0;
       margin-bottom: 0;
       border-radius: 0;
       box-shadow: none; }
-      /* line 213, scss/style.scss */
+      /* line 209, scss/style.scss */
       .content-container .side-menu .navbar-nav li.dropdown ul li a {
         height: 44px;
         line-height: 44px;
         vertical-align: middle;
         padding: 0em 1.2em; }
-    /* line 223, scss/style.scss */
+    /* line 219, scss/style.scss */
     .content-container .side-menu .navbar-nav .panel-collapse.in {
       display: none; }
-  /* line 229, scss/style.scss */
+  /* line 225, scss/style.scss */
   .content-container .side-menu:hover {
     width: 250px; }
-    /* line 234, scss/style.scss */
+    /* line 230, scss/style.scss */
     .content-container .side-menu:hover .navbar-header .navbar-brand .title {
       display: inline-block; }
-    /* line 243, scss/style.scss */
+    /* line 239, scss/style.scss */
     .content-container .side-menu:hover .navbar-nav li a .title {
       width: 192px;
       display: inline-block; }
-    /* line 250, scss/style.scss */
+    /* line 246, scss/style.scss */
     .content-container .side-menu:hover .panel-collapse.in {
       display: block; }
-  /* line 255, scss/style.scss */
+  /* line 251, scss/style.scss */
   .content-container .side-body {
     padding-top: 60px; }
-  /* line 259, scss/style.scss */
+  /* line 255, scss/style.scss */
   .content-container .side-body.padding-top {
     padding-top: 84px; }
 
-/* line 264, scss/style.scss */
+/* line 260, scss/style.scss */
 .content-container.expanded .navbar-top {
   padding-left: 250px; }
-/* line 267, scss/style.scss */
+/* line 263, scss/style.scss */
 .content-container.expanded .side-menu {
   width: 250px; }
-  /* line 273, scss/style.scss */
+  /* line 269, scss/style.scss */
   .content-container.expanded .side-menu .navbar-header .navbar-brand .title {
     display: inline-block; }
-  /* line 282, scss/style.scss */
+  /* line 278, scss/style.scss */
   .content-container.expanded .side-menu .navbar-nav li a .title {
     display: inline-block; }
 
-/* line 291, scss/style.scss */
+/* line 287, scss/style.scss */
 .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
   margin-left: -15px;
   margin-right: -15px; }
 
-/* line 296, scss/style.scss */
+/* line 292, scss/style.scss */
 .page-title {
   font-family: 'Roboto Condensed', sans-serif;
   margin-left: -10px;
@@ -224,45 +220,45 @@ body {
   padding: 15px 10px;
   margin-bottom: 0px;
   height: auto; }
-  /* line 304, scss/style.scss */
+  /* line 300, scss/style.scss */
   .page-title .title {
     font-size: 2em; }
-  /* line 308, scss/style.scss */
+  /* line 304, scss/style.scss */
   .page-title .page-action {
     float: right;
     height: 40px;
     line-height: 40px;
     vertical-align: middle; }
 
-/* line 316, scss/style.scss */
+/* line 312, scss/style.scss */
 .sub-title {
   font-family: 'Roboto Condensed', sans-serif; }
-  /* line 318, scss/style.scss */
+  /* line 314, scss/style.scss */
   .sub-title > * {
     display: inline-block; }
-  /* line 322, scss/style.scss */
+  /* line 318, scss/style.scss */
   .sub-title h3 {
     margin-right: 10px; }
-  /* line 326, scss/style.scss */
+  /* line 322, scss/style.scss */
   .sub-title .description {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 0.9em; }
 
 /* Main body section */
-/* line 333, scss/style.scss */
+/* line 329, scss/style.scss */
 .content-container .side-body {
   margin-left: 60px;
   margin-right: 10px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s; }
 
-/* line 340, scss/style.scss */
+/* line 336, scss/style.scss */
 .content-container.expanded .side-body {
   margin-left: 260px; }
 
 /* small screen */
 @media (max-width: 768px) {
-  /* line 346, scss/style.scss */
+  /* line 342, scss/style.scss */
   .side-menu {
     position: relative;
     width: 100%;
@@ -270,7 +266,7 @@ body {
     border-right: 0;
     border-bottom: 1px solid #e7e7e7; }
 
-  /* line 353, scss/style.scss */
+  /* line 349, scss/style.scss */
   .side-menu .brand-name-wrapper .navbar-brand {
     display: inline-block; }
 
@@ -307,7 +303,7 @@ body {
       left: -300px; } }
   /* Slide side menu*/
   /* Add .absolute-wrapper.slide-in for scrollable menu -> see top comment */
-  /* line 407, scss/style.scss */
+  /* line 403, scss/style.scss */
   .side-menu-container > .navbar-nav.slide-in {
     -moz-animation: slidein 300ms forwards;
     -o-animation: slidein 300ms forwards;
@@ -316,7 +312,7 @@ body {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d; }
 
-  /* line 415, scss/style.scss */
+  /* line 411, scss/style.scss */
   .side-menu-container > .navbar-nav {
     /* Add position:absolute for scrollable menu -> see top comment */
     position: fixed;
@@ -374,7 +370,7 @@ body {
     100% {
       left: 0; } }
   /* Slide side body*/
-  /* line 490, scss/style.scss */
+  /* line 486, scss/style.scss */
   .side-body {
     margin-left: 5px;
     margin-top: 70px;
@@ -386,7 +382,7 @@ body {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d; }
 
-  /* line 501, scss/style.scss */
+  /* line 497, scss/style.scss */
   .body-slide-in {
     -moz-animation: bodyslidein 300ms forwards;
     -o-animation: bodyslidein 300ms forwards;
@@ -396,7 +392,7 @@ body {
     transform-style: preserve-3d; }
 
   /* Hamburger */
-  /* line 510, scss/style.scss */
+  /* line 506, scss/style.scss */
   .navbar-toggle {
     border: 0;
     float: left;
@@ -406,15 +402,15 @@ body {
     background-color: #f3f3f3; }
 
   /* Search */
-  /* line 519, scss/style.scss */
+  /* line 515, scss/style.scss */
   #search .panel-body .navbar-form {
     border-bottom: 0; }
 
-  /* line 522, scss/style.scss */
+  /* line 518, scss/style.scss */
   #search .panel-body .navbar-form .form-group {
     margin: 0; }
 
-  /* line 525, scss/style.scss */
+  /* line 521, scss/style.scss */
   .navbar-header {
     /* this is probably redundant */
     position: fixed;
@@ -422,84 +418,88 @@ body {
     background-color: #f8f8f8; }
 
   /* Dropdown tweek */
-  /* line 532, scss/style.scss */
+  /* line 528, scss/style.scss */
   #dropdown .panel-body .navbar-nav {
     margin: 0; } }
 /* Card */
-/* line 538, scss/style.scss */
+/* line 534, scss/style.scss */
 .card {
   background-color: #FFF;
   border-radius: 3px;
   overflow: visible; }
-  /* line 542, scss/style.scss */
+  /* line 538, scss/style.scss */
   .card .card-body {
-    padding: 1em 1.5em; }
-    /* line 545, scss/style.scss */
+    padding: 1.5em 1.5em; }
+    /* line 541, scss/style.scss */
     .card .card-body .sub-title {
       font-size: 1.2em;
       padding: 1.2em 0em 0.4em 0em;
       margin-bottom: 0.5em; }
-      /* line 550, scss/style.scss */
+      /* line 546, scss/style.scss */
       .card .card-body .sub-title .description {
         padding-left: 0.4em;
         font-size: 0.8em;
         opacity: 0.8; }
-  /* line 558, scss/style.scss */
+  /* line 554, scss/style.scss */
   .card .card-header {
     padding: 1em 1.5em; }
-    /* line 560, scss/style.scss */
+    /* line 556, scss/style.scss */
     .card .card-header .title {
       font-family: 'Roboto Condensed', sans-serif;
       font-size: 1.5em;
       text-decoration: none; }
+  /* line 565, scss/style.scss */
+  .card .card-profile-img img {
+    width: 100%;
+    height: auto; }
 
-/* line 570, scss/style.scss */
+/* line 574, scss/style.scss */
 .card:hover .card-header .title {
   text-decoration: none !important; }
 
-/* line 577, scss/style.scss */
+/* line 581, scss/style.scss */
 .card.summary-inline .card-body {
   padding: 20px; }
-  /* line 581, scss/style.scss */
+  /* line 585, scss/style.scss */
   .card.summary-inline .card-body .content {
     float: right; }
-    /* line 584, scss/style.scss */
+    /* line 588, scss/style.scss */
     .card.summary-inline .card-body .content .title {
       font-family: 'Lato', sans-serif;
       margin-top: -0.3em;
       font-size: 3.5em;
       text-align: right; }
-    /* line 591, scss/style.scss */
+    /* line 595, scss/style.scss */
     .card.summary-inline .card-body .content .sub-title {
       font-family: 'Lato', sans-serif;
       font-size: 0.8em;
       text-align: right;
       margin-top: -10px; }
 
-/* line 602, scss/style.scss */
+/* line 606, scss/style.scss */
 .card.profile .card-body {
   padding: 0.5em 0.8em; }
-/* line 606, scss/style.scss */
+/* line 610, scss/style.scss */
 .card.profile .card-footer {
   padding: 0.5em 0.8em; }
 
-/* line 612, scss/style.scss */
+/* line 616, scss/style.scss */
 .panel {
   border-radius: 3px; }
-  /* line 615, scss/style.scss */
+  /* line 619, scss/style.scss */
   .panel .panel-heading {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px; }
 
-/* line 622, scss/style.scss */
+/* line 626, scss/style.scss */
 .chart {
   padding: 15px; }
 
-/* line 625, scss/style.scss */
+/* line 629, scss/style.scss */
 .chart.no-padding {
   margin-bottom: -5px; }
 
-/* line 630, scss/style.scss */
+/* line 634, scss/style.scss */
 .btn {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -507,88 +507,147 @@ body {
   border-width: 1px;
   font-family: 'Roboto Condensed', sans-serif; }
 
-/* line 639, scss/style.scss */
+/* line 643, scss/style.scss */
 .progress {
   border-radius: 3px;
   box-shadow: none; }
-  /* line 643, scss/style.scss */
+  /* line 647, scss/style.scss */
   .progress .progress-bar {
     box-shadow: none; }
 
-/* line 649, scss/style.scss */
+/* line 653, scss/style.scss */
 .pagination {
   margin-top: 5px;
   margin-bottom: 5px; }
-  /* line 654, scss/style.scss */
+  /* line 658, scss/style.scss */
   .pagination li:first-child > a, .pagination li:first-child span {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px; }
-  /* line 661, scss/style.scss */
+  /* line 665, scss/style.scss */
   .pagination li:last-child > a, .pagination li:last-child span {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px; }
 
-/* line 669, scss/style.scss */
+/* line 673, scss/style.scss */
 .form-control {
   border-radius: 3px;
   box-shadow: none; }
 
-/* line 676, scss/style.scss */
+/* line 680, scss/style.scss */
 .bs-example-modal .modal {
   z-index: 100;
   position: relative;
   display: block; }
 
-/* line 683, scss/style.scss */
+/* line 687, scss/style.scss */
 .modal {
   z-index: 100001; }
-  /* line 690, scss/style.scss */
+  /* line 694, scss/style.scss */
   .modal .modal-dialog .modal-content {
     border-radius: 3px;
     box-shadow: none; }
-  /* line 696, scss/style.scss */
+  /* line 700, scss/style.scss */
   .modal .modal-dialog .modal-footer .btn {
     margin-top: 0;
     margin-bottom: 0; }
 
-/* line 703, scss/style.scss */
+/* line 707, scss/style.scss */
 .modal-backdrop {
   z-index: 100000; }
 
-/* line 706, scss/style.scss */
+/* line 710, scss/style.scss */
 .modal-backdrop.in {
   opacity: 0.8; }
 
-/* line 711, scss/style.scss */
+/* line 715, scss/style.scss */
 .alert {
-  border: 0;
+  border-width: 1px;
   border-radius: 3px; }
 
-/* line 719, scss/style.scss */
+/* line 723, scss/style.scss */
 .list-group .badge {
   border-radius: 3px; }
-/* line 723, scss/style.scss */
+/* line 727, scss/style.scss */
 .list-group .list-group-item:last-child {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px; }
-/* line 727, scss/style.scss */
+/* line 731, scss/style.scss */
 .list-group .list-group-item:first-child {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px; }
 
-/* line 734, scss/style.scss */
+/* line 738, scss/style.scss */
 .checkbox, .radio {
   margin-top: 15px;
   margin-bottom: 15px; }
 
-/* line 738, scss/style.scss */
+/* line 742, scss/style.scss */
 .checkbox-inline {
   margin-bottom: 5px; }
 
-/* line 741, scss/style.scss */
+/* line 745, scss/style.scss */
 .icheckbox_flat, .iradio_flat {
   margin-right: 6px; }
 
-/* line 745, scss/style.scss */
+/* line 749, scss/style.scss */
 .checkbox label, .radio label, .checkbox-inline, .radio-inline {
   padding-left: 0px; }
+
+/* line 754, scss/style.scss */
+.bootstrap-switch {
+  border-radius: 3px; }
+
+/* line 759, scss/style.scss */
+.thumbnail {
+  border-radius: 3px;
+  padding: 0; }
+  /* line 763, scss/style.scss */
+  .thumbnail .caption {
+    padding: 0.5em 1.2em; }
+    /* line 766, scss/style.scss */
+    .thumbnail .caption .h1, .thumbnail .caption .h2, .thumbnail .caption .h3, .thumbnail .caption h1, .thumbnail .caption h2, .thumbnail .caption h3 {
+      margin-top: 15px; }
+
+/* line 773, scss/style.scss */
+body.login-page {
+  background: url(../../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  /* line 780, scss/style.scss */
+  body.login-page .login-box {
+    background-color: #FFF;
+    min-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border-radius: 3px; }
+    /* line 790, scss/style.scss */
+    body.login-page .login-box .title {
+      margin-bottom: 1em; }
+    /* line 794, scss/style.scss */
+    body.login-page .login-box > .row {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0; }
+  /* line 801, scss/style.scss */
+  body.login-page .login-form {
+    padding: 1.5em 2em; }
+    /* line 804, scss/style.scss */
+    body.login-page .login-form input {
+      margin-bottom: 0.8em;
+      margin-top: 0.5em;
+      border: 0; }
+  /* line 811, scss/style.scss */
+  body.login-page .login-sidebar {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 1.5em 2em;
+    vertical-align: middle;
+    position: relative; }
+    /* line 818, scss/style.scss */
+    body.login-page .login-sidebar .content {
+      margin-bottom: 1em; }

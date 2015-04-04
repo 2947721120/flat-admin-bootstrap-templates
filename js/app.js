@@ -18,6 +18,10 @@
   });
 
   $(function() {
+    return $('.match-height').matchHeight();
+  });
+
+  $(function() {
     var ctx, ctx_light, data, data_light, myLineChart, myLineChartLight, options, options_light;
     Chart.defaults.global.responsive = true;
     ctx = $('#dashboard-order-chart').get(0).getContext('2d');

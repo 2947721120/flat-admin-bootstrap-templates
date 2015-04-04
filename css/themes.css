@@ -1,334 +1,474 @@
 /* line 2, scss/themes.scss */
 .flat-red {
   background-color: #F9F9F9; }
-  /* line 39, scss/themes.scss */
+  /* line 51, scss/themes.scss */
   .flat-red .navbar {
     background-color: #3E4651;
     border-bottom: 0px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
-    /* line 47, scss/themes.scss */
+    /* line 59, scss/themes.scss */
     .flat-red .navbar .navbar-header .navbar-brand {
       color: #F9F9F9; }
-    /* line 51, scss/themes.scss */
+    /* line 63, scss/themes.scss */
     .flat-red .navbar .navbar-header .navbar-expand-toggle {
       color: #FFF; }
-    /* line 57, scss/themes.scss */
+    /* line 69, scss/themes.scss */
     .flat-red .navbar .navbar-nav > li > a {
       color: #FFF; }
-    /* line 62, scss/themes.scss */
+    /* line 74, scss/themes.scss */
     .flat-red .navbar .navbar-nav > li:hover > a {
       color: #FA2A00; }
-    /* line 68, scss/themes.scss */
+    /* line 80, scss/themes.scss */
     .flat-red .navbar .navbar-nav > li.open > a {
       background-color: transparent;
       color: #FA2A00; }
-    /* line 75, scss/themes.scss */
+    /* line 87, scss/themes.scss */
     .flat-red .navbar .navbar-nav > li.danger > a {
       background-color: #FA2A00;
       color: #FFF; }
-    /* line 80, scss/themes.scss */
+    /* line 92, scss/themes.scss */
     .flat-red .navbar .navbar-nav .dropdown-menu {
       background-color: #F9F9F9;
       border-color: #3E4651; }
-      /* line 83, scss/themes.scss */
+      /* line 95, scss/themes.scss */
       .flat-red .navbar .navbar-nav .dropdown-menu .title {
         background-color: #FFF; }
-        /* line 85, scss/themes.scss */
+        /* line 97, scss/themes.scss */
         .flat-red .navbar .navbar-nav .dropdown-menu .title .badge {
           background-color: #3E4651; }
-    /* line 90, scss/themes.scss */
+    /* line 102, scss/themes.scss */
     .flat-red .navbar .navbar-nav .dropdown-menu.danger {
       border-color: #FA2A00; }
-      /* line 92, scss/themes.scss */
+      /* line 104, scss/themes.scss */
       .flat-red .navbar .navbar-nav .dropdown-menu.danger .title {
         background-color: #FA2A00;
         color: #FFF; }
-        /* line 96, scss/themes.scss */
+        /* line 108, scss/themes.scss */
         .flat-red .navbar .navbar-nav .dropdown-menu.danger .title .badge {
           background-color: #FFF;
           color: #FA2A00; }
-    /* line 103, scss/themes.scss */
+    /* line 115, scss/themes.scss */
     .flat-red .navbar .navbar-nav .dropdown.profile .dropdown-menu {
       border-color: #22A7F0; }
-      /* line 105, scss/themes.scss */
+      /* line 117, scss/themes.scss */
       .flat-red .navbar .navbar-nav .dropdown.profile .dropdown-menu li.profile-img {
         background-color: #22A7F0; }
-    /* line 111, scss/themes.scss */
+    /* line 123, scss/themes.scss */
     .flat-red .navbar .navbar-nav .dropdown.profile.open > a {
       background-color: #22A7F0;
       color: #FFF; }
-  /* line 120, scss/themes.scss */
+  /* line 132, scss/themes.scss */
   .flat-red .side-menu {
     background-color: #EAEAEA; }
-    /* line 123, scss/themes.scss */
+    /* line 135, scss/themes.scss */
     .flat-red .side-menu .navbar-header {
       background-color: #363c46; }
-      /* line 125, scss/themes.scss */
+      /* line 137, scss/themes.scss */
       .flat-red .side-menu .navbar-header .navbar-brand {
         color: #FF003C; }
-    /* line 130, scss/themes.scss */
+    /* line 142, scss/themes.scss */
     .flat-red .side-menu .navbar-nav {
       width: 100%; }
-    /* line 134, scss/themes.scss */
+    /* line 146, scss/themes.scss */
     .flat-red .side-menu .navbar {
       background-color: #EAEAEA;
       border-bottom: 0px;
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
-      /* line 143, scss/themes.scss */
+      /* line 155, scss/themes.scss */
       .flat-red .side-menu .navbar li > a {
         color: #363c46; }
-      /* line 149, scss/themes.scss */
+      /* line 161, scss/themes.scss */
       .flat-red .side-menu .navbar li.active > a {
         background-color: #FA2A00;
         color: #FFF; }
-      /* line 155, scss/themes.scss */
+      /* line 167, scss/themes.scss */
       .flat-red .side-menu .navbar li:hover > a {
         background-color: #FA2A00;
         color: #FFF; }
-      /* line 161, scss/themes.scss */
+      /* line 173, scss/themes.scss */
       .flat-red .side-menu .navbar li.dropdown {
         background-color: #EAEAEA; }
-        /* line 164, scss/themes.scss */
+        /* line 176, scss/themes.scss */
         .flat-red .side-menu .navbar li.dropdown > .panel-collapse {
           background-color: rgba(0, 0, 0, 0.1); }
-        /* line 168, scss/themes.scss */
+        /* line 180, scss/themes.scss */
         .flat-red .side-menu .navbar li.dropdown .panel-body {
           padding: 0; }
-  /* line 181, scss/themes.scss */
+  /* line 193, scss/themes.scss */
   .flat-red .card.red {
     background-color: #FA2A00;
     color: #FFF; }
-  /* line 186, scss/themes.scss */
+  /* line 198, scss/themes.scss */
   .flat-red .card.yellow {
     background-color: #ffb400;
     color: #FFF; }
-  /* line 191, scss/themes.scss */
+  /* line 203, scss/themes.scss */
   .flat-red .card.green {
     background-color: #1ABC9C;
     color: #FFF; }
-  /* line 196, scss/themes.scss */
+  /* line 208, scss/themes.scss */
   .flat-red .card.blue {
     background-color: #22A7F0;
     color: #FFF; }
-  /* line 201, scss/themes.scss */
+  /* line 213, scss/themes.scss */
   .flat-red .card.dark {
     background-color: #3E4651;
     color: #FFF; }
-  /* line 206, scss/themes.scss */
+  /* line 218, scss/themes.scss */
   .flat-red .card.red, .flat-red .card.yellow, .flat-red .card.green, .flat-red .card.blue, .flat-red .card.dark {
     border: 0; }
-    /* line 208, scss/themes.scss */
+    /* line 220, scss/themes.scss */
     .flat-red .card.red .card-header, .flat-red .card.yellow .card-header, .flat-red .card.green .card-header, .flat-red .card.blue .card-header, .flat-red .card.dark .card-header {
       border-bottom: 0; }
-      /* line 210, scss/themes.scss */
+      /* line 222, scss/themes.scss */
       .flat-red .card.red .card-header .title, .flat-red .card.yellow .card-header .title, .flat-red .card.green .card-header .title, .flat-red .card.blue .card-header .title, .flat-red .card.dark .card-header .title {
         color: #FFF; }
-  /* line 216, scss/themes.scss */
+  /* line 228, scss/themes.scss */
   .flat-red .card {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid #EAEAEA; }
-    /* line 219, scss/themes.scss */
+    /* line 231, scss/themes.scss */
     .flat-red .card .card-header {
       border-bottom: 1px solid #EAEAEA; }
-      /* line 221, scss/themes.scss */
+      /* line 233, scss/themes.scss */
       .flat-red .card .card-header .title {
         color: #3E4651; }
-    /* line 227, scss/themes.scss */
+    /* line 239, scss/themes.scss */
     .flat-red .card .card-body .sub-title {
       border-bottom: 1px solid #F9F9F9; }
-    /* line 232, scss/themes.scss */
+    /* line 244, scss/themes.scss */
     .flat-red .card .card-header.no-border {
       border-bottom: 0; }
-  /* line 241, scss/themes.scss */
+  /* line 253, scss/themes.scss */
   .flat-red .card.profile .card-footer {
     border-top: 1px solid #F9F9F9; }
-  /* line 247, scss/themes.scss */
+  /* line 259, scss/themes.scss */
   .flat-red .panel.panel-default {
     border: 1px solid #EAEAEA; }
-    /* line 249, scss/themes.scss */
+    /* line 261, scss/themes.scss */
     .flat-red .panel.panel-default .panel-heading {
       border-bottom: 1px solid #EAEAEA;
       background-color: #F0F0F0; }
-  /* line 255, scss/themes.scss */
+  /* line 267, scss/themes.scss */
   .flat-red .panel.panel-primary {
     border: 1px solid #3E4651; }
-    /* line 257, scss/themes.scss */
+    /* line 269, scss/themes.scss */
     .flat-red .panel.panel-primary .panel-heading {
+      border-bottom: 1px solid #3E4651;
+      background-color: #73849d;
+      color: #FFF; }
+  /* line 276, scss/themes.scss */
+  .flat-red .panel.panel-success {
+    border: 1px solid #1ABC9C; }
+    /* line 278, scss/themes.scss */
+    .flat-red .panel.panel-success .panel-heading {
+      border-bottom: 1px solid #1ABC9C;
+      background-color: #99e9d9;
+      color: #006551; }
+  /* line 285, scss/themes.scss */
+  .flat-red .panel.panel-info {
+    border: 1px solid #22A7F0; }
+    /* line 287, scss/themes.scss */
+    .flat-red .panel.panel-info .panel-heading {
+      border-bottom: 1px solid #22A7F0;
+      background-color: #91d5fb;
+      color: #09486b; }
+  /* line 294, scss/themes.scss */
+  .flat-red .panel.panel-warning {
+    border: 1px solid #FABE28; }
+    /* line 296, scss/themes.scss */
+    .flat-red .panel.panel-warning .panel-heading {
+      border-bottom: 1px solid #FABE28;
+      background-color: #ffe5a2;
+      color: #85630f; }
+  /* line 303, scss/themes.scss */
+  .flat-red .panel.panel-danger {
+    border: 1px solid #fb927d; }
+    /* line 305, scss/themes.scss */
+    .flat-red .panel.panel-danger .panel-heading {
+      border-bottom: 1px solid #fb927d;
+      background-color: #ffb8aa;
+      color: #7c1a06; }
+  /* line 314, scss/themes.scss */
+  .flat-red .panel.fresh-color.panel-primary {
+    border: 1px solid #3E4651; }
+    /* line 316, scss/themes.scss */
+    .flat-red .panel.fresh-color.panel-primary .panel-heading {
       border-bottom: 1px solid #3E4651;
       background-color: #3E4651;
       color: #FFF; }
-  /* line 264, scss/themes.scss */
-  .flat-red .panel.panel-success {
+  /* line 323, scss/themes.scss */
+  .flat-red .panel.fresh-color.panel-success {
     border: 1px solid #1ABC9C; }
-    /* line 266, scss/themes.scss */
-    .flat-red .panel.panel-success .panel-heading {
+    /* line 325, scss/themes.scss */
+    .flat-red .panel.fresh-color.panel-success .panel-heading {
       border-bottom: 1px solid #1ABC9C;
       background-color: #1ABC9C;
       color: #FFF; }
-  /* line 273, scss/themes.scss */
-  .flat-red .panel.panel-info {
+  /* line 332, scss/themes.scss */
+  .flat-red .panel.fresh-color.panel-info {
     border: 1px solid #22A7F0; }
-    /* line 275, scss/themes.scss */
-    .flat-red .panel.panel-info .panel-heading {
+    /* line 334, scss/themes.scss */
+    .flat-red .panel.fresh-color.panel-info .panel-heading {
       border-bottom: 1px solid #22A7F0;
       background-color: #22A7F0;
       color: #FFF; }
-  /* line 282, scss/themes.scss */
-  .flat-red .panel.panel-warning {
+  /* line 341, scss/themes.scss */
+  .flat-red .panel.fresh-color.panel-warning {
     border: 1px solid #FABE28; }
-    /* line 284, scss/themes.scss */
-    .flat-red .panel.panel-warning .panel-heading {
+    /* line 343, scss/themes.scss */
+    .flat-red .panel.fresh-color.panel-warning .panel-heading {
       border-bottom: 1px solid #FABE28;
       background-color: #FABE28;
       color: #FFF; }
-  /* line 291, scss/themes.scss */
-  .flat-red .panel.panel-danger {
+  /* line 350, scss/themes.scss */
+  .flat-red .panel.fresh-color.panel-danger {
     border: 1px solid #FA2A00; }
-    /* line 293, scss/themes.scss */
-    .flat-red .panel.panel-danger .panel-heading {
+    /* line 352, scss/themes.scss */
+    .flat-red .panel.fresh-color.panel-danger .panel-heading {
       border-bottom: 1px solid #FA2A00;
       background-color: #FA2A00;
       color: #FFF; }
-  /* line 301, scss/themes.scss */
+  /* line 360, scss/themes.scss */
   .flat-red .btn.btn-default {
-    background-color: #F0F0F0; }
-  /* line 304, scss/themes.scss */
+    background-color: #F0F0F0;
+    border-color: #EAEAEA; }
+  /* line 364, scss/themes.scss */
   .flat-red .btn.btn-default:hover {
     background-color: #EAEAEA; }
-  /* line 308, scss/themes.scss */
+  /* line 368, scss/themes.scss */
   .flat-red .btn.btn-primary {
     background-color: #3E4651;
     color: #FFF;
     border-color: #3E4651; }
-  /* line 314, scss/themes.scss */
+  /* line 374, scss/themes.scss */
   .flat-red .btn.btn-success {
     background-color: #1ABC9C;
     color: #FFF;
     border-color: #1ABC9C; }
-  /* line 320, scss/themes.scss */
+  /* line 380, scss/themes.scss */
   .flat-red .btn.btn-warning {
     background-color: #FABE28;
     color: #FFF;
     border-color: #FABE28; }
-  /* line 326, scss/themes.scss */
+  /* line 386, scss/themes.scss */
   .flat-red .btn.btn-info {
     background-color: #22A7F0;
     color: #FFF;
     border-color: #22A7F0; }
-  /* line 331, scss/themes.scss */
+  /* line 391, scss/themes.scss */
   .flat-red .btn.btn-danger {
     background-color: #FA2A00;
     color: #FFF;
     border-color: #FA2A00; }
-  /* line 339, scss/themes.scss */
+  /* line 399, scss/themes.scss */
   .flat-red .progress .progress-bar {
     background-color: #3E4651;
     color: #FFF; }
-  /* line 343, scss/themes.scss */
+  /* line 403, scss/themes.scss */
   .flat-red .progress .progress-bar.progress-bar-success {
     background-color: #1ABC9C; }
-  /* line 346, scss/themes.scss */
+  /* line 406, scss/themes.scss */
   .flat-red .progress .progress-bar.progress-bar-info {
     background-color: #22A7F0; }
-  /* line 349, scss/themes.scss */
+  /* line 409, scss/themes.scss */
   .flat-red .progress .progress-bar.progress-bar-warning {
     background-color: #FABE28; }
-  /* line 352, scss/themes.scss */
+  /* line 412, scss/themes.scss */
   .flat-red .progress .progress-bar.progress-bar-danger {
     background-color: #FA2A00; }
-  /* line 360, scss/themes.scss */
+  /* line 420, scss/themes.scss */
   .flat-red .pagination > li > a {
     color: #3E4651; }
-  /* line 365, scss/themes.scss */
+  /* line 425, scss/themes.scss */
   .flat-red .pagination .active > a, .flat-red .pagination .active > a:focus, .flat-red .pagination .active > a:hover, .flat-red .pagination .active span, .flat-red .pagination .active > span:focus, .flat-red .pagination .active > span:hover {
     background-color: #3E4651;
     border-color: #3E4651;
     color: #FFF; }
-  /* line 375, scss/themes.scss */
+  /* line 435, scss/themes.scss */
   .flat-red .modal.modal-primary .modal-header {
     background-color: #3E4651;
     color: #FFF; }
-  /* line 382, scss/themes.scss */
+  /* line 442, scss/themes.scss */
   .flat-red .modal.modal-success .modal-header {
     background-color: #1ABC9C;
     color: #FFF; }
-  /* line 389, scss/themes.scss */
+  /* line 449, scss/themes.scss */
   .flat-red .modal.modal-info .modal-header {
     background-color: #22A7F0;
     color: #FFF; }
-  /* line 396, scss/themes.scss */
+  /* line 456, scss/themes.scss */
   .flat-red .modal.modal-warning .modal-header {
     background-color: #FABE28;
     color: #FFF; }
-  /* line 403, scss/themes.scss */
+  /* line 463, scss/themes.scss */
   .flat-red .modal.modal-danger .modal-header {
     background-color: #FA2A00;
     color: #FFF; }
-  /* line 410, scss/themes.scss */
-  .flat-red .alert {
+  /* line 471, scss/themes.scss */
+  .flat-red .alert.alert-success {
+    background-color: #99e9d9;
+    color: #006551;
+    border-color: #1ABC9C; }
+    /* line 476, scss/themes.scss */
+    .flat-red .alert.alert-success .alert-link {
+      color: #006551;
+      text-decoration: underline; }
+    /* line 481, scss/themes.scss */
+    .flat-red .alert.alert-success .btn-link {
+      color: #006551; }
+  /* line 485, scss/themes.scss */
+  .flat-red .alert.alert-info {
+    background-color: #91d5fb;
+    color: #09486b;
+    border-color: #22A7F0; }
+    /* line 490, scss/themes.scss */
+    .flat-red .alert.alert-info .alert-link {
+      color: #09486b;
+      text-decoration: underline; }
+    /* line 495, scss/themes.scss */
+    .flat-red .alert.alert-info .btn-link {
+      color: #09486b; }
+  /* line 499, scss/themes.scss */
+  .flat-red .alert.alert-warning {
+    background-color: #ffe5a2;
+    border-color: #FABE28;
+    color: #85630f; }
+    /* line 504, scss/themes.scss */
+    .flat-red .alert.alert-warning .alert-link {
+      color: #85630f;
+      text-decoration: underline; }
+    /* line 509, scss/themes.scss */
+    .flat-red .alert.alert-warning .btn-link {
+      color: #85630f; }
+  /* line 513, scss/themes.scss */
+  .flat-red .alert.alert-danger {
+    background-color: #ffb8aa;
+    border-color: #fb927d;
+    color: #7c1a06; }
+    /* line 518, scss/themes.scss */
+    .flat-red .alert.alert-danger .alert-link {
+      color: #7c1a06;
+      text-decoration: underline; }
+    /* line 523, scss/themes.scss */
+    .flat-red .alert.alert-danger .btn-link {
+      color: #7c1a06; }
+  /* line 528, scss/themes.scss */
+  .flat-red .alert.fresh-color {
     color: #FFF; }
-    /* line 412, scss/themes.scss */
-    .flat-red .alert .alert-link {
+    /* line 530, scss/themes.scss */
+    .flat-red .alert.fresh-color .alert-link {
       color: #FFF;
       text-decoration: underline; }
-    /* line 416, scss/themes.scss */
-    .flat-red .alert .btn-link {
+    /* line 534, scss/themes.scss */
+    .flat-red .alert.fresh-color .btn-link {
       color: #FFF; }
-  /* line 421, scss/themes.scss */
-  .flat-red .alert.alert-success {
+  /* line 539, scss/themes.scss */
+  .flat-red .alert.fresh-color.alert-success {
     background-color: #1ABC9C; }
-  /* line 424, scss/themes.scss */
-  .flat-red .alert.alert-info {
+  /* line 542, scss/themes.scss */
+  .flat-red .alert.fresh-color.alert-info {
     background-color: #22A7F0; }
-  /* line 427, scss/themes.scss */
-  .flat-red .alert.alert-warning {
+  /* line 545, scss/themes.scss */
+  .flat-red .alert.fresh-color.alert-warning {
     background-color: #FABE28; }
-  /* line 430, scss/themes.scss */
-  .flat-red .alert.alert-danger {
-    background-color: #FA2A00; }
-  /* line 437, scss/themes.scss */
+  /* line 548, scss/themes.scss */
+  .flat-red .alert.fresh-color.alert-danger {
+    background-color: #FA2A00;
+    border-color: #FA2A00; }
+  /* line 556, scss/themes.scss */
   .flat-red .list-group .list-group-item.active {
     background-color: #3E4651;
     color: #FFF;
     border-color: #3E4651; }
-    /* line 442, scss/themes.scss */
+    /* line 561, scss/themes.scss */
     .flat-red .list-group .list-group-item.active .badge {
       color: #3E4651; }
-  /* line 447, scss/themes.scss */
+  /* line 566, scss/themes.scss */
   .flat-red .list-group .list-group-item.list-group-item-success {
     background-color: #1ABC9C;
     color: #FFF;
     border-color: #1ABC9C; }
-    /* line 452, scss/themes.scss */
+    /* line 571, scss/themes.scss */
     .flat-red .list-group .list-group-item.list-group-item-success .badge {
       background-color: #FFF;
       color: #1ABC9C; }
-  /* line 458, scss/themes.scss */
+  /* line 577, scss/themes.scss */
   .flat-red .list-group .list-group-item.list-group-item-info {
     background-color: #22A7F0;
     color: #FFF;
     border-color: #22A7F0; }
-    /* line 463, scss/themes.scss */
+    /* line 582, scss/themes.scss */
     .flat-red .list-group .list-group-item.list-group-item-info .badge {
       background-color: #FFF;
       color: #22A7F0; }
-  /* line 469, scss/themes.scss */
+  /* line 588, scss/themes.scss */
   .flat-red .list-group .list-group-item.list-group-item-warning {
     background-color: #FABE28;
     color: #FFF;
     border-color: #FABE28; }
-    /* line 474, scss/themes.scss */
+    /* line 593, scss/themes.scss */
     .flat-red .list-group .list-group-item.list-group-item-warning .badge {
       background-color: #FFF;
       color: #FABE28; }
-  /* line 480, scss/themes.scss */
+  /* line 599, scss/themes.scss */
   .flat-red .list-group .list-group-item.list-group-item-danger {
     background-color: #FA2A00;
     color: #FFF;
     border-color: #FA2A00; }
-    /* line 485, scss/themes.scss */
+    /* line 604, scss/themes.scss */
     .flat-red .list-group .list-group-item.list-group-item-danger .badge {
       background-color: #FFF;
       color: #FA2A00; }
+  /* line 613, scss/themes.scss */
+  .flat-red .bootstrap-switch {
+    border-color: #EAEAEA; }
+    /* line 615, scss/themes.scss */
+    .flat-red .bootstrap-switch .bootstrap-switch-primary {
+      background-color: #3E4651; }
+  /* line 623, scss/themes.scss */
+  .flat-red .table .active td, .flat-red .table .active th {
+    background-color: #EAEAEA; }
+  /* line 627, scss/themes.scss */
+  .flat-red .table .success {
+    color: #006551; }
+    /* line 630, scss/themes.scss */
+    .flat-red .table .success td, .flat-red .table .success th {
+      background-color: #99e9d9; }
+  /* line 634, scss/themes.scss */
+  .flat-red .table .info {
+    color: #09486b; }
+    /* line 637, scss/themes.scss */
+    .flat-red .table .info td, .flat-red .table .info th {
+      background-color: #91d5fb; }
+  /* line 641, scss/themes.scss */
+  .flat-red .table .warning {
+    color: #85630f; }
+    /* line 644, scss/themes.scss */
+    .flat-red .table .warning td, .flat-red .table .warning th {
+      background-color: #ffe5a2; }
+  /* line 648, scss/themes.scss */
+  .flat-red .table .danger {
+    color: #7c1a06; }
+    /* line 651, scss/themes.scss */
+    .flat-red .table .danger td, .flat-red .table .danger th {
+      background-color: #ffb8aa; }
+  /* line 658, scss/themes.scss */
+  .flat-red .table > tbody > tr > td, .flat-red .table > tbody > tr > th, .flat-red .table > tfoot > tr > td, .flat-red .table > tfoot > tr > th {
+    border-color: #EAEAEA; }
+  /* line 665, scss/themes.scss */
+  .flat-red .table > thead > tr > th {
+    border-color: #EAEAEA; }
+  /* line 674, scss/themes.scss */
+  .flat-red .login-box .login-sidebar {
+    color: #FFF;
+    background-color: #3E4651; }
+    /* line 678, scss/themes.scss */
+    .flat-red .login-box .login-sidebar .btn-default {
+      color: #FFF;
+      background-color: transparent; }
+  /* line 684, scss/themes.scss */
+  .flat-red .login-box input {
+    background-color: #EAEAEA; }

@@ -8,10 +8,6 @@ body {
 }
 
 // Bootstrap Wrap
-:focus {
-  outline: none;
-}
-
 .row {
   margin-bottom: 30px;
 }
@@ -113,7 +109,7 @@ body {
 
         img.profile-img {
           width: 100px;
-          height: 100px;
+          height: auto;
           margin: 8px;
           border: 3px solid #FFF;
         }
@@ -540,7 +536,7 @@ body {
   border-radius: 3px;
   overflow: visible;
   .card-body {
-    padding: 1em 1.5em;
+    padding: 1.5em 1.5em;
 
     .sub-title {
       font-size: 1.2em;
@@ -561,6 +557,14 @@ body {
       font-family: 'Roboto Condensed', sans-serif;
       font-size: 1.5em;
       text-decoration: none;
+    }
+  }
+
+  .card-profile-img {
+
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 }
@@ -709,7 +713,7 @@ body {
 
 // Alert 
 .alert {
-  border: 0;
+  border-width: 1px;
   border-radius: 3px;
 }
 
@@ -744,4 +748,75 @@ body {
 
 .checkbox label, .radio label , .checkbox-inline, .radio-inline {
   padding-left: 0px;
+}
+
+// Bootstrap Switch
+.bootstrap-switch {
+  border-radius: 3px;
+}
+
+// Thumbnail
+.thumbnail {
+  border-radius: 3px;
+  padding: 0;
+  
+  .caption {
+    padding: 0.5em 1.2em;
+
+    .h1, .h2, .h3, h1, h2, h3 {
+      margin-top: 15px;
+    }
+  }
+}
+
+// Login Pages
+body.login-page {
+  background: url(../../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .login-box {
+    background-color: #FFF;
+    min-width: 800px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border-radius: 3px;
+
+    .title {
+      margin-bottom: 1em;
+    }
+
+    & > .row {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .login-form {
+    padding: 1.5em 2em;
+
+    input {
+      margin-bottom: 0.8em;
+      margin-top: 0.5em;
+      border: 0;
+    }
+  }
+
+  .login-sidebar {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 1.5em 2em;
+    vertical-align: middle;
+    position: relative;
+
+    .content {
+      margin-bottom: 1em;
+    }
+  }
 }

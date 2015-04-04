@@ -6,23 +6,35 @@
   $color-lighter-grey: #F0F0F0;
   $color-grey: #EAEAEA;
 
+  $color-clear-dark-blue: #73849d;
   $color-dark-blue: #3E4651;
   $color-dark-blue-hover: #363c46;
 
   $color-dark-black: #232323;
 
+  $color-clear-red: #ffb8aa;
+  $color-lightest-red: #fb927d;
   $color-light-red: #FF003C;
   $color-red: #FA2A00;
+  $color-darkest-red: #7c1a06;
 
   $color-light-green: #88F159;
 
+  $color-clear-yellow: #ffe5a2;
   $color-yellow: #FABE28;
   $color-dark-yellow: #ffb400;
+  $color-darkest-yellow: #85630f;
 
   $color-bgreen: #88C100;
 
+  $color-clear-green-sea: #99e9d9;
   $color-green-sea: #1ABC9C;
   $color-dark-green-sea: #16A085;
+  $color-darkest-green-sea: #006551;
+
+  $color-clear-blue: #91d5fb;
+  $color-blue: #22A7F0;
+  $color-darkest-blue: #09486b;
 
   $color-light-gblue: #00B9BD;
   $color-gblue: #007E80;
@@ -243,7 +255,7 @@
     }
   }
 
-  // Panel 
+   // Panel
   .panel.panel-default {
     border: 1px solid $color-grey;
     .panel-heading {
@@ -256,7 +268,7 @@
     border: 1px solid $color-dark-blue;
     .panel-heading {
       border-bottom: 1px solid $color-dark-blue;
-      background-color: $color-dark-blue;
+      background-color: $color-clear-dark-blue;
       color: $color-white;
     }
   }
@@ -265,12 +277,59 @@
     border: 1px solid $color-green-sea;
     .panel-heading {
       border-bottom: 1px solid $color-green-sea;
+      background-color: $color-clear-green-sea;
+      color: $color-darkest-green-sea;
+    }
+  }
+
+  .panel.panel-info {
+    border: 1px solid $color-blue;
+    .panel-heading {
+      border-bottom: 1px solid $color-blue;
+      background-color: $color-clear-blue;
+      color: $color-darkest-blue;
+    }
+  }
+
+  .panel.panel-warning {
+    border: 1px solid $color-yellow;
+    .panel-heading {
+      border-bottom: 1px solid $color-yellow;
+      background-color: $color-clear-yellow;
+      color: $color-darkest-yellow;
+    }
+  }
+
+  .panel.panel-danger {
+    border: 1px solid $color-lightest-red;
+    .panel-heading {
+      border-bottom: 1px solid $color-lightest-red;
+      background-color: $color-clear-red;
+      color: $color-darkest-red
+    }
+  }
+
+
+  // Panel with Fresh color
+  .panel.fresh-color.panel-primary {
+    border: 1px solid $color-dark-blue;
+    .panel-heading {
+      border-bottom: 1px solid $color-dark-blue;
+      background-color: $color-dark-blue;
+      color: $color-white;
+    }
+  }
+
+  .panel.fresh-color.panel-success {
+    border: 1px solid $color-green-sea;
+    .panel-heading {
+      border-bottom: 1px solid $color-green-sea;
       background-color: $color-green-sea;
       color: $color-white;
     }
   }
 
-  .panel.panel-info {
+  .panel.fresh-color.panel-info {
     border: 1px solid $color-blue;
     .panel-heading {
       border-bottom: 1px solid $color-blue;
@@ -279,7 +338,7 @@
     }
   }
 
-  .panel.panel-warning {
+  .panel.fresh-color.panel-warning {
     border: 1px solid $color-yellow;
     .panel-heading {
       border-bottom: 1px solid $color-yellow;
@@ -288,7 +347,7 @@
     }
   }
 
-  .panel.panel-danger {
+  .panel.fresh-color.panel-danger {
     border: 1px solid $color-red;
     .panel-heading {
       border-bottom: 1px solid $color-red;
@@ -300,6 +359,7 @@
   // Button
   .btn.btn-default {
     background-color: $color-lighter-grey;
+    border-color: $color-grey;
   }
   .btn.btn-default:hover {
     background-color: $color-grey;
@@ -407,7 +467,65 @@
   }
 
   // Alert
-  .alert {
+
+  .alert.alert-success {
+    background-color: $color-clear-green-sea;
+    color: $color-darkest-green-sea;
+    border-color: $color-green-sea;
+
+    .alert-link {
+      color: $color-darkest-green-sea;
+      text-decoration: underline;
+    }
+
+    .btn-link {
+      color: $color-darkest-green-sea;
+    }
+  }
+  .alert.alert-info {
+    background-color: $color-clear-blue;
+    color: $color-darkest-blue;
+    border-color: $color-blue;
+
+    .alert-link {
+      color: $color-darkest-blue;
+      text-decoration: underline;
+    }
+
+    .btn-link {
+      color: $color-darkest-blue;
+    }
+  }
+  .alert.alert-warning {
+    background-color: $color-clear-yellow;
+    border-color: $color-yellow;
+    color: $color-darkest-yellow;
+
+    .alert-link {
+      color: $color-darkest-yellow;
+      text-decoration: underline;
+    }
+
+    .btn-link {
+      color: $color-darkest-yellow;
+    }
+  }
+  .alert.alert-danger {
+    background-color: $color-clear-red;
+    border-color: $color-lightest-red;
+    color: $color-darkest-red;
+
+    .alert-link {
+      color: $color-darkest-red;
+      text-decoration: underline;
+    }
+
+    .btn-link {
+      color: $color-darkest-red;
+    }
+  }
+
+  .alert.fresh-color {
     color: $color-white;
     .alert-link {
       color: $color-white;
@@ -418,17 +536,18 @@
     }
   }
 
-  .alert.alert-success {
+  .alert.fresh-color.alert-success {
     background-color: $color-green-sea;
   }
-  .alert.alert-info {
+  .alert.fresh-color.alert-info {
     background-color: $color-blue;
   }
-  .alert.alert-warning {
+  .alert.fresh-color.alert-warning {
     background-color: $color-yellow;
   }
-  .alert.alert-danger {
+  .alert.fresh-color.alert-danger {
     background-color: $color-red;
+    border-color: $color-red;
   }
 
 
@@ -486,6 +605,84 @@
         background-color: $color-white;
         color: $color-red;
       }
+    }
+  }
+
+
+  // Bootstrap Switch
+  .bootstrap-switch {
+    border-color: $color-grey;
+    .bootstrap-switch-primary {
+      background-color: $color-dark-blue;
+    }
+  }
+
+  // Table
+  .table {
+    .active {
+      td, th {
+        background-color: $color-grey;
+      }
+    }
+    .success {
+      color: $color-darkest-green-sea;
+
+      td, th {
+        background-color: $color-clear-green-sea;
+      }
+    }
+    .info {
+      color: $color-darkest-blue;
+
+      td, th {
+        background-color: $color-clear-blue;
+      }
+    }
+    .warning {
+      color: $color-darkest-yellow;
+
+      td, th {
+        background-color: $color-clear-yellow;
+      }
+    }
+    .danger {
+      color: $color-darkest-red;
+
+      td, th {
+        background-color: $color-clear-red;
+      }
+    }
+
+    & > tbody , & > tfoot {
+      & > tr {
+        & > td , & > th {
+          border-color: $color-grey;
+        }
+      }
+    }
+    & > thead {
+      & > tr {
+        & > th {
+          border-color: $color-grey;
+        }
+      }
+    }
+  }
+
+  // Login page
+  .login-box {
+    .login-sidebar {
+      color: $color-white;
+      background-color: $color-dark-blue;
+
+      .btn-default {
+        color: $color-white;
+        background-color: transparent;
+      }
+    }
+
+    input {
+      background-color: $color-grey;
     }
   }
 }

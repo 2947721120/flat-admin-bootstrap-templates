@@ -15,6 +15,11 @@ $ ->
 $ ->
   $('.toggle-checkbox').bootstrapSwitch();
 
+
+# Match Height
+$ ->
+   $('.match-height').matchHeight();
+
 # Chart.JS
 $ ->
   Chart.defaults.global.responsive = true
