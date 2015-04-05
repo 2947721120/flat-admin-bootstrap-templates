@@ -15,6 +15,9 @@
     <link rel="stylesheet" type="text/css" href="../vendor/css/typicons.min.css">
     <link rel="stylesheet" type="text/css" href="../vendor/css/bootstrap-switch.min.css">
     <link rel="stylesheet" type="text/css" href="../vendor/css/icheck/skin/flat/_all.css">
+    <link rel="stylesheet" type="text/css" href="../vendor/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../vendor/css/dataTables.bootstrap.css">
+
     <!-- CSS App -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/themes.css">
@@ -56,29 +59,29 @@
                             Notification <span class="badge pull-right">4</span>
                         </li>
                         <li>
-                            <ul class="notification-list">
+                            <ul class="notifications">
                                 <li>
                                     <a href="#">
-                                        <div class="noti-icon noti-alert">
+                                        <div class="icon">
                                             <i class="fa fa-exclamation-circle fa-2x"></i>
                                         </div>
-                                        <div class="noti-message">1 new registration</div>
+                                        <div class="message">1 new registration</div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="noti-icon noti-success">
+                                        <div class="icon">
                                             <i class="fa fa-check fa-2x"></i>
                                         </div>
-                                        <div class="noti-message">3 new orders</div>
+                                        <div class="message">3 new orders</div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="noti-icon noti-primary">
+                                        <div class="icon">
                                             <i class="fa fa-comments fa-2x"></i>
                                         </div>
-                                        <div class="noti-message">2 customers messages</div>
+                                        <div class="message">2 customers messages</div>
                                     </a>
                                 </li>
                             </ul>
@@ -291,7 +294,10 @@
                     <div class="col-sm-6 col-xs-12">
                         <div class="card dark">
                             <div class="card-header">
-                                <div class="title">Profits</div>
+                                <div class="card-title">
+                                    <div class="title">Profits</div>
+                                </div>
+                                <div class="clear-both"></div>
                             </div>
                             <div class="card-body no-padding">
                                 <canvas id="dashboard-order-chart" class="chart"></canvas>
@@ -301,7 +307,10 @@
                     <div class="col-sm-6 col-xs-12">
                         <div class="card">
                             <div class="card-header no-border">
-                                <div class="title">Orders</div>
+                                <div class="card-title">
+                                    <div class="title">Orders</div>
+                                </div>
+                                <div class="clear-both"></div>
                             </div>
                             <div class="card-body no-padding">
                                 <canvas id="dashboard-order-chart-light" class="chart"></canvas>
@@ -319,8 +328,15 @@
     <script type="text/javascript" src="../vendor/js/bootstrap-switch.min.js"></script>
     <script type="text/javascript" src="../vendor/js/icheck.min.js"></script>
     <script type="text/javascript" src="../vendor/js/jquery.matchHeight-min.js"></script>
-    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../vendor/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../vendor/js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="../vendor/js/ace/ace.js"></script>
+    <script type="text/javascript" src="../vendor/js/ace/mode-html.js"></script>
+    <script type="text/javascript" src="../vendor/js/ace/theme-github.js"></script>
+
     <!-- Javascript -->
+    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
 </body>
 
 </html>
