@@ -46,6 +46,14 @@
   $theme-danger-color: $color-red;
 
   background-color: $color-light-grey;
+
+  a {
+    color: $color-dark-blue-hover;
+  }
+
+  a:hover {
+    color: $color-red;
+  }
   
   // Navbar
   .navbar {
@@ -53,6 +61,10 @@
     border-bottom: 0px;
 
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+    & > .container-fluid {
+      background-color: $color-dark-blue;
+    }
 
     .navbar-header {
 
@@ -687,5 +699,22 @@
     input {
       background-color: $color-grey;
     }
+  }
+
+  // Badge
+  .badge.primary {
+    background-color: $color-dark-blue;
+  }
+  .badge.success {
+    background-color: $color-green-sea;
+  }
+  .badge.info {
+    background-color: $color-blue;
+  }
+  .badge.warning {
+    background-color: $color-yellow;
+  }
+  .badge.danger {
+    background-color: $color-red;
   }
 }

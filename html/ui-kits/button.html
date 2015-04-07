@@ -9,8 +9,13 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
     <!-- CSS Libs -->
     <link rel="stylesheet" type="text/css" href="../../vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/css/animate.css">
     <link rel="stylesheet" type="text/css" href="../../vendor/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../vendor/css/typicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/css/bootstrap-switch.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/css/icheck/skin/flat/_all.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/css/dataTables.bootstrap.css">
     <!-- CSS App -->
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/themes.css">
@@ -30,12 +35,12 @@
                     <button type="button" class="navbar-expand-toggle">
                         <i class="fa fa-bars icon"></i>
                     </button>
-                    <a class="navbar-brand" href="#">UI Elements <i class="fa fa-angle-right"></i> Button</a>
+                    <a class="navbar-brand" href="#">UI Kits <i class="fa fa-angle-right"></i> Button</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-comments-o"></i></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu animated fadeInDown">
                             <li class="title">
                                 Notification <span class="badge pull-right">0</span>
                             </li>
@@ -46,45 +51,41 @@
                     </li>
                     <li class="dropdown danger">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-star-half-o"></i> 4</a>
-                        <ul class="dropdown-menu danger">
+                        <ul class="dropdown-menu danger animated fadeInDown">
                             <li class="title">
                                 Notification <span class="badge pull-right">4</span>
                             </li>
                             <li>
-                                <ul class="notification-list">
-                                    <li>
-                                        <a href="#">
-                                            <div class="noti-icon noti-alert">
-                                                <i class="fa fa-exclamation-circle fa-2x"></i>
-                                            </div>
-                                            <div class="noti-message">1 new registration</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="noti-icon noti-success">
-                                                <i class="fa fa-check fa-2x"></i>
-                                            </div>
-                                            <div class="noti-message">3 new orders</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="noti-icon noti-primary">
-                                                <i class="fa fa-comments fa-2x"></i>
-                                            </div>
-                                            <div class="noti-message">2 customers messages</div>
-                                        </a>
-                                    </li>
+                                <ul class="list-group notifications">
+                                    <a href="#">
+                                        <li class="list-group-item">
+                                            <span class="badge">1</span> <i class="fa fa-exclamation-circle icon"></i> new registration
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="list-group-item">
+                                            <span class="badge success">1</span> <i class="fa fa-check icon"></i> new orders
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="list-group-item">
+                                            <span class="badge danger">2</span> <i class="fa fa-comments icon"></i> customers messages
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="list-group-item message">
+                                            view all
+                                        </li>
+                                    </a>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown profile">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Emily Hart <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu animated fadeInDown">
                             <li class="profile-img">
-                                <img src="../img/profile.jpg" class="profile-img">
+                                <img src="../../img/profile/picjumbo.com_HNCK4153_resize.jpg" class="profile-img">
                             </li>
                             <li>
                                 <div class="profile-info">
@@ -110,9 +111,12 @@
                             <div class="title">Flat Admin V.2</div>
                         </a>
                     </div>
-
-                                        <ul class="nav navbar-nav">
-                        <li><a href="../index.html"><div class="icon fa fa-tachometer"></div><div class="title">Dashboard</div></a>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="../index.html">
+                                <div class="icon fa fa-tachometer"></div>
+                                <div class="title">Dashboard</div>
+                            </a>
                         </li>
                         <li class="panel panel-default dropdown">
                             <a data-toggle="collapse" href="#dropdown-element">
@@ -126,17 +130,19 @@
                                         </li>
                                         <li><a href="../ui-kits/card.html">Cards</a>
                                         </li>
+                                        <li><a href="../ui-kits/list.html">Lists</a>
+                                        </li>
                                         <li><a href="../ui-kits/modal.html">Modals</a>
                                         </li>
-                                        <li><a href="../ui-kits/alert.html">Alerts</a>
-                                        </li>
-                                        <li><a href="../ui-kits/toast.html">Toasts</a>
+                                        <li><a href="../ui-kits/alert.html">Alerts & Toasts</a>
                                         </li>
                                         <li><a href="../ui-kits/panel.html">Panels</a>
                                         </li>
                                         <li><a href="../ui-kits/loader.html">Loaders</a>
                                         </li>
                                         <li><a href="../ui-kits/step.html">Steps</a>
+                                        </li>
+                                        <li><a href="../ui-kits/other.html">Other</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -157,7 +163,6 @@
                                     </ul>
                                 </div>
                             </div>
-                        </li>
                         </li>
                         <li class="panel panel-default dropdown">
                             <a data-toggle="collapse" href="#dropdown-form">
@@ -188,6 +193,27 @@
                                         </li>
                                         <li><a href="../pages/register.html">Register</a>
                                         </li>
+                                        <li><a href="../pages/inbox.html">Inbox</a>
+                                        </li>
+                                        <li><a href="../pages/timeline.html">Timeline</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Dropdown-->
+                        <li class="panel panel-default dropdown">
+                            <a data-toggle="collapse" href="#dropdown-icon">
+                                <span class="icon fa fa-archive"></span><span class="title">Icons</span>
+                            </a>
+                            <!-- Dropdown level 1 -->
+                            <div id="dropdown-icon" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="../icons/login.html">Glyphicons</a>
+                                        </li>
+                                        <li><a href="../icons/register.html">Font Awesomes</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -208,7 +234,14 @@
                     <div class="col-xs-12">
                         <div class="card">
                             <div class="card-header">
-                                <div class="title">Button</div>
+                                <div class="card-title">
+                                    <div class="title">Button</div>
+                                </div>
+                                <div class="pull-right card-action">
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modalButtonExample"><i class="fa fa-code"></i></button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-body">
                                 <div>
@@ -220,7 +253,14 @@
                                     <button type="button" class="btn btn-danger">Danger</button>
                                     <button type="button" class="btn btn-link">Link</button>
                                 </div>
-                                <div class="sub-title">Sizing</div>
+                                <div class="sub-title">
+                                    <div class="title">Button</div>
+                                    <div class="pull-right action">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modalButtonExample"><i class="fa fa-code"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div>
                                     <button type="button" class="btn btn-xs btn-default">Extra Small .btn-xs</button>
                                     <button type="button" class="btn btn-sm btn-default">Small .btn-sm</button>
@@ -231,11 +271,37 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="modalButtonExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Button Example</h4>
+                            </div>
+                            <div class="modal-body no-padding">
+                                <div id="code-preview-button" class="code-preview">&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="card">
                             <div class="card-header">
-                                <div class="title">Button Group</div>
+                                <div class="card-title">
+                                    <div class="title">Button Group</div>
+                                </div>
+                                <div class="pull-right card-action">
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modalButtonGroupExample"><i class="fa fa-code"></i></button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-body">
                                 <div>
@@ -246,6 +312,23 @@
                                     </div>
                                 </div>
                                 <div class="sub-title">Sizing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalButtonGroupExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Button Group Example</h4>
+                            </div>
+                            <div class="modal-body no-padding">
+                                <div id="code-preview-button-group" class="code-preview">&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Default button group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</div>
                             </div>
                         </div>
                     </div>
@@ -276,7 +359,14 @@
                     <div class="col-xs-12">
                         <div class="card">
                             <div class="card-header">
-                                <div class="title">Button Dropdown</div>
+                                <div class="card-title">
+                                    <div class="title">Button Dropdown</div>
+                                </div>
+                                <div class="pull-right card-action">
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modalButtonDropdownExample"><i class="fa fa-code"></i></button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-body">
                                 <div>
@@ -290,7 +380,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Primary <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
@@ -301,7 +390,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Success <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
@@ -312,7 +400,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Info <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
@@ -323,7 +410,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Warning <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
@@ -334,7 +420,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Danger <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu">
@@ -345,7 +430,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                 </div>
                                 <div class="sub-title">Split Button</div>
                                 <div>
@@ -363,7 +447,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary">Primary</button>
                                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -378,7 +461,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-success">Success</button>
                                         <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -393,7 +475,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-info">Info</button>
                                         <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -408,7 +489,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-warning">Warning</button>
                                         <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -423,7 +503,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-danger">Danger</button>
                                         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -438,7 +517,6 @@
                                             <li><a href="#">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                 </div>
                                 <div class="sub-title">Sizing</div>
                                 <div>
@@ -455,9 +533,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <!-- /btn-group -->
                                     </div>
-                                    <!-- /btn-toolbar -->
                                     <div class="btn-toolbar" role="toolbar">
                                         <div class="btn-group">
                                             <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
@@ -471,9 +547,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <!-- /btn-group -->
                                     </div>
-                                    <!-- /btn-toolbar -->
                                     <div class="btn-toolbar" role="toolbar">
                                         <div class="btn-group">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
@@ -487,10 +561,81 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <!-- /btn-group -->
                                     </div>
-                                    <!-- /btn-toolbar -->
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modalButtonDropdownExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Button Dropdown Example</h4>
+                            </div>
+                            <div class="modal-body no-padding">
+                                <div id="code-preview-button-dropdown" class="code-preview">&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Default &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Primary &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-success dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Success &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-info dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Info &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Warning &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Danger &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</div>
                             </div>
                         </div>
                     </div>
@@ -498,12 +643,20 @@
             </div>
         </div>
     </div>
-    <!-- Javascript Libs -->
     <script type="text/javascript" src="../../vendor/js/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="../../vendor/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../vendor/js/Chart.min.js"></script>
-    <script type="text/javascript" src="../../js/app.js"></script>
+    <script type="text/javascript" src="../../vendor/js/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="../../vendor/js/icheck.min.js"></script>
+    <script type="text/javascript" src="../../vendor/js/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="../../vendor/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../../vendor/js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="../../vendor/js/ace/ace.js"></script>
+    <script type="text/javascript" src="../../vendor/js/ace/mode-html.js"></script>
+    <script type="text/javascript" src="../../vendor/js/ace/theme-github.js"></script>
     <!-- Javascript -->
+    <script type="text/javascript" src="../../js/app.js"></script>
+    <script type="text/javascript" src="../../js/button.js"></script>
 </body>
 
 </html>
