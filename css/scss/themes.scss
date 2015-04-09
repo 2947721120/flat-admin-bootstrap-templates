@@ -5,7 +5,7 @@
   $color-light-grey: #F9F9F9;
   $color-lighter-grey: #F0F0F0;
   $color-grey: #EAEAEA;
-  $color-grey-level1: #DDD;
+  $color-grey-level1: #DFDFDF;
 
   $color-clear-dark-blue: #73849d;
   $color-dark-blue: #3E4651;
@@ -241,9 +241,9 @@
 
   .card {
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    border: 1px solid $color-grey;
+    border: 1px solid $color-grey-level1;
     .card-header {
-      border-bottom: 1px solid $color-grey;
+      border-bottom: 1px solid $color-grey-level1;
       .title {
         color: $color-dark-blue;
       }
@@ -429,6 +429,11 @@
     .progress-bar.progress-bar-danger {
       background-color: $color-red;
     }
+  }
+
+  // Font Color
+  .color-white {
+    color: $color-white;
   }
 
   // Pagination
@@ -718,5 +723,159 @@
   }
   .badge.danger {
     background-color: $color-red;
+  }
+
+  // Tabs
+  .nav-tabs {
+    background-color: $color-lighter-grey;
+  }
+
+
+  // Overide BS3 Tab for Position
+
+  .tabs-below > .nav-tabs {
+    border-top: 1px solid $color-grey-level1;
+  }
+
+  .tabs-below > .nav-tabs > li > a:hover,
+  .tabs-below > .nav-tabs > li > a:focus {
+    border-top-color: $color-grey-level1;
+    border-bottom-color: transparent;
+  }
+
+  .tabs-below > .nav-tabs > .active > a,
+  .tabs-below > .nav-tabs > .active > a:hover,
+  .tabs-below > .nav-tabs > .active > a:focus {
+    border-color: transparent $color-grey-level1 $color-grey-level1 $color-grey-level1;
+  }
+
+  .tabs-left > .nav-tabs {
+    border-right: 1px solid $color-grey-level1;
+  }
+
+  .tabs-left > .nav-tabs > li > a:hover,
+  .tabs-left > .nav-tabs > li > a:focus {
+    border-color: $color-grey-level1 $color-grey-level1 $color-grey-level1  $color-grey-level1;
+  }
+
+  .tabs-left > .nav-tabs .active > a,
+  .tabs-left > .nav-tabs .active > a:hover,
+  .tabs-left > .nav-tabs .active > a:focus {
+    border-color: $color-grey-level1 transparent $color-grey-level1 $color-grey-level1;
+    *border-right-color: $color-white;
+  }
+
+  .tabs-right > .nav-tabs {
+    border-left: 1px solid $color-grey-level1;
+  }
+
+  .tabs-right > .nav-tabs > li > a:hover,
+  .tabs-right > .nav-tabs > li > a:focus {
+    border-color: $color-grey-level1 $color-grey-level1 $color-grey-level1 $color-grey-level1 ;
+  }
+
+  .tabs-right > .nav-tabs .active > a,
+  .tabs-right > .nav-tabs .active > a:hover,
+  .tabs-right > .nav-tabs .active > a:focus {
+    border-color: $color-grey-level1 $color-grey-level1 $color-grey-level1 transparent;
+    *border-left-color: $color-white;
+  }
+
+
+  // Step
+  .step {
+    .nav-tabs {
+      background-color: $color-white;
+    }
+  }
+
+
+  // Tab Step Horizontal
+  .step {
+    .nav-tabs {
+      & > li {
+        border: 1px solid $color-grey-level1;
+        border-right: 0;
+      }
+      & > li:after {
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid $color-white;
+      }
+      & > li:before {
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-left: 16px solid $color-grey-level1;
+      }
+      & > li.active {
+        background-color: $color-grey;
+        & > a  , & > a:focus , & > a:hover {
+          background: transparent;
+
+        }
+      }
+      & > li:hover {
+        background-color: $color-grey;
+      }
+      & > li:hover:after, & > li.active:after {
+        border-left: 15px solid $color-grey;
+      }
+      & > li:last-child {
+        border-right: 1px  solid $color-grey-level1;
+      }
+    }
+  }
+
+  .step.card-no-padding {
+    .nav-tabs {
+
+      & > li {
+        border: 0px solid transparent;
+        border-right: 1px  solid $color-grey-level1;
+        border-bottom: 1px  solid $color-grey-level1;
+      }
+      & > li:last-child {
+        border-right: 0px  solid $color-grey-level1;
+
+      }
+    }
+  }
+
+  .step.tabs-left {
+    .nav-tabs {
+      & > li {
+        border: 1px solid $color-grey-level1;
+      }
+      & > li:after {
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid $color-white;
+      }
+      & > li:before {
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-left: 16px solid $color-grey-level1;
+      }
+      & > li.active {
+        background-color: $color-grey;
+        & > a  , & > a:focus , & > a:hover {
+          background: transparent;
+        }
+      }
+      & > li:hover {
+        background-color: $color-grey;
+      }
+      & > li:hover:after , & > li.active:after{
+        border-left: 15px solid $color-grey;
+      }
+    }
+  }
+
+  .step.tabs-left.card-no-padding {
+    .nav-tabs {
+      & > li {
+        border: 0px solid transparent;
+      }
+    }
   }
 }
