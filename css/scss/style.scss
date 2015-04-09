@@ -269,6 +269,13 @@ a:hover {
             }
           }
         }
+
+        & > a:after {
+         content: "";
+         position: absolute;
+         right: 1em;
+         
+        }
       }
 
       .panel-collapse.in {
@@ -295,6 +302,14 @@ a:hover {
             width: 192px;
             display: inline-block;
           }
+        }
+      }
+      li.dropdown {
+        & > a:after {
+          font-family: FontAwesome;
+          content: "\f107";
+          position: absolute;
+          right: 1em;
         }
       }
     }
@@ -333,6 +348,18 @@ a:hover {
           .title {
             display: inline-block;
           }
+        }
+
+        .panel-collapse.in {
+          display: block;
+        }
+      }
+      li.dropdown {
+        & > a:after {
+          font-family: FontAwesome;
+          content: "\f107";
+          position: absolute;
+          right: 1em;
         }
       }
     }
@@ -938,6 +965,371 @@ body.login-page {
   }
 }
 
+// Overide BS3 Tab for Position
+.tabs-below > .nav-tabs,
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
 
+.tabs-left .tab-content {
+  padding-left: 280px;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+
+.tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.tabs-below > .nav-tabs > li > a:hover,
+.tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent;
+}
+
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+  border-left: 1px solid #ddd;
+}
+
+.tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+}
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+  border-color: #ddd #ddd #ddd transparent;
+  *border-left-color: #ffffff;
+}
+
+.tabbable:after {
+  content: '';
+  display: block;
+  clear:both;
+}
+
+
+// Tab Step Horizontal
+.nav-tabs.step.horizontal {
+  border-bottom: 0px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+
+  & > li[class^="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  & > li:first-child {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+  }
+
+  & > li {
+    border: 1px solid #DDD;
+    border-right: 0px;
+    display:table;
+    & > a {
+      margin-right: 0;
+      display: table-cell;
+      width: 100%;
+      height: 70px;
+      padding: 1em;
+      padding-left: 1.8em;
+      vertical-align: middle;
+      table-layout:fixed;
+      white-space: nowrap;
+      overflow: hidden;
+
+      .icon {
+        font-size: 2.5em;
+        display: inline-block;
+        margin-right: 0.25em;
+        vertical-align: middle;
+
+      }
+      .step-title {
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+
+        .title {
+          font-weight: bold;
+          font-size: 1.1em;
+        }
+
+        .description {
+          font-size: 0.9em;
+        }
+      }
+    }
+    & > a:hover { 
+      border-bottom: 0;
+    }
+  }
+
+  & > li:after {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #FFF;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    z-index: 10000;
+  }
+
+  & > li:before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid #DDD;
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    transform: translate(0%, -50%);
+    z-index: 10000;
+  }
+
+  & > li.active {
+    background-color: #EEE;
+    & > a  , & > a:focus , & > a:hover {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      border-bottom: 0;
+    }
+  }
+
+  & > li:hover {
+    background-color: #EEE;
+
+  }
+
+  & > li:hover:after {
+    border-left: 15px solid #EEE;
+  }
+
+  & > li.active:after {
+    border-left: 15px solid #EEE;
+  }
+
+  & > li:last-child {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+
+    border-right: 1px  solid #DDD;
+  }
+
+
+  & > li:last-child:before , & > li:last-child:after {
+    display: none;
+  }
+}
+
+
+.nav-tabs.step.vertical {
+  border-bottom: 0px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+
+  & > li[class^="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  & > li:first-child {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+  }
+
+  & > li {
+    border: 1px solid #DDD;
+    border-right: 0px;
+    min-width: 250px;
+    display: table;
+    width: 250px;
+
+    & > a {
+      margin-right: 0;
+      display: table-cell;
+      width: 100%;
+      height: 70px;
+      padding: 1em;
+      padding-left: 1.8em;
+      vertical-align: middle;
+      table-layout:fixed;
+      white-space: nowrap;
+      overflow: hidden;
+
+      .icon {
+        font-size: 2.5em;
+        display: inline-block;
+        margin-right: 0.25em;
+        vertical-align: middle;
+
+      }
+      .step-title {
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+
+        .title {
+          font-weight: bold;
+          font-size: 1.1em;
+        }
+
+        .description {
+          font-size: 0.9em;
+        }
+      }
+    }
+    & > a:hover { 
+      border-bottom: 0;
+    }
+  }
+
+  & > li:after {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #FFF;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    z-index: 10000;
+    display: none;
+  }
+
+  & > li:before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid #DDD;
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    transform: translate(0%, -50%);
+    z-index: 10000;
+    display: none;
+  }
+
+  & > li.active {
+    background-color: #EEE;
+    & > a  , & > a:focus , & > a:hover {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      border-bottom: 0;
+    }
+  }
+
+  & > li:hover {
+    background-color: #EEE;
+
+  }
+
+  & > li:hover:after {
+    border-left: 15px solid #EEE;
+  }
+
+  & > li.active:after {
+    border-left: 15px solid #EEE;
+    display: block;
+  }
+
+  & > li.active:before {
+    display: block;
+  }
+
+  & > li:last-child {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+  }
+
+}
 
 

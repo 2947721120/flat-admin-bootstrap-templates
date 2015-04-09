@@ -1,20 +1,22 @@
 // Blue Themes
-.flat-red {
+.flat-blue {
 
   $color-white: #FFF;
   $color-light-grey: #F9F9F9;
   $color-lighter-grey: #F0F0F0;
   $color-grey: #EAEAEA;
+  $color-grey-level1: #DDD;
 
   $color-clear-dark-blue: #73849d;
   $color-dark-blue: #3E4651;
+  $color-dark-blue-1: #22A7F0;
   $color-dark-blue-hover: #363c46;
 
   $color-dark-black: #232323;
 
   $color-clear-red: #ffb8aa;
   $color-lightest-red: #fb927d;
-  $color-light-red: #FF003C;
+  $color-light-red: #19B5FE;
   $color-red: #FA2A00;
   $color-darkest-red: #7c1a06;
 
@@ -52,7 +54,7 @@
   }
 
   a:hover {
-    color: $color-red;
+    color: $color-darkest-blue;
   }
   
   // Navbar
@@ -84,7 +86,7 @@
       }
       & > li:hover {
         & > a {
-          color: $color-red;
+          color: $color-dark-blue-1;
         }
       }
       & > li.open {
@@ -171,11 +173,11 @@
       li.active {
 
         & > a {
-          background-color: $color-red;
-          color: $color-white;
+          border-right: 2px solid $color-blue;
+          background-color: $color-clear-blue;
         }
       }
-      li:hover {
+      & > li:hover {
         & > a {
           background-color: $color-red;
           color: $color-white;
@@ -186,7 +188,7 @@
 
         background-color: $color-grey;
         & > .panel-collapse {
-          background-color: rgba(0,0,0,0.1);
+          background-color: $color-grey-level1;
         }
 
         .panel-body {
