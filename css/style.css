@@ -578,7 +578,6 @@ body.login-page {
   -o-background-size: cover;
   background-size: cover; }
   body.login-page .login-box {
-    background-color: #FFF;
     min-width: 800px;
     position: absolute;
     top: 50%;
@@ -586,14 +585,16 @@ body.login-page {
     transform: translate(-50%, -50%);
     padding: 0;
     border-radius: 3px; }
-    body.login-page .login-box .title {
+    body.login-page .login-box > .title {
       margin-bottom: 1em; }
     body.login-page .login-box > .row {
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 0; }
   body.login-page .login-form {
-    padding: 1.5em 2em; }
+    padding: 1.5em 2em;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
     body.login-page .login-form input {
       margin-bottom: 0.8em;
       margin-top: 0.5em;

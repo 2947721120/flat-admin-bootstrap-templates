@@ -693,6 +693,9 @@
 
   // Login page
   .login-box {
+    .login-form {
+      background-color: $color-white;
+    }
     .login-sidebar {
       color: $color-white;
       background-color: $color-dark-blue;

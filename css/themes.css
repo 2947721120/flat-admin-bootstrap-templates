@@ -346,6 +346,8 @@
     border-color: #EAEAEA; }
   .flat-blue .table > thead > tr > th {
     border-color: #EAEAEA; }
+  .flat-blue .login-box .login-form {
+    background-color: #FFF; }
   .flat-blue .login-box .login-sidebar {
     color: #FFF;
     background-color: #3E4651; }

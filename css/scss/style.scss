@@ -891,7 +891,6 @@ body.login-page {
   background-size: cover;
 
   .login-box {
-    background-color: #FFF;
     min-width: 800px;
     position:absolute;
     top:50%;
@@ -900,7 +899,7 @@ body.login-page {
     padding: 0;
     border-radius: 3px;
 
-    .title {
+    & > .title {
       margin-bottom: 1em;
     }
 
@@ -913,6 +912,8 @@ body.login-page {
 
   .login-form {
     padding: 1.5em 2em;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 
     input {
       margin-bottom: 0.8em;
