@@ -154,8 +154,8 @@ a:hover {
       .content-container .side-menu .navbar-nav li a {
         font-family: 'Roboto Condensed', sans-serif;
         padding: 0 10px 0 10px;
-        height: 60px;
-        line-height: 60px;
+        height: 46px;
+        line-height: 46px;
         display: block;
         white-space: nowrap; }
         .content-container .side-menu .navbar-nav li a .icon {
@@ -578,7 +578,7 @@ body.login-page {
   -o-background-size: cover;
   background-size: cover; }
   body.login-page .login-box {
-    min-width: 800px;
+    min-width: 1000px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -597,8 +597,7 @@ body.login-page {
     border-bottom-left-radius: 3px; }
     body.login-page .login-form input {
       margin-bottom: 0.8em;
-      margin-top: 0.5em;
-      border: 0; }
+      margin-top: 0.5em; }
   body.login-page .login-sidebar {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -607,6 +606,13 @@ body.login-page {
     position: relative; }
     body.login-page .login-sidebar .content {
       margin-bottom: 1em; }
+  body.login-page .sidebar-left .login-sidebar {
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  body.login-page .sidebar-left .login-form {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
 
 .dataTables_wrapper .row {
   margin-bottom: 0.5em; }
@@ -785,8 +791,8 @@ body.login-page {
     padding-left: 0;
     padding-right: 0; }
   .step.tabs-left .nav-tabs > li:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px; }
   .step.tabs-left .nav-tabs > li {
     border-right: 0px;
     min-width: 250px;

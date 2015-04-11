@@ -232,8 +232,8 @@ a:hover {
         a {
           font-family: 'Roboto Condensed', sans-serif;
           padding: 0 10px 0 10px;
-          height: 60px;
-          line-height: 60px;
+          height: 46px;
+          line-height: 46px;
           display: block;
           white-space: nowrap;
 
@@ -891,7 +891,7 @@ body.login-page {
   background-size: cover;
 
   .login-box {
-    min-width: 800px;
+    min-width: 1000px;
     position:absolute;
     top:50%;
     left:50%;
@@ -918,7 +918,6 @@ body.login-page {
     input {
       margin-bottom: 0.8em;
       margin-top: 0.5em;
-      border: 0;
     }
   }
 
@@ -932,6 +931,23 @@ body.login-page {
     .content {
       margin-bottom: 1em;
     }
+  }
+
+  .sidebar-left {
+    .login-sidebar {
+      border-radius: 0;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px; 
+    }
+
+    .login-form {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+
+  .no-sidebar {
+
   }
 }
 
@@ -1202,8 +1218,8 @@ body.login-page {
     }
 
     & > li:first-child {
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
     }
 
     & > li {

@@ -5,7 +5,7 @@
   $color-light-grey: #F9F9F9;
   $color-lighter-grey: #F0F0F0;
   $color-grey: #EAEAEA;
-  $color-grey-level1: #DFDFDF;
+  $color-grey-level1: #E4E4E4;
 
   $color-clear-dark-blue: #73849d;
   $color-dark-blue: #3E4651;
@@ -707,7 +707,8 @@
     }
 
     input {
-      background-color: $color-grey;
+      background-color: transparent;
+      border: 1px solid $color-grey-level1;
     }
   }
 
@@ -730,7 +731,19 @@
 
   // Tabs
   .nav-tabs {
-    background-color: $color-lighter-grey;
+    background-color: $color-grey;
+
+    & > li {
+      & > a:hover {
+        background-color: $color-grey;
+      }
+    }
+
+    & > li.active {
+      & > a:hover {
+        background-color: $color-white;
+      }
+    } 
   }
 
 
@@ -774,7 +787,7 @@
 
   .tabs-right > .nav-tabs > li > a:hover,
   .tabs-right > .nav-tabs > li > a:focus {
-    border-color: $color-grey-level1 $color-grey-level1 $color-grey-level1 $color-grey-level1 ;
+    border-color: $color-grey-level1 $color-grey-level1 $color-grey-level1 $color-grey-level1;
   }
 
   .tabs-right > .nav-tabs .active > a,
