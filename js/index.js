@@ -1,73 +1,42 @@
 (function() {
   $(function() {
-    var ctx, ctx_light, data, data_light, myLineChart, myLineChartLight, options, options_light;
+    var ctx, data, myLineChart, options;
     Chart.defaults.global.responsive = true;
-    ctx = $('#dashboard-order-chart').get(0).getContext('2d');
-    ctx_light = $('#dashboard-order-chart-light').get(0).getContext('2d');
+    ctx = $('#jumbotron-line-chart').get(0).getContext('2d');
     options = {
-      bezierCurve: false,
-      pointDotRadius: 0,
-      datasetStroke: true,
-      datasetStrokeWidth: 5,
-      scaleGridLineColor: 'rgba(255,255,255,0)',
-      scaleFontColor: 'rgba(255,255,255,.4)',
-      scaleLineColor: 'rgba(0,0,0,0)',
-      scaleShowVerticalLines: false,
+      showScale: false,
       scaleShowGridLines: false,
-      scaleOverride: false,
-      scaleShowLabels: false,
-      scaleSteps: 10,
-      pointDotStrokeWidth: 0,
-      showScale: true
-    };
-    options_light = {
-      bezierCurve: false,
-      pointDotRadius: 0,
-      datasetStroke: true,
-      datasetStrokeWidth: 5,
-      scaleGridLineColor: 'rgba(255,255,255,0)',
-      scaleFontColor: 'rgba(0,0,0,.4)',
-      scaleLineColor: 'rgba(0,0,0,0)',
+      scaleGridLineColor: "rgba(0,0,0,.05)",
+      scaleGridLineWidth: 0,
+      scaleShowHorizontalLines: false,
       scaleShowVerticalLines: false,
-      scaleShowGridLines: true,
-      scaleOverride: false,
-      scaleSteps: 10,
-      scaleShowLabels: false,
-      pointDotStrokeWidth: 0,
-      showScale: true
+      bezierCurve: false,
+      bezierCurveTension: 0.4,
+      pointDot: false,
+      pointDotRadius: 0,
+      pointDotStrokeWidth: 2,
+      pointHitDetectionRadius: 20,
+      datasetStroke: true,
+      datasetStrokeWidth: 4,
+      datasetFill: true,
+      legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
     };
     data = {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September'],
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
       datasets: [
         {
-          label: 'My First dataset',
-          fillColor: 'transparent',
-          strokeColor: '#FFF',
-          pointColor: '#FFF',
-          pointStrokeColor: 'rgba(0,177,106,1)',
-          pointHighlightFill: '#fff',
-          pointHighlightStroke: 'rgba(220,220,220,1)',
-          data: [35000, 38000, 29000, 40000, 34500, 41000, 42000, 56000, 80000]
-        }
-      ]
-    };
-    data_light = {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September'],
-      datasets: [
-        {
-          label: 'My First dataset',
-          fillColor: 'transparent',
-          strokeColor: '#22A7F0',
-          pointColor: '#FFF',
-          pointStrokeColor: 'rgba(0,177,106,1)',
-          pointHighlightFill: '#fff',
-          pointHighlightStroke: 'rgba(220,220,220,1)',
-          data: [39, 32, 42, 40, 58, 66, 78, 80, 99]
+          label: "My Second dataset",
+          fillColor: "rgba(34, 167, 240,0.2)",
+          strokeColor: "#22A7F0",
+          pointColor: "#22A7F0",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "#22A7F0",
+          data: [28, 48, 40, 45, 76, 65, 90]
         }
       ]
     };
     myLineChart = new Chart(ctx).Line(data, options);
-    myLineChartLight = new Chart(ctx_light).Line(data_light, options_light);
   });
 
 }).call(this);

@@ -6,6 +6,9 @@
   $color-lighter-grey: #F0F0F0;
   $color-grey: #EAEAEA;
   $color-grey-level1: #E4E4E4;
+  $color-grey-level2: #DDD;
+  $color-grey-level3: #CCC;
+
 
   $color-clear-dark-blue: #73849d;
   $color-dark-blue: #3E4651;
@@ -75,6 +78,9 @@
       }
 
       .navbar-expand-toggle {
+        color: $color-white;
+      }
+      .navbar-right-expand-toggle {
         color: $color-white;
       }
     }
@@ -202,6 +208,14 @@
 
     }
   }
+  /* small screen */
+  @media (max-width: 768px) {
+    .navbar { 
+      .navbar-right {
+        background-color: $color-dark-blue;
+      }
+    }
+  }
 
   // Card
   .card.red {
@@ -251,12 +265,24 @@
 
     .card-body {
       .sub-title {
-        border-bottom: 1px solid $color-light-grey;
+        border-bottom: 1px solid $color-grey;
       }
     }
 
     .card-header.no-border {
       border-bottom: 0;
+    }
+
+    .card-jumbotron {
+      background-color: $color-grey;
+    }
+  }
+
+  // Jumbotron Color
+  .card.primary {
+    .card-jumbotron {
+      background-color: $color-dark-blue;
+      color: $color-white;
     }
   }
 
@@ -705,6 +731,16 @@
         background-color: transparent;
       }
     }
+    .login-sidebar.blue {
+      color: $color-white;
+      background-color: $color-blue;
+
+      .btn-default {
+        color: $color-white;
+        background-color: transparent;
+      }
+
+    }
 
     input {
       background-color: transparent;
@@ -892,6 +928,90 @@
       & > li {
         border: 0px solid transparent;
       }
+    }
+  }
+
+  // pricing table
+  .pricing-table {
+    box-shadow: 0 1px 1px $color-grey-level3;
+    .pt-header {
+      background-color: $color-grey-level1;
+
+      .plan-pricing {
+        .pricing {
+          text-shadow: 0 1px 1px $color-white;
+        }
+      }
+    }
+
+    .pt-body {
+      background-color: $color-light-grey;
+      .plan-detail {
+        border-top: 1px dashed rgba(255,255,255,0.6);
+        padding-top: 1em;
+        margin-top: 1em;
+      }
+    }
+    .pt-footer {
+      background-color: $color-light-grey;
+    }
+  }
+
+  // pricing table
+  .pricing-table.green {
+    .pt-header {
+      background-color: $color-green-sea;
+      color: $color-white;
+    }
+
+    .pt-body {
+      background-color: $color-clear-green-sea;
+      color: $color-darkest-green-sea;
+    }
+    .pt-footer {
+    }
+  }
+
+  // pricing table
+  .pricing-table.blue {
+    .pt-header {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+
+    .pt-body {
+      background-color: $color-clear-blue;
+      color: $color-darkest-blue;
+    }
+    .pt-footer {
+    }
+  }
+  // pricing table
+  .pricing-table.yellow {
+    .pt-header {
+      background-color: $color-yellow;
+      color: $color-white;
+    }
+
+    .pt-body {
+      background-color: $color-clear-yellow;
+      color: $color-darkest-yellow;
+    }
+    .pt-footer {
+    }
+  }
+  // pricing table
+  .pricing-table.red {
+    .pt-header {
+      background-color: $color-red;
+      color: $color-white;
+    }
+
+    .pt-body {
+      background-color: $color-clear-red;
+      color: $color-darkest-red;
+    }
+    .pt-footer {
     }
   }
 }

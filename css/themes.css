@@ -1,5 +1,6 @@
 .flat-blue {
-  background-color: #F9F9F9; }
+  background-color: #F9F9F9;
+  /* small screen */ }
   .flat-blue a {
     color: #363c46; }
   .flat-blue a:hover {
@@ -13,6 +14,8 @@
     .flat-blue .navbar .navbar-header .navbar-brand {
       color: #F9F9F9; }
     .flat-blue .navbar .navbar-header .navbar-expand-toggle {
+      color: #FFF; }
+    .flat-blue .navbar .navbar-header .navbar-right-expand-toggle {
       color: #FFF; }
     .flat-blue .navbar .navbar-nav > li > a {
       color: #FFF; }
@@ -74,6 +77,9 @@
           background-color: #E4E4E4; }
         .flat-blue .side-menu .navbar li.dropdown .panel-body {
           padding: 0; }
+  @media (max-width: 768px) {
+    .flat-blue .navbar .navbar-right {
+      background-color: #3E4651; } }
   .flat-blue .card.red {
     background-color: #FA2A00;
     color: #FFF; }
@@ -103,9 +109,14 @@
       .flat-blue .card .card-header .title {
         color: #3E4651; }
     .flat-blue .card .card-body .sub-title {
-      border-bottom: 1px solid #F9F9F9; }
+      border-bottom: 1px solid #EAEAEA; }
     .flat-blue .card .card-header.no-border {
       border-bottom: 0; }
+    .flat-blue .card .card-jumbotron {
+      background-color: #EAEAEA; }
+  .flat-blue .card.primary .card-jumbotron {
+    background-color: #3E4651;
+    color: #FFF; }
   .flat-blue .card.profile .card-footer {
     border-top: 1px solid #F9F9F9; }
   .flat-blue .panel.panel-default {
@@ -354,6 +365,12 @@
     .flat-blue .login-box .login-sidebar .btn-default {
       color: #FFF;
       background-color: transparent; }
+  .flat-blue .login-box .login-sidebar.blue {
+    color: #FFF;
+    background-color: #22A7F0; }
+    .flat-blue .login-box .login-sidebar.blue .btn-default {
+      color: #FFF;
+      background-color: transparent; }
   .flat-blue .login-box input {
     background-color: transparent;
     border: 1px solid #E4E4E4; }
@@ -452,3 +469,41 @@
     border-left: 15px solid #EAEAEA; }
   .flat-blue .step.tabs-left.card-no-padding .nav-tabs > li {
     border: 0px solid transparent; }
+  .flat-blue .pricing-table {
+    box-shadow: 0 1px 1px #CCC; }
+    .flat-blue .pricing-table .pt-header {
+      background-color: #E4E4E4; }
+      .flat-blue .pricing-table .pt-header .plan-pricing .pricing {
+        text-shadow: 0 1px 1px #FFF; }
+    .flat-blue .pricing-table .pt-body {
+      background-color: #F9F9F9; }
+      .flat-blue .pricing-table .pt-body .plan-detail {
+        border-top: 1px dashed rgba(255, 255, 255, 0.6);
+        padding-top: 1em;
+        margin-top: 1em; }
+    .flat-blue .pricing-table .pt-footer {
+      background-color: #F9F9F9; }
+  .flat-blue .pricing-table.green .pt-header {
+    background-color: #1ABC9C;
+    color: #FFF; }
+  .flat-blue .pricing-table.green .pt-body {
+    background-color: #99e9d9;
+    color: #006551; }
+  .flat-blue .pricing-table.blue .pt-header {
+    background-color: #22A7F0;
+    color: #FFF; }
+  .flat-blue .pricing-table.blue .pt-body {
+    background-color: #91d5fb;
+    color: #09486b; }
+  .flat-blue .pricing-table.yellow .pt-header {
+    background-color: #FABE28;
+    color: #FFF; }
+  .flat-blue .pricing-table.yellow .pt-body {
+    background-color: #ffe5a2;
+    color: #85630f; }
+  .flat-blue .pricing-table.red .pt-header {
+    background-color: #FA2A00;
+    color: #FFF; }
+  .flat-blue .pricing-table.red .pt-body {
+    background-color: #ffb8aa;
+    color: #7c1a06; }
