@@ -1,7 +1,7 @@
 # Navbar
 $ ->
   $(".navbar-expand-toggle").click ->
-    $(".content-container").toggleClass "expanded"
+    $(".app-container").toggleClass "expanded"
     $(".navbar-expand-toggle").toggleClass "fa-rotate-90"
   
   $(".navbar-right-expand-toggle").click ->
