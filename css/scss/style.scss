@@ -285,7 +285,7 @@ a:hover {
         border-bottom: 0px solid #e7e7e7;
 
         .navbar-brand {
-          width: 50px;
+          width: 45px;
           line-height: 60px;
           height: 60px;
           padding: 0;
@@ -300,6 +300,7 @@ a:hover {
           }
 
           .title {
+            margin-left: -10px;
             display: none;
           }
         }
@@ -737,6 +738,12 @@ a:hover {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.btn-group-lg {
+  & > .btn, & > .btn-lg {
+    border-radius: 3px;
+  }
+}
+
 // Progress Bar
 .progress {
   border-radius: 3px;
@@ -961,6 +968,21 @@ body.login-page {
   .row {
     margin-bottom: 0.5em;
   }
+  .top {
+    margin-bottom: 6px;
+    position: relative;
+  }
+  .bottom {
+    margin-top: 6px;
+  }
+
+  .top:after , .bottom:after {
+    position: relative;
+    clear: both;
+    display: block;
+    content: '';
+  }
+  
   .dataTables_paginate {
     .paginate_button {
       padding: 0;

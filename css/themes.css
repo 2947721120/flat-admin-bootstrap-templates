@@ -321,30 +321,30 @@
     .flat-blue .list-group .list-group-item.active .badge {
       color: #3E4651; }
   .flat-blue .list-group .list-group-item.list-group-item-success {
-    background-color: #1ABC9C;
-    color: #FFF;
-    border-color: #1ABC9C; }
+    background-color: #99e9d9;
+    color: #006551;
+    border-color: #99e9d9; }
     .flat-blue .list-group .list-group-item.list-group-item-success .badge {
       background-color: #FFF;
       color: #1ABC9C; }
   .flat-blue .list-group .list-group-item.list-group-item-info {
-    background-color: #22A7F0;
-    color: #FFF;
-    border-color: #22A7F0; }
+    background-color: #91d5fb;
+    color: #09486b;
+    border-color: #91d5fb; }
     .flat-blue .list-group .list-group-item.list-group-item-info .badge {
       background-color: #FFF;
       color: #22A7F0; }
   .flat-blue .list-group .list-group-item.list-group-item-warning {
-    background-color: #FABE28;
-    color: #FFF;
-    border-color: #FABE28; }
+    background-color: #ffe5a2;
+    color: #85630f;
+    border-color: #ffe5a2; }
     .flat-blue .list-group .list-group-item.list-group-item-warning .badge {
       background-color: #FFF;
       color: #FABE28; }
   .flat-blue .list-group .list-group-item.list-group-item-danger {
-    background-color: #FA2A00;
-    color: #FFF;
-    border-color: #FA2A00; }
+    background-color: #ffb8aa;
+    color: #7c1a06;
+    border-color: #ffb8aa; }
     .flat-blue .list-group .list-group-item.list-group-item-danger .badge {
       background-color: #FFF;
       color: #FA2A00; }

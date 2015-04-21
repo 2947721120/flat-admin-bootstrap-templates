@@ -26,4 +26,6 @@ $ ->
 
 # DataTable
 $ ->
-  $('.datatable').DataTable();
+  $('.datatable').DataTable({
+    "dom": '<"top"fl<"clear">>rt<"bottom"ip<"clear">>'
+    });

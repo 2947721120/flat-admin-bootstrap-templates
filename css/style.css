@@ -195,7 +195,7 @@ a:hover {
         width: 100%;
         border-bottom: 0px solid #e7e7e7; }
         .app-container .content-container .side-menu .navbar-header .navbar-brand {
-          width: 50px;
+          width: 45px;
           line-height: 60px;
           height: 60px;
           padding: 0;
@@ -207,6 +207,7 @@ a:hover {
             text-align: center;
             display: inline-block; }
           .app-container .content-container .side-menu .navbar-header .navbar-brand .title {
+            margin-left: -10px;
             display: none; }
         .app-container .content-container .side-menu .navbar-header .navbar-expand-toggle {
           position: absolute;
@@ -462,6 +463,9 @@ a:hover {
   border-width: 1px;
   font-family: 'Roboto Condensed', sans-serif; }
 
+.btn-group-lg > .btn, .btn-group-lg > .btn-lg {
+  border-radius: 3px; }
+
 .progress {
   border-radius: 3px;
   box-shadow: none; }
@@ -596,6 +600,16 @@ body.login-page {
     max-width: 260px; } }
 .dataTables_wrapper .row {
   margin-bottom: 0.5em; }
+.dataTables_wrapper .top {
+  margin-bottom: 6px;
+  position: relative; }
+.dataTables_wrapper .bottom {
+  margin-top: 6px; }
+.dataTables_wrapper .top:after, .dataTables_wrapper .bottom:after {
+  position: relative;
+  clear: both;
+  display: block;
+  content: ''; }
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   padding: 0;
   margin-left: 0;

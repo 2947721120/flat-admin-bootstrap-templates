@@ -649,9 +649,9 @@
     }
 
     .list-group-item.list-group-item-success {
-      background-color: $color-green-sea;
-      color: $color-white;
-      border-color: $color-green-sea;
+      background-color: $color-clear-green-sea;
+      color: $color-darkest-green-sea;
+      border-color: $color-clear-green-sea;
 
       .badge {
         background-color: $color-white;
@@ -660,9 +660,9 @@
     }
 
     .list-group-item.list-group-item-info {
-      background-color: $color-blue;
-      color: $color-white;
-      border-color: $color-blue;
+      background-color: $color-clear-blue;
+      color: $color-darkest-blue;
+      border-color: $color-clear-blue;
 
       .badge {
         background-color: $color-white;
@@ -671,9 +671,9 @@
     }
 
     .list-group-item.list-group-item-warning {
-      background-color: $color-yellow;
-      color: $color-white;
-      border-color: $color-yellow;
+      background-color: $color-clear-yellow;
+      color: $color-darkest-yellow;
+      border-color: $color-clear-yellow;
 
       .badge {
         background-color: $color-white;
@@ -682,9 +682,9 @@
     }
 
     .list-group-item.list-group-item-danger {
-      background-color: $color-red;
-      color: $color-white;
-      border-color: $color-red;
+      background-color: $color-clear-red;
+      color: $color-darkest-red;
+      border-color: $color-clear-red;
 
       .badge {
         background-color: $color-white;

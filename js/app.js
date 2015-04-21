@@ -26,7 +26,9 @@
   });
 
   $(function() {
-    return $('.datatable').DataTable();
+    return $('.datatable').DataTable({
+      "dom": '<"top"fl<"clear">>rt<"bottom"ip<"clear">>'
+    });
   });
 
 }).call(this);
