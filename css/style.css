@@ -961,13 +961,6 @@ body.login-page {
     transition: all 0.25s linear;
     opacity: 0.75; }
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a; }
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
