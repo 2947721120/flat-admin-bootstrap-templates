@@ -908,6 +908,29 @@
       & > li:last-child {
         border-right: 1px  solid $color-grey-level1;
       }
+
+      & > li.step-success {
+        background-color: $color-clear-green-sea;
+        border: 1px solid $color-green-sea;
+        a {
+          color: $color-darkest-green-sea;
+        }
+      }
+
+      & > li.step-disabled {
+        background-color: $color-clear-green-sea;
+      }
+      & > li.step-success:after {
+        border-left: 15px solid $color-clear-green-sea;
+      }
+      & > li.step-success.active:hover:after { 
+        border-left: 15px solid $color-clear-green-sea;
+      }
+
+      & > li.step-success:hover:after { 
+        border-left: 15px solid $color-grey;
+      }
+
     }
   }
 

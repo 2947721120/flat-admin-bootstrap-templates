@@ -455,6 +455,19 @@
     border-left: 15px solid #EAEAEA; }
   .flat-blue .step .nav-tabs > li:last-child {
     border-right: 1px solid #E4E4E4; }
+  .flat-blue .step .nav-tabs > li.step-success {
+    background-color: #99e9d9;
+    border: 1px solid #1ABC9C; }
+    .flat-blue .step .nav-tabs > li.step-success a {
+      color: #006551; }
+  .flat-blue .step .nav-tabs > li.step-disabled {
+    background-color: #99e9d9; }
+  .flat-blue .step .nav-tabs > li.step-success:after {
+    border-left: 15px solid #99e9d9; }
+  .flat-blue .step .nav-tabs > li.step-success.active:hover:after {
+    border-left: 15px solid #99e9d9; }
+  .flat-blue .step .nav-tabs > li.step-success:hover:after {
+    border-left: 15px solid #EAEAEA; }
   .flat-blue .step.card-no-padding .nav-tabs > li {
     border: 0px solid transparent;
     border-right: 1px solid #E4E4E4;

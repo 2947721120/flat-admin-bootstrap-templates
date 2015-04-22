@@ -8,13 +8,12 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
     <!-- CSS Libs -->
-    <link rel="stylesheet" type="text/css" href="../../vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/css/typicons.min.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/css/bootstrap-switch.min.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/css/icheck/skin/flat/_all.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/animate.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/iCheck/skins/flat/_all.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/DataTables/media/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="../../vendor/css/dataTables.bootstrap.css">
     <!-- CSS App -->
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
@@ -278,11 +277,6 @@
                                     </div>
                                     <div class="sub-title">
                                         <div class="title">Button</div>
-                                        <div class="pull-right action">
-                                            <div class="btn-group" role="group">
-                                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modalButtonExample"><i class="fa fa-code"></i></button>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div>
                                         <button type="button" class="btn btn-xs btn-default">Extra Small .btn-xs</button>
@@ -302,7 +296,13 @@
                                     <h4 class="modal-title" id="myModalLabel">Button Example</h4>
                                 </div>
                                 <div class="modal-body no-padding">
-                                    <div id="code-preview-button" class="code-preview">&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</div>
+                                    <div id="code-preview-button" class="code-preview">&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</div>
                                 </div>
                             </div>
                         </div>
@@ -328,7 +328,11 @@
                                             <button type="button" class="btn btn-default">Right</button>
                                         </div>
                                     </div>
-                                    <div class="sub-title">Sizing</div>
+                                    <div class="sub-title">
+                                        <span>Sizing</span>
+                                        <span class="description">( <code>.btn-group-lg</code> , <code>.btn-group-sm</code> , <code>.btn-group-xs</code> )</span>
+
+                                    </div>
                                     <div >
                                         <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
                                           <button type="button" class="btn btn-default">Left</button>
@@ -366,8 +370,11 @@
                                     <h4 class="modal-title" id="myModalLabel">Button Group Example</h4>
                                 </div>
                                 <div class="modal-body no-padding">
-                                    <div id="code-preview-button-group" class="code-preview">&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Default button group&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt; &lt;/div&gt;
-                                    </div>
+                                    <div id="code-preview-button-group" class="code-preview">&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Default button group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</div>
                                 </div>
                             </div>
                         </div>
@@ -535,7 +542,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="sub-title">Sizing</div>
+                                    <div class="sub-title">Sizing <span class="description">( <code>.btn-lg</code> , <code>.btn-sm</code> , <code>.btn-xs</code> )</span></div>
                                     <div>
                                         <div class="btn-toolbar" role="toolbar">
                                             <div class="btn-group">
@@ -592,8 +599,66 @@
                                     <h4 class="modal-title" id="myModalLabel">Button Dropdown Example</h4>
                                 </div>
                                 <div class="modal-body no-padding">
-                                    <div id="code-preview-button-dropdown" class="code-preview">&lt;div class=&quot;btn-group&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Default &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt; &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;div class=&quot;btn-group&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Primary &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt; &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;div class=&quot;btn-group&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-success dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Success &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt; &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;div class=&quot;btn-group&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-info dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Info &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt; &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;div class=&quot;btn-group&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-warning dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Warning &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt; &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;div class=&quot;btn-group&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Danger &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt; &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;
-                                    </div>
+                                    <div id="code-preview-button-dropdown" class="code-preview">&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Default &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Primary &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-success dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Success &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-info dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Info &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Warning &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Danger &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</div>
                                 </div>
                             </div>
                         </div>
@@ -607,19 +672,20 @@
             </div>
         </footer>
     <div>
-        <script type="text/javascript" src="../../vendor/js/jquery-2.1.3.min.js"></script>
-        <script type="text/javascript" src="../../vendor/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="../../vendor/js/Chart.min.js"></script>
-        <script type="text/javascript" src="../../vendor/js/bootstrap-switch.min.js"></script>
-        <script type="text/javascript" src="../../vendor/js/icheck.min.js"></script>
-        <script type="text/javascript" src="../../vendor/js/jquery.matchHeight-min.js"></script>
-        <script type="text/javascript" src="../../vendor/js/jquery.dataTables.min.js"></script>
-        <script type="text/javascript" src="../../vendor/js/dataTables.bootstrap.js"></script>
-        <script type="text/javascript" src="../../vendor/js/ace/ace.js"></script>
-        <script type="text/javascript" src="../../vendor/js/ace/mode-html.js"></script>
-        <script type="text/javascript" src="../../vendor/js/ace/theme-github.js"></script>
-        <!-- Javascript -->
-        <script type="text/javascript" src="../../js/app.js"></script>
-        <script type="text/javascript" src="../../js/button.js"></script>
+        
+    <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/chartjs/Chart.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/iCheck/icheck.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/matchHeight/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="../../bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../../vendor/js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="../../vendor/js/ace/ace.js"></script>
+    <script type="text/javascript" src="../../vendor/js/ace/mode-html.js"></script>
+    <script type="text/javascript" src="../../vendor/js/ace/theme-github.js"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="../../js/app.js"></script>
+    <script type="text/javascript" src="../../js/button.js"></script>
 </body>
 </html>
