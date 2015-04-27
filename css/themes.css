@@ -508,6 +508,12 @@
         margin-top: 1em; }
     .flat-blue .pricing-table .pt-footer {
       background-color: #F9F9F9; }
+  .flat-blue .pricing-table.dark-blue .pt-header {
+    background-color: #3E4651;
+    color: #FFF; }
+  .flat-blue .pricing-table.dark-blue .pt-body {
+    background-color: #9eaabd;
+    color: #363c46; }
   .flat-blue .pricing-table.green .pt-header {
     background-color: #1ABC9C;
     color: #FFF; }
@@ -532,3 +538,14 @@
   .flat-blue .pricing-table.red .pt-body {
     background-color: #ffb8aa;
     color: #7c1a06; }
+
+.flat-blue.landing-page .navbar {
+  background-color: transparent;
+  box-shadow: none; }
+  .flat-blue.landing-page .navbar .navbar-nav > .active > a {
+    background-color: transparent; }
+.flat-blue.landing-page .app-header .app-btn {
+  background-color: transparent;
+  border: 2px solid #FFF; }
+.flat-blue.landing-page .app-content-a {
+  background-color: #EAEAEA; }

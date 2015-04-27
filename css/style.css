@@ -548,7 +548,7 @@ a:hover {
       margin-top: 15px; }
 
 body.login-page {
-  background: url(../../img/bg.jpg) no-repeat center center fixed;
+  background: url(../../img/app-header-bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -932,34 +932,103 @@ body.login-page {
 .bs-example > *:last-child {
   margin-bottom: 5px; }
 
-.landing-page .navbar-header {
-  border-bottom: 0px solid #e7e7e7; }
-  .landing-page .navbar-header .navbar-brand {
-    width: 45px;
-    line-height: 60px;
-    height: 60px;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-    font-family: 'Roboto Condensed', sans-serif; }
-    .landing-page .navbar-header .navbar-brand .icon {
-      width: 50px;
-      text-align: center;
-      display: inline-block; }
-    .landing-page .navbar-header .navbar-brand .title {
-      margin-left: -10px;
-      display: inline-block; }
-  .landing-page .navbar-header .navbar-expand-toggle {
-    position: absolute;
-    right: 0;
-    width: 60px;
-    height: 60px;
+.landing-page {
+  font-family: 'Roboto Condensed', sans-serif; }
+  .landing-page .app-header {
+    padding-top: 100px;
+    background-image: url("../../img/app-header-bg.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0; }
+    .landing-page .app-header .app-logo {
+      margin-bottom: 20px; }
+    .landing-page .app-header .app-description {
+      margin-bottom: 40px; }
+  .landing-page .app-content-a, .landing-page .app-content-b {
+    padding-top: 50px;
+    padding-bottom: 20px; }
+  .landing-page .app-content-b.feature-1 {
+    background-image: url("../../img/thumbnails/original/picjumbo.com_HNCK3558.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0; }
+  .landing-page .app-content-b.contact-us {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url("../../img/contact-us-bg.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0; }
+    .landing-page .app-content-b.contact-us .contact-us-header {
+      font-weight: 300;
+      font-size: 46px; }
+    .landing-page .app-content-b.contact-us .contact-us-description {
+      font-weight: 300;
+      font-size: 18px;
+      opacity: 0.9;
+      text-indent: 40px; }
+    .landing-page .app-content-b.contact-us form {
+      margin-top: 20px; }
+      .landing-page .app-content-b.contact-us form input {
+        padding: 10px;
+        width: 100%;
+        border: 0px; }
+  .landing-page .app-content-header {
+    font-weight: 300;
+    font-size: 46px; }
+  .landing-page .app-content-description {
+    font-weight: 300;
+    font-size: 18px; }
+  .landing-page .app-footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0; }
+    .landing-page .app-footer p {
+      margin: 0; }
+  .landing-page .navbar {
+    padding-left: 0px;
     background-color: transparent;
-    border: 0px;
-    -moz-transition: all 0.25s linear;
-    -webkit-transition: all 0.25s linear;
-    transition: all 0.25s linear;
-    opacity: 0.75; }
+    box-shadow: none; }
+    .landing-page .navbar .navbar-header {
+      border-bottom: 0px solid #e7e7e7; }
+      .landing-page .navbar .navbar-header .navbar-brand {
+        width: 45px;
+        line-height: 60px;
+        height: 60px;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        font-family: 'Roboto Condensed', sans-serif; }
+        .landing-page .navbar .navbar-header .navbar-brand .icon {
+          width: 50px;
+          text-align: center;
+          display: inline-block; }
+        .landing-page .navbar .navbar-header .navbar-brand .title {
+          margin-left: -10px;
+          display: inline-block; }
+      .landing-page .navbar .navbar-header .navbar-expand-toggle {
+        position: absolute;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        border: 0px;
+        -moz-transition: all 0.25s linear;
+        -webkit-transition: all 0.25s linear;
+        transition: all 0.25s linear;
+        opacity: 0.75; }
 
 .row-example > [class*="col-"] {
   margin-bottom: 0px; }
@@ -1061,4 +1130,5 @@ body.login-page {
     font-size: 50px; } }
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px; } }
+    margin-top: 100px;
+    margin-bottom: 20px; } }

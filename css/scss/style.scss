@@ -882,7 +882,7 @@ a:hover {
 
 // Login Pages
 body.login-page {
-  background: url(../../img/bg.jpg) no-repeat center center fixed; 
+  background: url(../../img/app-header-bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1477,41 +1477,140 @@ body.login-page {
 
 // Landing Pages
 .landing-page {
-  .navbar-header {
-    border-bottom: 0px solid #e7e7e7;
+  font-family: 'Roboto Condensed', sans-serif;
+  .app-header {
+    padding-top: 100px;
+    background-image:url('../../img/app-header-bg.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    margin-bottom: 0;
 
-    .navbar-brand {
-      width: 45px;
-      line-height: 60px;
-      height: 60px;
-      padding: 0;
-      width: 100%;
-      overflow: hidden;
-      font-family: 'Roboto Condensed', sans-serif;
+    .app-logo {
+      margin-bottom: 20px;
+    }
 
-      .icon {
-        width: 50px;
-        text-align: center;
-        display: inline-block;
-      }
+    .app-title {
 
-      .title {
-        margin-left: -10px;
-        display: inline-block;
+    }
+
+    .app-description {
+      margin-bottom: 40px;
+    }
+
+  }
+  .app-content-a, .app-content-b {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .app-content-b.feature-1 {
+
+    background-image:url('../../img/thumbnails/original/picjumbo.com_HNCK3558.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    margin-bottom: 0;
+  }
+  .app-content-b.contact-us {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-image:url('../../img/contact-us-bg.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    margin-bottom: 0;
+
+    .contact-us-header {
+      font-weight: 300;
+      font-size: 46px;
+    }
+
+    .contact-us-description {
+      font-weight: 300;
+      font-size: 18px;
+      opacity: 0.9;
+      text-indent: 40px;
+    }
+
+    form {
+      margin-top: 20px;
+      input {
+        padding: 10px;
+        width: 100%;
+        border: 0px;
       }
     }
-    .navbar-expand-toggle {
-      position: absolute;
-      right: 0;
-      width: 60px;
-      height: 60px;
-      background-color: transparent;
-      border: 0px;
-      -moz-transition: all 0.25s linear;
-      -webkit-transition: all 0.25s linear;
-      transition: all 0.25s linear;
+  }
+  .app-content-header {
+    font-weight: 300;
+    font-size: 46px;
+  }
+  .app-content-description {
+    font-weight: 300;
+    font-size: 18px;
+  }
 
-      opacity: 0.75;
+  .app-footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .navbar {
+    padding-left: 0px;
+    background-color: transparent;
+    box-shadow: none;
+    
+    .navbar-header {
+      border-bottom: 0px solid #e7e7e7;
+
+      .navbar-brand {
+        width: 45px;
+        line-height: 60px;
+        height: 60px;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        font-family: 'Roboto Condensed', sans-serif;
+
+        .icon {
+          width: 50px;
+          text-align: center;
+          display: inline-block;
+        }
+
+        .title {
+          margin-left: -10px;
+          display: inline-block;
+        }
+      }
+      .navbar-expand-toggle {
+        position: absolute;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        border: 0px;
+        -moz-transition: all 0.25s linear;
+        -webkit-transition: all 0.25s linear;
+        transition: all 0.25s linear;
+
+        opacity: 0.75;
+      }
     }
   }
 }
@@ -1644,6 +1743,7 @@ body.login-page {
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 100px;
+    margin-bottom: 20px;
   }
 }
