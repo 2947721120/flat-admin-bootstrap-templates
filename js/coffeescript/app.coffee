@@ -15,6 +15,9 @@ $ ->
       radioClass: 'iradio_flat'
     return
 
+$ ->
+  $('select').select2();
+
 # Bootstrap Toggle
 $ ->
   $('.toggle-checkbox').bootstrapSwitch();
