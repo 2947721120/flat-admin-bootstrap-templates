@@ -271,19 +271,19 @@ $ ->
   ctx = $('#jumbotron-line-chart').get(0).getContext('2d')
   options = 
     showScale: false
-    scaleShowGridLines : false,
+    scaleShowGridLines : true,
     scaleGridLineColor : "rgba(0,0,0,.05)",
-    scaleGridLineWidth : 0,
-    scaleShowHorizontalLines: false,
-    scaleShowVerticalLines: false,
+    scaleGridLineWidth : 1,
+    scaleShowHorizontalLines: true,
+    scaleShowVerticalLines: true,
     bezierCurve : false,
     bezierCurveTension : 0.4,
-    pointDot : false,
-    pointDotRadius : 0,
-    pointDotStrokeWidth : 2,
+    pointDot : true,
+    pointDotRadius : 4,
+    pointDotStrokeWidth : 1,
     pointHitDetectionRadius : 20,
     datasetStroke : true,
-    datasetStrokeWidth : 4,
+    datasetStrokeWidth : 2,
     datasetFill : true,
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
 

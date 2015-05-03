@@ -1,5 +1,6 @@
 
 $color-white: #FFF;
+$color-light-grey-1: #FDFDFD;
 $color-light-grey: #F9F9F9;
 $color-lighter-grey: #F0F0F0;
 $color-grey: #EAEAEA;
@@ -275,7 +276,7 @@ $theme-danger-color: $color-red;
 
   .card {
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    border: 1px solid $color-grey-level1;
+    border: 0px solid $color-grey-level1;
     .card-header {
       border-bottom: 1px solid $color-grey-level1;
       .title {
@@ -332,6 +333,24 @@ $theme-danger-color: $color-red;
   }
   .card.summary-inline.dark:hover {
     background-color: $color-darkest-blue;
+  }
+
+  .card.card-success {
+    .card-header {
+      background-color: $color-green-sea;
+      .title {
+        color: $color-white;
+      }
+    }
+  }
+
+  .card.card-info {
+    .card-header {
+      background-color: $color-blue;
+      .title {
+        color: $color-white;
+      }
+    }
   }
 
    // Panel
@@ -755,6 +774,13 @@ $theme-danger-color: $color-red;
       }
     }
   }
+  .table.table-striped {
+    & > tbody {
+      & > tr:nth-of-type(odd) {
+        background-color: $color-light-grey-1;
+      }
+    }
+  }
 
   // Login page
   .login-box {
@@ -1100,6 +1126,12 @@ $theme-danger-color: $color-red;
           background-color: transparent;
         }
       }
+    }
+  }
+
+  .navbar.affix {
+    .navbar-brand {
+      color: $color-dark-blue;
     }
   }
 

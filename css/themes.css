@@ -110,7 +110,7 @@
         color: #FFF; }
   .flat-blue .card {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #E4E4E4; }
+    border: 0px solid #E4E4E4; }
     .flat-blue .card .card-header {
       border-bottom: 1px solid #E4E4E4; }
       .flat-blue .card .card-header .title {
@@ -136,6 +136,14 @@
     background-color: #3E4651; }
   .flat-blue .card.summary-inline.dark:hover {
     background-color: #09486b; }
+  .flat-blue .card.card-success .card-header {
+    background-color: #1ABC9C; }
+    .flat-blue .card.card-success .card-header .title {
+      color: #FFF; }
+  .flat-blue .card.card-info .card-header {
+    background-color: #22A7F0; }
+    .flat-blue .card.card-info .card-header .title {
+      color: #FFF; }
   .flat-blue .panel.panel-default {
     border: 1px solid #EAEAEA; }
     .flat-blue .panel.panel-default .panel-heading {
@@ -374,6 +382,8 @@
     border-color: #EAEAEA; }
   .flat-blue .table > thead > tr > th {
     border-color: #EAEAEA; }
+  .flat-blue .table.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #FDFDFD; }
   .flat-blue .login-box .login-form .login-header {
     color: #FFF; }
   .flat-blue .login-box .login-form .login-body {
@@ -544,6 +554,8 @@
   box-shadow: none; }
   .flat-blue.landing-page .navbar .navbar-nav > .active > a {
     background-color: transparent; }
+.flat-blue.landing-page .navbar.affix .navbar-brand {
+  color: #3E4651; }
 .flat-blue.landing-page .app-header .app-btn {
   background-color: transparent;
   border: 2px solid #FFF; }

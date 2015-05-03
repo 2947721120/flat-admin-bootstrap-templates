@@ -13,7 +13,7 @@ body {
 .row > [class*="col-"] {
   margin-bottom: 25px; }
 
-.row.no-margin > [class*="col-"] {
+.row.no-margin-bottom > [class*="col-"] {
   margin-bottom: 10px; }
 
 .row.no-gap {
@@ -38,11 +38,20 @@ body {
 .no-margin-bottom {
   margin-bottom: 0; }
 
+.no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0; }
+
 a {
   text-decoration: none; }
 
 a:hover {
   text-decoration: none; }
+
+.font-weight-300 {
+  font-weight: 300; }
 
 .text-indent {
   text-indent: 1em; }
@@ -400,6 +409,8 @@ a:hover {
         padding-left: 0.4em;
         font-size: 0.8em;
         opacity: 0.8; }
+  .card .card-body.half-padding {
+    padding: 12.5px; }
   .card .card-header .card-title {
     padding: 1.2em 25px;
     float: left; }
@@ -927,6 +938,30 @@ body.login-page {
     content: '\f105';
     margin-right: 3px; }
 
+.message-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .message-list > a > li {
+    border-bottom: 1px dotted #EEE;
+    padding: 8px; }
+    .message-list > a > li > .message-block {
+      padding-left: 70px;
+      min-height: 60px; }
+      .message-list > a > li > .message-block .username {
+        font-size: 12px;
+        font-weight: bold; }
+      .message-list > a > li > .message-block .message-datetime {
+        font-size: 10px;
+        color: #AAA; }
+      .message-list > a > li > .message-block .message {
+        font-size: 12px; }
+    .message-list > a > li .profile-img {
+      width: 60px;
+      height: 60px; }
+  .message-list > a:hover li {
+    background-color: rgba(0, 0, 0, 0.01); }
+
 .bs-example > * {
   margin-bottom: 20px; }
 .bs-example > *:last-child {
@@ -997,6 +1032,28 @@ body.login-page {
     margin-bottom: 0; }
     .landing-page .app-footer p {
       margin: 0; }
+  .landing-page .navbar-affix {
+    width: 100%;
+    height: 60px;
+    border-top: 2px rgba(78, 205, 196, 0.8);
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    position: fixed;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(96, 100, 109, 0.4);
+    box-shadow: 0px 0px 6px 0px rgba(96, 100, 109, 0.4); }
+  .landing-page .navbar.affix {
+    z-index: 4000;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    height: 60px;
+    opacity: 1;
+    margin-top: 0px; }
+  .landing-page .navbar-affix.affix li a {
+    height: 60px;
+    line-height: 60px; }
+  .landing-page .navbar-affix.affix .navbar-nav > li > a {
+    background-color: transparent;
+    font-weight: 400;
+    color: #333; }
   .landing-page .navbar {
     padding-left: 0px;
     background-color: transparent;
