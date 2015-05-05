@@ -2,7 +2,9 @@
 
 * Update for V.2 -> Rewrite Everything from V.1
 
-Completely free bootstrap templates with Bootstrap 3.
+## [Live Demo](http://www.tui2tone.me/flat-admin-bootstrap-templates/)
+
+Completely free bootstrap administrator templates with Bootstrap 3.
 
 - Resposive admin templates for all devices.
 - A lot  of UI Kits with Bootstrap
@@ -30,4 +32,5 @@ Login
 Landing Pages
 ![SS](http://templates.tui2tone.me/assets/img/flat-admin/landing-pages.png)
 
-[Live Demo](http://www.tui2tone.me/flat-admin-bootstrap-templates/)
+Made w/ Love<br>
+Tui2Tone
