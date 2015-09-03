@@ -2,7 +2,7 @@
 
 * Update for V.2 -> Rewrite Everything from V.1
 
-## [Live Demo](http://www.tui2tone.me/flat-admin-bootstrap-templates/)
+## [Live Demo](http://tui2tone.github.io/flat-admin-bootstrap-templates/html/)
 
 Completely free bootstrap administrator templates with Bootstrap 3.
 
@@ -24,13 +24,13 @@ Completely free bootstrap administrator templates with Bootstrap 3.
 ## Screenshot
 
 Dashboard
-![SS](http://templates.tui2tone.me/assets/img/flat-admin/flat-admin-v2-1.png)
+![SS](http://tui2tone.github.io/templates/assets/img/flat-admin/flat-admin-v2-1.png)
 
 Login
-![SS](http://templates.tui2tone.me/assets/img/flat-admin/login-pages.png)
+![SS](http://tui2tone.github.io/templates/assets/img/flat-admin/login-pages.png)
 
 Landing Pages
-![SS](http://templates.tui2tone.me/assets/img/flat-admin/landing-pages.png)
+![SS](http://tui2tone.github.io/templates/assets/img/flat-admin/landing-pages.png)
 
 Made w/ Love<br>
 Tui2Tone
