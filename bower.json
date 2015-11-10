@@ -1,0 +1,16 @@
+{
+  "name": "flat-admin-bootstrap-templates",
+  "dependencies": {
+    "jquery":"latest",
+    "bootstrap":"latest",
+    "font-awesome":"latest",
+    "datatables":"latest",
+    "iCheck":"latest",
+    "Chart.js":"latest",
+    "bootstrap-switch":"latest",
+    "matchHeight":"latest",
+    "select2":"latest",
+    "animate.css": "latest"
+  },
+  "private": true
+}

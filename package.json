@@ -1,0 +1,9 @@
+{
+  "name": "flat-admin-bootstrap-templates",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-coffee": "*",
+    "gulp-sass": "*"
+  },
+  "private": true
+}
