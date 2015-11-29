@@ -554,10 +554,13 @@
   box-shadow: none; }
   .flat-blue.landing-page .navbar .navbar-nav > .active > a {
     background-color: transparent; }
+
 .flat-blue.landing-page .navbar.affix .navbar-brand {
   color: #3E4651; }
+
 .flat-blue.landing-page .app-header .app-btn {
   background-color: transparent;
   border: 2px solid #FFF; }
+
 .flat-blue.landing-page .app-content-a {
   background-color: #EAEAEA; }

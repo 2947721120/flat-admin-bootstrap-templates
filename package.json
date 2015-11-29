@@ -3,7 +3,8 @@
   "devDependencies": {
     "gulp": "*",
     "gulp-coffee": "*",
-    "gulp-sass": "*"
+    "gulp-sass": "*",
+    "browser-sync": "*"
   },
   "private": true
 }
