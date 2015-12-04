@@ -1,6 +1,8 @@
 # Flat Admin V.2 Bootstrap Templates
 
-* Update for V.2 -> Rewrite Everything from V.1
+### Change log (v2.0.1)
+
+* Fix mobile sidebar bugs
 
 ## [Live Demo](http://tui2tone.github.io/flat-admin-bootstrap-templates/html/)
 
