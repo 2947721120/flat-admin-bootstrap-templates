@@ -91,7 +91,8 @@ a:hover {
       height: 60px;
       background-color: transparent;
       border: 0px;
-      float: left;
+      position: absolute;
+      right: 0;
       -moz-transition: all 0.25s linear;
       -webkit-transition: all 0.25s linear;
       transition: all 0.25s linear;
@@ -292,8 +293,10 @@ a:hover {
 
 .app-container.expanded .app-footer {
   left: 250px; }
+
 .app-container.expanded .content-container .navbar-top {
   padding-left: 250px; }
+
 .app-container.expanded .content-container .side-menu {
   width: 250px; }
   .app-container.expanded .content-container .side-menu .navbar-header .navbar-brand .title {
@@ -374,25 +377,24 @@ a:hover {
         position: absolute; }
     .navbar .navbar-right.expanded {
       right: 0; }
-
-  .content-container .side-menu {
-    margin-left: -60px;
-    width: 60px; }
-  .content-container .side-menu:hover {
-    width: 60px; }
-  .content-container .side-body {
+  .app-container .navbar-top {
+    min-width: 300px; }
+  .app-container .content-container .side-menu {
+    margin-left: -250px;
+    width: 0px; }
+  .app-container .content-container .side-body {
     margin-left: 10px; }
-
-  .content-container.expanded .navbar-top {
+  .app-container.expanded .navbar-top {
+    min-width: 480px;
     padding-left: 0px; }
-  .content-container.expanded .side-menu {
+  .app-container.expanded .side-menu {
     margin-left: 0px;
     width: 250px; }
-  .content-container.expanded .side-body {
+  .app-container.expanded .side-body {
     margin-left: 10px; }
-
   .app-container .app-footer {
     left: 0; } }
+
 /* Card */
 .card {
   background-color: #FFF;
@@ -453,6 +455,7 @@ a:hover {
 
 .card.profile .card-body {
   padding: 0.5em 0.8em; }
+
 .card.profile .card-footer {
   padding: 0.5em 0.8em; }
 
@@ -527,9 +530,11 @@ a:hover {
 
 .list-group .badge {
   border-radius: 3px; }
+
 .list-group .list-group-item:last-child {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px; }
+
 .list-group .list-group-item:first-child {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px; }
@@ -611,24 +616,31 @@ body.login-page {
   body.login-page .login-box {
     width: 100%;
     max-width: 260px; } }
+
 .dataTables_wrapper .row {
   margin-bottom: 0.5em; }
+
 .dataTables_wrapper .top {
   margin-bottom: 6px;
   position: relative; }
+
 .dataTables_wrapper .bottom {
   margin-top: 6px; }
+
 .dataTables_wrapper .top:after, .dataTables_wrapper .bottom:after {
   position: relative;
   clear: both;
   display: block;
   content: ''; }
+
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   padding: 0;
   margin-left: 0;
   border: 0; }
+
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
   border: 0; }
+
 .dataTables_wrapper tfoot {
   display: none; }
 
@@ -641,6 +653,7 @@ body.login-page {
   .nav-tabs > li > a {
     border-radius: 0;
     border: 0; }
+
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
   border-radius: 0;
   border-top: 0; }
@@ -769,6 +782,7 @@ body.login-page {
     border-bottom-right-radius: 3px; }
   .step .nav-tabs > li:last-child:before, .step .nav-tabs > li:last-child:after {
     display: none; }
+
 .step .tab-content > div {
   padding: 0; }
 
@@ -776,6 +790,7 @@ body.login-page {
   margin-bottom: 0px; }
   .step.card-no-padding .nav-tabs > li {
     border-radius: 0; }
+
 .step.card-no-padding .tab-content > div {
   padding: 20px; }
 
@@ -785,6 +800,7 @@ body.login-page {
   vertical-align: top; }
   .step.tabs-left .tab-content > div {
     padding: 20px; }
+
 .step.tabs-left .nav-tabs {
   border-bottom: 0px;
   margin-left: 0;
@@ -861,6 +877,7 @@ body.login-page {
     display: none; }
   .step .nav-tabs > li:before {
     display: none; } }
+
 .loader-container {
   display: none; }
 
@@ -891,6 +908,7 @@ body.login-page {
     font-size: 2.5em; }
   .pricing-table .pt-header .plan-pricing .pricing-type {
     opacity: 0.9; }
+
 .pricing-table .pt-body {
   padding: 1em;
   text-align: center; }
@@ -898,6 +916,7 @@ body.login-page {
     padding: 0;
     margin: 0;
     list-style: none; }
+
 .pricing-table .pt-footer {
   padding: 0.75em;
   text-align: center; }
@@ -964,6 +983,7 @@ body.login-page {
 
 .bs-example > * {
   margin-bottom: 20px; }
+
 .bs-example > *:last-child {
   margin-bottom: 5px; }
 
@@ -1168,23 +1188,20 @@ body.login-page {
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px; }
-
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0; }
-
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px; }
-
   /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4; }
-
   .featurette-heading {
     font-size: 50px; } }
+
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 100px;
