@@ -14,7 +14,7 @@ gulp.task('build', function(cb) {
       .pipe(replace('bower_components/font-awesome/css/font-awesome.min.css', 'lib/css/font-awesome.min.css'))
       .pipe(replace('bower_components/animate.css/animate.min.css', 'lib/css/animate.min.css'))
       .pipe(replace('bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css', 'lib/css/bootstrap-switch.min.css'))
-      .pipe(replace('bower_components/iCheck/skins/flat/_all.css', 'lib/css/_all.css'))
+      .pipe(replace('bower_components/iCheck/skins/flat/_all.css', 'lib/css/icheck.css'))
       .pipe(replace('bower_components/DataTables/media/css/jquery.dataTables.min.css', 'lib/css/jquery.dataTables.min.css'))
       .pipe(replace('bower_components/datatables/media/css/dataTables.bootstrap.css', 'lib/css/dataTables.bootstrap.css'))
       .pipe(replace('bower_components/select2/dist/css/select2.min.css', 'lib/css/select2.min.css'))
@@ -60,6 +60,7 @@ gulp.task('build', function(cb) {
     gulp.src(acejs_lib).pipe(gulp.dest('./dist/lib/js/ace'));
     gulp.src(css_lib).pipe(gulp.dest('./dist/lib/css'));
     gulp.src(fonts_lib).pipe(gulp.dest('./dist/lib/fonts'));
+    gulp.src("./dist/lib/css/_all.css").pipe(rename("./dist/lib/css/icheck.css")).pipe(gulp.dest("./"));
 });
 
 gulp.task('coffee', function() {
