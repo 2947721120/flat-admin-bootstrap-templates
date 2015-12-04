@@ -1,6 +1,6 @@
 # Flat Admin V.2 Bootstrap Templates
 
-### Change log (v2.0.1)
+#### Change log (v2.0.1)
 
 * Fix mobile sidebar bugs
 
