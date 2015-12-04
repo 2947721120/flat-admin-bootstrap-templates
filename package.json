@@ -1,10 +1,14 @@
 {
   "name": "flat-admin-bootstrap-templates",
   "devDependencies": {
+    "browser-sync": "*",
     "gulp": "*",
     "gulp-coffee": "*",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
     "gulp-sass": "*",
-    "browser-sync": "*"
+    "main-bower-files": "^2.9.0",
+    "rimraf": "^2.4.4"
   },
   "private": true
 }
