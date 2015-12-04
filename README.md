@@ -4,6 +4,7 @@
 
 * Fix mobile sidebar bugs
 
+
 ## [Live Demo](http://tui2tone.github.io/flat-admin-bootstrap-templates/html/)
 
 Completely free bootstrap administrator templates with Bootstrap 3.
@@ -22,6 +23,7 @@ Completely free bootstrap administrator templates with Bootstrap 3.
   - Landing Pages
 - Build with Coffeescript and SASS
 
+#### [Download V2.0.1](https://github.com/tui2tone/flat-admin-bootstrap-templates/archive/v2.0.1.zip)
 
 ## Screenshot
 
