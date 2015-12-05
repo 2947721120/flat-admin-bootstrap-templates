@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../../bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
-    <link rel="stylesheet" type="text/css" href="../../bower_components/iCheck/skins/flat/_all.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/checkbox3/dist/checkbox3.min.css">
     <link rel="stylesheet" type="text/css" href="../../bower_components/DataTables/media/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="../../bower_components/datatables/media/css/dataTables.bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../../bower_components/select2/dist/css/select2.min.css">
@@ -268,54 +268,72 @@
                                     <div>
                                         <textarea class="form-control" rows="3"></textarea>
                                     </div>
-                                    <div class="sub-title">Checkboxes and radios <span class="description">( with <a href="https://github.com/fronteed/iCheck">iCheck</a> )</span></div>
+                                    <div class="sub-title">Checkboxes and radios <span class="description">( with <a href="https://github.com/tui2tone/checkbox3">checkbox3</a> )</span></div>
                                     <div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" class="input-checkbox" value=""> Option one is this and that&mdash;be sure to include why it's great
-                                            </label>
+                                        <div class="checkbox3 checkbox-round">
+                                          <input type="checkbox" id="checkbox-2">
+                                          <label for="checkbox-2">
+                                            Option one is this and that&mdash;be sure to include why it's great
+                                          </label>
                                         </div>
-                                        <div class="checkbox disabled">
-                                            <label>
-                                                <input type="checkbox" class="input-checkbox" value="" disabled> Option two is disabled
-                                            </label>
+                                        <div class="checkbox3 checkbox-round">
+                                          <input type="checkbox" id="checkbox-3" disabled="">
+                                          <label for="checkbox-3">
+                                            Option two is disabled
+                                          </label>
                                         </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" class="input-radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Option one is this and that&mdash;be sure to include why it's great
-                                            </label>
+                                        <div class="radio3">
+                                          <input type="radio" id="radio1" name="radio1" value="option1">
+                                          <label for="radio1">
+                                            Option one is this and that&mdash;be sure to include why it's great
+                                          </label>
                                         </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" class="input-radio" name="optionsRadios" id="optionsRadios2" value="option2"> Option two can be something else and selecting it will deselect option one
-                                            </label>
+                                        <div class="radio3">
+                                          <input type="radio" id="radio2" name="radio1" value="option2">
+                                          <label for="radio2">
+                                            Option two can be something else and selecting it will deselect option one
+                                          </label>
                                         </div>
-                                        <div class="radio disabled">
-                                            <label>
-                                                <input type="radio" class="input-radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled> Option three is disabled
+                                        <div class="sub-title">Inline</div>
+                                        <div>
+                                          <div class="checkbox3 checkbox-inline checkbox-check checkbox-light">
+                                            <input type="checkbox" id="checkbox-fa-light-1" checked="">
+                                            <label for="checkbox-fa-light-1">
+                                              Option1
                                             </label>
+                                          </div>
+                                          <div class="checkbox3 checkbox-success checkbox-inline checkbox-check checkbox-round  checkbox-light">
+                                            <input type="checkbox" id="checkbox-fa-light-2" checked="">
+                                            <label for="checkbox-fa-light-2">
+                                              Option Round
+                                            </label>
+                                          </div>
+                                          <div class="checkbox3 checkbox-danger checkbox-inline checkbox-check  checkbox-circle checkbox-light">
+                                            <input type="checkbox" id="checkbox-fa-light-3" checked="">
+                                            <label for="checkbox-fa-light-3">
+                                              Option Circle
+                                            </label>
+                                          </div>
                                         </div>
                                         <div>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" class="input-checkbox" id="inlineCheckbox1" value="option1"> 1
+                                          <div class="radio3 radio-check radio-inline">
+                                            <input type="radio" id="radio4" name="radio2" value="option1" checked="">
+                                            <label for="radio4">
+                                              Option 1
                                             </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" class="input-checkbox" id="inlineCheckbox2" value="option2"> 2
+                                          </div>
+                                          <div class="radio3 radio-check radio-success radio-inline">
+                                            <input type="radio" id="radio5" name="radio2" value="option2">
+                                            <label for="radio5">
+                                              Option 2
                                             </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" class="input-checkbox" id="inlineCheckbox3" value="option3"> 3
+                                          </div>
+                                          <div class="radio3 radio-check radio-warning radio-inline">
+                                            <input type="radio" id="radio6" name="radio2" value="option3">
+                                            <label for="radio6">
+                                              Option 3
                                             </label>
-                                        </div>
-                                        <div>
-                                            <label class="radio-inline">
-                                                <input type="radio" class="input-radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" class="input-radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" class="input-radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-                                            </label>
+                                          </div>
                                         </div>
                                     </div>
                                     <div class="sub-title">Toggle <span class="description">( with <a href="https://github.com/nostalgiaz/bootstrap-switch">bootstrap-switch</a> )</span></div>
@@ -415,9 +433,12 @@
                                             <p class="help-block">Example block-level help text here.</p>
                                         </div>
                                         <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" class="input-checkbox"> Check me out
+                                          <div class="checkbox3 checkbox-round">
+                                            <input type="checkbox" id="checkbox-1">
+                                            <label for="checkbox-1">
+                                              Check me out
                                             </label>
+                                          </div>
                                         </div>
                                         <button type="submit" class="btn btn-default">Submit</button>
                                     </form>
@@ -473,11 +494,12 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-offset-2 col-sm-10">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" class="input-checkbox"> Remember me
-                                                    </label>
-                                                </div>
+                                              <div class="checkbox3 checkbox-round checkbox-check checkbox-light">
+                                                <input type="checkbox" id="checkbox-10">
+                                                <label for="checkbox-10">
+                                                  Remember me
+                                                </label>
+                                              </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -504,7 +526,7 @@
             <script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
             <script type="text/javascript" src="../../bower_components/Chart.js/Chart.min.js"></script>
             <script type="text/javascript" src="../../bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
-            <script type="text/javascript" src="../../bower_components/iCheck/icheck.min.js"></script>
+
             <script type="text/javascript" src="../../bower_components/matchHeight/jquery.matchHeight-min.js"></script>
             <script type="text/javascript" src="../../bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
             <script type="text/javascript" src="../../bower_components/DataTables/media/js/dataTables.bootstrap.min.js"></script>

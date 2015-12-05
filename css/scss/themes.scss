@@ -67,7 +67,7 @@ $theme-danger-color: $color-red;
     opacity: 0.7;
     color: $color-dark-blue;
   }
-  
+
   // Navbar
   .navbar {
     background-color: $color-dark-blue;
@@ -113,14 +113,14 @@ $theme-danger-color: $color-red;
         }
       }
       & > li.open {
-        
+
         & > a {
           background-color: transparent;
           color: $color-red;
         }
       }
       & > li.danger {
-        
+
         & > a {
           background-color: $theme-danger-color;
           color: $color-white;
@@ -227,7 +227,7 @@ $theme-danger-color: $color-red;
   }
   /* small screen */
   @media (max-width: 768px) {
-    .navbar { 
+    .navbar {
       .navbar-right {
         background-color: $color-dark-blue;
         .open {
@@ -840,7 +840,7 @@ $theme-danger-color: $color-red;
       & > a:hover {
         background-color: $color-white;
       }
-    } 
+    }
   }
 
 
@@ -951,11 +951,11 @@ $theme-danger-color: $color-red;
       & > li.step-success:after {
         border-left: 15px solid $color-clear-green-sea;
       }
-      & > li.step-success.active:hover:after { 
+      & > li.step-success.active:hover:after {
         border-left: 15px solid $color-clear-green-sea;
       }
 
-      & > li.step-success:hover:after { 
+      & > li.step-success:hover:after {
         border-left: 15px solid $color-grey;
       }
 
@@ -1116,6 +1116,9 @@ $theme-danger-color: $color-red;
 
 // Landing Pages
 .flat-blue.landing-page {
+  .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: transparent;
+  }
   .navbar {
     background-color: transparent;
     box-shadow: none;
@@ -1127,11 +1130,36 @@ $theme-danger-color: $color-red;
         }
       }
     }
+    .navbar-collapse {
+      border: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      .navbar-collapse {
+        background-color: #333;
+      }
+      .navbar-right {
+        background-color: transparent;
+        color: #FFF;
+      }
+    }
+    .navbar.affix {
+      .navbar-nav > li > a {
+        color: #FFF;
+      }
+    }
   }
 
   .navbar.affix {
     .navbar-brand {
       color: $color-dark-blue;
+    }
+    .navbar-toggle {
+      .icon-bar {
+          background-color: $color-dark-blue;
+      }
     }
   }
 
