@@ -14,7 +14,7 @@ gulp.task('build', function(cb) {
       .pipe(replace('bower_components/font-awesome/css/font-awesome.min.css', 'lib/css/font-awesome.min.css'))
       .pipe(replace('bower_components/animate.css/animate.min.css', 'lib/css/animate.min.css'))
       .pipe(replace('bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css', 'lib/css/bootstrap-switch.min.css'))
-      .pipe(replace('bower_components/iCheck/skins/flat/_all.css', 'lib/css/icheck.css'))
+      .pipe(replace('bower_components/checkbox3/dist/checkbox3.min.css', 'lib/css/checkbox3.min.css'))
       .pipe(replace('bower_components/DataTables/media/css/jquery.dataTables.min.css', 'lib/css/jquery.dataTables.min.css'))
       .pipe(replace('bower_components/datatables/media/css/dataTables.bootstrap.css', 'lib/css/dataTables.bootstrap.css'))
       .pipe(replace('bower_components/select2/dist/css/select2.min.css', 'lib/css/select2.min.css'))
@@ -38,7 +38,7 @@ gulp.task('build', function(cb) {
     css_lib = []
     fonts_lib = []
     acejs_lib = []
-    for(var i = 0; i < lib.length - 1; i++) {
+    for(var i = 0; i < lib.length; i++) {
       if(lib[i].indexOf('.js') > -1) {
         if(lib[i].indexOf('/ace-builds/') > -1) {
           acejs_lib.push(lib[i])

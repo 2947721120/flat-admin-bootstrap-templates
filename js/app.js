@@ -10,18 +10,13 @@ $(function() {
 });
 
 $(function() {
-  $('.input-checkbox, .input-radio').iCheck({
-    checkboxClass: 'icheckbox_flat',
-    radioClass: 'iradio_flat'
-  });
-});
-
-$(function() {
   return $('select').select2();
 });
 
 $(function() {
-  return $('.toggle-checkbox').bootstrapSwitch();
+  return $('.toggle-checkbox').bootstrapSwitch({
+    size: "small"
+  });
 });
 
 $(function() {
