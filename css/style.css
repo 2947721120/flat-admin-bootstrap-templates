@@ -398,7 +398,7 @@ a:hover {
 /* Card */
 .card {
   background-color: #FFF;
-  border-radius: 3px;
+  border-radius: 1px;
   overflow: hidden;
   position: relative; }
   .card .card-body {
@@ -460,7 +460,7 @@ a:hover {
   padding: 0.5em 0.8em; }
 
 .panel {
-  border-radius: 3px; }
+  border-radius: 1px; }
   .panel .panel-heading {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px; }
@@ -475,15 +475,15 @@ a:hover {
 .btn {
   margin-top: 5px;
   margin-bottom: 5px;
-  border-radius: 3px;
+  border-radius: 1px;
   border-width: 1px;
   font-family: 'Roboto Condensed', sans-serif; }
 
 .btn-group-lg > .btn, .btn-group-lg > .btn-lg {
-  border-radius: 3px; }
+  border-radius: 1px; }
 
 .progress {
-  border-radius: 3px;
+  border-radius: 1px;
   box-shadow: none; }
   .progress .progress-bar {
     box-shadow: none; }
@@ -499,7 +499,7 @@ a:hover {
     border-bottom-right-radius: 3px; }
 
 .form-control {
-  border-radius: 3px;
+  border-radius: 1px;
   box-shadow: none; }
 
 .bs-example-modal .modal {
@@ -512,7 +512,7 @@ a:hover {
   .modal .modal-dialog .modal-header {
     font-family: 'Roboto Condensed', sans-serif; }
   .modal .modal-dialog .modal-content {
-    border-radius: 3px;
+    border-radius: 1px;
     box-shadow: none; }
   .modal .modal-dialog .modal-footer .btn {
     margin-top: 0;
@@ -526,10 +526,10 @@ a:hover {
 
 .alert {
   border-width: 0px;
-  border-radius: 3px; }
+  border-radius: 1px; }
 
 .list-group .badge {
-  border-radius: 3px; }
+  border-radius: 1px; }
 
 .list-group .list-group-item:last-child {
   border-bottom-right-radius: 3px;
@@ -559,10 +559,10 @@ a:hover {
   font-weight: normal; }
 
 .bootstrap-switch {
-  border-radius: 3px; }
+  border-radius: 1px; }
 
 .thumbnail {
-  border-radius: 3px;
+  border-radius: 1px;
   padding: 0; }
   .thumbnail .caption {
     padding: 0.5em 1.2em; }
@@ -596,17 +596,17 @@ body.login-page {
       font-size: 1.5em; }
     body.login-page .login-form .login-body {
       padding: 1.5em;
-      border-radius: 2px; }
+      border-radius: 1px; }
     body.login-page .login-form input {
       margin-bottom: 0.8em;
       margin-top: 0.5em;
       padding: 1.2em 1em;
       font-size: 1.1em;
-      border-radius: 2px; }
+      border-radius: 1px; }
   body.login-page .login-button .btn {
     padding: 0.5em 2em;
     font-size: 1.1em;
-    border-radius: 2px;
+    border-radius: 1px;
     margin-bottom: 0; }
   body.login-page .login-footer {
     padding-top: 8px;
@@ -905,7 +905,7 @@ body.login-page {
   width: 100%;
   height: 100%;
   z-index: 1001;
-  border-radius: 3px; }
+  border-radius: 1px; }
 
 .pricing-table .pt-header {
   text-align: center;

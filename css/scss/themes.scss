@@ -7,6 +7,7 @@ $color-grey: #EAEAEA;
 $color-grey-level1: #E4E4E4;
 $color-grey-level2: #DDD;
 $color-grey-level3: #CCC;
+$color-dark-grey: #2f2f30;
 
 
 $color-clearer-dark-blue: #9eaabd;
@@ -69,7 +70,102 @@ $theme-danger-color: $color-red;
   }
 
   // Navbar
-  .navbar {
+  .navbar, .navbar.navbar-default {
+    border-bottom: 0px;
+
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+
+    & > .container-fluid {
+      background-color: $color-white;
+    }
+
+    .navbar-header {
+
+      .navbar-brand {
+        color: $color-light-grey;
+      }
+
+      .navbar-expand-toggle {
+        color: $color-dark-blue;
+      }
+      .navbar-right-expand-toggle {
+        color: $color-dark-blue;
+      }
+    }
+
+    .navbar-breadcrumb {
+      li {
+        color: $color-dark-blue;
+        a {
+          color: $color-dark-blue;
+        }
+      }
+    }
+    .navbar-nav {
+      & > li {
+        & > a {
+          color: $color-dark-blue;
+        }
+      }
+      & > li:hover {
+        & > a {
+          color: $color-dark-blue-1;
+        }
+      }
+      & > li.open {
+
+        & > a {
+          background-color: transparent;
+          color: $color-red;
+        }
+      }
+      & > li.danger {
+
+        & > a {
+          background-color: $theme-danger-color;
+          color: $color-white;
+        }
+      }
+      .dropdown-menu {
+        background-color: $color-light-grey;
+        border-color: $color-dark-blue;
+        .title {
+          background-color: $color-white;
+          .badge {
+            background-color: $color-dark-blue;
+          }
+        }
+      }
+      .dropdown-menu.danger {
+        border-color: $theme-danger-color;
+        .title {
+          background-color: $theme-danger-color;
+          color: $color-white;
+
+          .badge {
+            background-color: $color-white;
+            color: $theme-danger-color;
+          }
+        }
+      }
+      .dropdown.profile {
+        .dropdown-menu {
+          border-color: $color-blue;
+          li.profile-img {
+            background-color: $color-blue;
+          }
+        }
+      }
+      .dropdown.profile.open {
+        & > a {
+          background-color: $color-blue;
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  .navbar.navbar-inverse {
     background-color: $color-dark-blue;
     border-bottom: 0px;
 
@@ -167,10 +263,12 @@ $theme-danger-color: $color-red;
 
   // Menu Bar
   .side-menu {
-    background-color: $color-grey;
+    background-color: $color-white;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.08);
 
     .navbar-header {
-      background-color: $color-dark-blue-hover;
+      background-color: $color-blue;
+      margin-bottom: 4px;
       .navbar-brand {
         color: $color-light-red;
       }
@@ -181,7 +279,7 @@ $theme-danger-color: $color-red;
     }
 
     .navbar {
-      background-color: $color-grey;
+      background-color: $color-white;
       border-bottom: 0px;
 
       -moz-box-shadow: none;
@@ -196,8 +294,8 @@ $theme-danger-color: $color-red;
       li.active {
 
         & > a {
-          border-right: 2px solid $color-blue;
-          background-color: $color-clear-blue;
+          border-right: 4px solid $color-blue;
+          background-color: $color-white;
         }
       }
       & > li:hover {
@@ -209,7 +307,7 @@ $theme-danger-color: $color-red;
 
       li.dropdown {
 
-        background-color: $color-grey;
+        background-color: $color-white;
         & > .panel-collapse {
           background-color: $color-grey-level1;
         }
