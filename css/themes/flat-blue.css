@@ -160,7 +160,13 @@
       .flat-blue .side-menu.sidebar-inverse .navbar li.dropdown .panel-body {
         padding: 0 7px; }
   @media (max-width: 768px) {
-    .flat-blue .navbar .navbar-right {
+    .flat-blue .navbar.navbar-default .navbar-nav > li {
+      border-left: 0; }
+    .flat-blue .navbar.navbar-default .navbar-right {
+      background-color: #FFF; }
+    .flat-blue .navbar.navbar-inverse .navbar-nav > li {
+      border-left: 0; }
+    .flat-blue .navbar.navbar-inverse .navbar-right {
       background-color: #353d47; } }
   .flat-blue .card.red {
     background-color: #FA2A00;

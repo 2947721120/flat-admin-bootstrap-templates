@@ -620,7 +620,9 @@ a:hover {
   }
   .app-container {
     .app-footer {
-      left: 0;
+      .wrapper {
+        padding-left: 25px;
+      }
     }
   }
 }

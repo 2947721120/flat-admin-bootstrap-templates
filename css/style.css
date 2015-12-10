@@ -395,8 +395,8 @@ a:hover {
     width: 250px; }
   .app-container.expanded .side-body {
     margin-left: 10px; }
-  .app-container .app-footer {
-    left: 0; } }
+  .app-container .app-footer .wrapper {
+    padding-left: 25px; } }
 
 /* Card */
 .card {

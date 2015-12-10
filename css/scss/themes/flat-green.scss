@@ -354,7 +354,22 @@ $theme-danger-color: $color-red;
 
   /* small screen */
   @media (max-width: 768px) {
-    .navbar {
+    .navbar.navbar-default {
+      .navbar-nav > li {
+        border-left: 0;
+      }
+      .navbar-right {
+        background-color: $color-white;
+        .open {
+          .dropdown-menu {
+          }
+        }
+      }
+    }
+    .navbar.navbar-inverse {
+      .navbar-nav > li {
+        border-left: 0;
+      }
       .navbar-right {
         background-color: $color-dark-blue;
         .open {
