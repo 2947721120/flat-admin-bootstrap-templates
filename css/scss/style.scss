@@ -82,7 +82,7 @@ a:hover {
 // Navbar
 .navbar {
   z-index: 10001;
-  padding-left: 50px;
+  padding-left: 60px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 
@@ -165,14 +165,14 @@ a:hover {
         font-family: 'Roboto Condensed', sans-serif;
         height: 60px;
         line-height: 60px;
-        padding: 0px 15px 0px 15px;
+        padding: 0px 20px 0px 20px;
       }
     }
   }
 
   .dropdown-menu {
     padding: 0;
-    border-top: 0;
+    border: 0;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 
@@ -186,9 +186,9 @@ a:hover {
       font-family: 'Roboto Condensed', sans-serif;
       padding: 5px 10px;
 
-      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 
     }
 
@@ -291,9 +291,10 @@ a:hover {
     margin-right: 0;
     margin-left: 0;
     .side-menu {
+      overflow-y: auto;
       z-index: 100000;
       position: fixed;
-      width: 50px;
+      width: 60px;
       height: 100%;
       -webkit-transition: all 0.25s;
       transition: all 0.25s;
@@ -303,7 +304,7 @@ a:hover {
         border-bottom: 0px solid #e7e7e7;
 
         .navbar-brand {
-          width: 45px;
+          width: 455px;
           line-height: 60px;
           height: 60px;
           padding: 0;
@@ -312,7 +313,7 @@ a:hover {
           font-family: 'Roboto Condensed', sans-serif;
 
           .icon {
-            width: 50px;
+            width: 60px;
             text-align: center;
             display: inline-block;
           }
@@ -357,7 +358,7 @@ a:hover {
             white-space: nowrap;
 
             .icon {
-              width: 28px;
+              width: 38px;
               text-align: center;
               font-size: 1.1em;
               display: inline-block;
@@ -542,8 +543,8 @@ a:hover {
 
 /* Main body section */
 .app-container .side-body {
-  margin-left: 60px;
-  margin-right: 10px;
+  margin-left: 75px;
+  margin-right: 15px;
 
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
@@ -597,9 +598,6 @@ a:hover {
         margin-left: -250px;
         width: 0px;
       }
-      // .side-menu:hover {
-      //   width: 0px;
-      // }
       .side-body {
         margin-left: 10px;
       }

@@ -12,7 +12,7 @@ $color-dark-grey: #2f2f30;
 
 $color-clearer-dark-blue: #9eaabd;
 $color-clear-dark-blue: #73849d;
-$color-dark-blue: #3E4651;
+$color-dark-blue: #353d47;
 $color-dark-blue-1: #22A7F0;
 $color-dark-blue-hover: #363c46;
 
@@ -103,6 +103,7 @@ $theme-danger-color: $color-red;
     }
     .navbar-nav {
       & > li {
+        border-left: 1px solid $color-light-grey;
         & > a {
           color: $color-dark-blue;
         }
@@ -113,22 +114,28 @@ $theme-danger-color: $color-red;
         }
       }
       & > li.open {
-
         & > a {
           background-color: transparent;
-          color: $color-red;
+          color: $color-blue;
         }
       }
       & > li.danger {
 
         & > a {
-          background-color: $theme-danger-color;
+          background-color: transparent;
+          border-bottom: 4px solid $theme-danger-color;
+          color: $theme-danger-color;
+        }
+      }
+      & > li.danger.open {
+        & > a {
+          background-color: $color-red;
           color: $color-white;
         }
       }
       .dropdown-menu {
         background-color: $color-light-grey;
-        border-color: $color-dark-blue;
+        border-color: $color-grey-level1;
         .title {
           background-color: $color-white;
           .badge {
@@ -146,20 +153,6 @@ $theme-danger-color: $color-red;
             background-color: $color-white;
             color: $theme-danger-color;
           }
-        }
-      }
-      .dropdown.profile {
-        .dropdown-menu {
-          border-color: $color-blue;
-          li.profile-img {
-            background-color: $color-blue;
-          }
-        }
-      }
-      .dropdown.profile.open {
-        & > a {
-          background-color: $color-blue;
-          color: $color-white;
         }
       }
     }
@@ -199,6 +192,7 @@ $theme-danger-color: $color-red;
     }
     .navbar-nav {
       & > li {
+        border-left: 1px solid $color-dark-blue-hover;
         & > a {
           color: $color-white;
         }
@@ -212,14 +206,20 @@ $theme-danger-color: $color-red;
 
         & > a {
           background-color: transparent;
-          color: $color-red;
+          color: $color-blue;
         }
       }
       & > li.danger {
 
         & > a {
-          background-color: $theme-danger-color;
+          background-color: transparent;
+          border-bottom: 4px solid $theme-danger-color;
           color: $color-white;
+        }
+      }
+      & > li.danger.open {
+        & > a {
+          background-color: $color-red;
         }
       }
       .dropdown-menu {
@@ -242,20 +242,6 @@ $theme-danger-color: $color-red;
             background-color: $color-white;
             color: $theme-danger-color;
           }
-        }
-      }
-      .dropdown.profile {
-        .dropdown-menu {
-          border-color: $color-blue;
-          li.profile-img {
-            background-color: $color-blue;
-          }
-        }
-      }
-      .dropdown.profile.open {
-        & > a {
-          background-color: $color-blue;
-          color: $color-white;
         }
       }
     }
@@ -292,6 +278,7 @@ $theme-danger-color: $color-red;
         }
       }
       li.active {
+        border-left: 0;
 
         & > a {
           border-right: 4px solid $color-blue;
@@ -307,22 +294,64 @@ $theme-danger-color: $color-red;
 
       li.dropdown {
 
-        background-color: $color-white;
+        background-color: transparent;
         & > .panel-collapse {
           background-color: $color-grey-level1;
         }
 
         .panel-body {
-          padding: 0;
+          padding: 0 7px;
+        }
+      }
+    }
+  }
+
+  .side-menu.sidebar-inverse {
+    background-color: $color-dark-blue;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.08);
+
+    .navbar {
+      background-color: $color-dark-blue;
+      border-bottom: 0px;
+
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+
+      li {
+        border-left: 0;
+        & > a {
+          color: $color-white;
+        }
+      }
+      li.active {
+
+        & > a {
+          color: $color-dark-blue;
+          border-left: 3px solid $color-blue;
+          border-right: 0px solid $color-blue;
+          background-color: $color-white;
+        }
+      }
+      & > li:hover {
+        & > a {
+          background-color: $color-red;
+          color: $color-white;
         }
       }
 
-      li:hover {
-        // background-color: rgba(0,0,0,0.1);
-      }
+      li.dropdown {
+        & > .panel-collapse {
+          background-color: rgba(0,0,0,0.1);
+        }
 
+        .panel-body {
+          padding: 0 7px;
+        }
+      }
     }
   }
+
   /* small screen */
   @media (max-width: 768px) {
     .navbar {
@@ -671,7 +700,6 @@ $theme-danger-color: $color-red;
   }
 
   // Alert
-
   .alert.alert-success {
     background-color: $color-clear-green-sea;
     color: $color-darkest-green-sea;
