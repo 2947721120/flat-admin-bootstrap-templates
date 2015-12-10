@@ -207,7 +207,7 @@ a:hover {
         min-width: 250px;
         padding: 8px;
         border: 0;
-        border-bottom: 1px solid #DDD;
+        border-bottom: 1px solid #EEE;
 
         .icon {
           margin-right: 5px;
@@ -273,14 +273,15 @@ a:hover {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 50px;
+    left: 0;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
     font-size: 12px;
     font-family: 'Roboto Condensed', sans-serif;
 
     .wrapper {
-      padding: 10px 25px;
+      padding: 10px 35px;
+      padding-left: 90px;
       height: 50px;
       line-height: 50px;
       vertical-align: middle;
@@ -358,6 +359,7 @@ a:hover {
             white-space: nowrap;
 
             .icon {
+              margin-left: 0px;
               width: 38px;
               text-align: center;
               font-size: 1.1em;
@@ -439,7 +441,7 @@ a:hover {
     }
 
     .side-body {
-      padding-top: 60px;
+      padding-top: 70px;
     }
 
     .side-body.padding-top {

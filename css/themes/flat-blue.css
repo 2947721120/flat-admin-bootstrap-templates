@@ -150,6 +150,8 @@
         border-left: 3px solid #22A7F0;
         border-right: 0px solid #22A7F0;
         background-color: #FFF; }
+        .flat-blue .side-menu.sidebar-inverse .navbar li.active > a .icon {
+          margin-left: -3px; }
       .flat-blue .side-menu.sidebar-inverse .navbar > li:hover > a {
         background-color: #FA2A00;
         color: #FFF; }

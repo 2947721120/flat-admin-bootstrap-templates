@@ -71,7 +71,7 @@ gulp.task('coffee', function() {
 });
 
 gulp.task("sass", function() {
-  return gulp.src('./css/scss/*.scss')
+  return gulp.src('./css/scss/**/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('./css'));
 });

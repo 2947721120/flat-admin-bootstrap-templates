@@ -12,7 +12,7 @@ $color-dark-grey: #2f2f30;
 
 $color-clearer-dark-blue: #9eaabd;
 $color-clear-dark-blue: #73849d;
-$color-dark-blue: #353d47;
+$color-dark-blue: #2C3E50;
 $color-dark-blue-1: #22A7F0;
 $color-dark-blue-hover: #363c46;
 
@@ -51,19 +51,15 @@ $theme-success-color: #00B16A;
 $color-blue: #22A7F0;
 $theme-danger-color: $color-red;
 
-// Blue Themes
-.flat-blue {
-
+// Green Themes
+.flat-green {
   background-color: $color-light-grey;
-
   a {
     color: $color-dark-blue-hover;
   }
-
   a:hover {
     color: $color-darkest-blue;
   }
-
   .app-footer {
     opacity: 0.7;
     color: $color-dark-blue;
@@ -253,7 +249,7 @@ $theme-danger-color: $color-red;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.08);
 
     .navbar-header {
-      background-color: $color-blue;
+      background-color: $color-green-sea;
       margin-bottom: 4px;
       .navbar-brand {
         color: $color-light-red;
@@ -281,7 +277,7 @@ $theme-danger-color: $color-red;
         border-left: 0;
 
         & > a {
-          border-right: 4px solid $color-blue;
+          border-right: 4px solid $color-green-sea;
           background-color: $color-white;
         }
       }
@@ -327,8 +323,12 @@ $theme-danger-color: $color-red;
       li.active {
 
         & > a {
+
+          .icon {
+            margin-left: -3px;
+          }
           color: $color-dark-blue;
-          border-left: 3px solid $color-blue;
+          border-left: 3px solid $color-green-sea;
           border-right: 0px solid $color-blue;
           background-color: $color-white;
         }
