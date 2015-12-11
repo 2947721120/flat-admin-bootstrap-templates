@@ -58,7 +58,7 @@ a:hover {
 
 .navbar {
   z-index: 10001;
-  padding-left: 50px;
+  padding-left: 60px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s; }
   .navbar > .container, .navbar > .container-fluid {
@@ -114,10 +114,10 @@ a:hover {
     font-family: 'Roboto Condensed', sans-serif;
     height: 60px;
     line-height: 60px;
-    padding: 0px 15px 0px 15px; }
+    padding: 0px 20px 0px 20px; }
   .navbar .dropdown-menu {
     padding: 0;
-    border-top: 0;
+    border: 0;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     animation-duration: 0.4s;
@@ -127,9 +127,9 @@ a:hover {
     .navbar .dropdown-menu .title {
       font-family: 'Roboto Condensed', sans-serif;
       padding: 5px 10px;
-      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
     .navbar .dropdown-menu .message {
       font-family: 'Roboto Condensed', sans-serif;
       text-align: center;
@@ -142,7 +142,7 @@ a:hover {
         min-width: 250px;
         padding: 8px;
         border: 0;
-        border-bottom: 1px solid #DDD; }
+        border-bottom: 1px solid #EEE; }
         .navbar .dropdown-menu .notifications.list-group .list-group-item .icon {
           margin-right: 5px; }
       .navbar .dropdown-menu .notifications.list-group .badge {
@@ -183,13 +183,14 @@ a:hover {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 50px;
+    left: 0;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
     font-size: 12px;
     font-family: 'Roboto Condensed', sans-serif; }
     .app-container .app-footer .wrapper {
-      padding: 10px 25px;
+      padding: 10px 35px;
+      padding-left: 90px;
       height: 50px;
       line-height: 50px;
       vertical-align: middle; }
@@ -197,9 +198,10 @@ a:hover {
     margin-right: 0;
     margin-left: 0; }
     .app-container .content-container .side-menu {
+      overflow-y: auto;
       z-index: 100000;
       position: fixed;
-      width: 50px;
+      width: 60px;
       height: 100%;
       -webkit-transition: all 0.25s;
       transition: all 0.25s; }
@@ -207,7 +209,7 @@ a:hover {
         width: 100%;
         border-bottom: 0px solid #e7e7e7; }
         .app-container .content-container .side-menu .navbar-header .navbar-brand {
-          width: 45px;
+          width: 455px;
           line-height: 60px;
           height: 60px;
           padding: 0;
@@ -215,7 +217,7 @@ a:hover {
           overflow: hidden;
           font-family: 'Roboto Condensed', sans-serif; }
           .app-container .content-container .side-menu .navbar-header .navbar-brand .icon {
-            width: 50px;
+            width: 60px;
             text-align: center;
             display: inline-block; }
           .app-container .content-container .side-menu .navbar-header .navbar-brand .title {
@@ -247,7 +249,8 @@ a:hover {
           display: block;
           white-space: nowrap; }
           .app-container .content-container .side-menu .navbar-nav li a .icon {
-            width: 28px;
+            margin-left: 0px;
+            width: 38px;
             text-align: center;
             font-size: 1.1em;
             display: inline-block; }
@@ -287,7 +290,7 @@ a:hover {
       .app-container .content-container .side-menu:hover .panel-collapse.in {
         display: block; }
     .app-container .content-container .side-body {
-      padding-top: 60px; }
+      padding-top: 70px; }
     .app-container .content-container .side-body.padding-top {
       padding-top: 84px; }
 
@@ -344,8 +347,8 @@ a:hover {
 
 /* Main body section */
 .app-container .side-body {
-  margin-left: 60px;
-  margin-right: 10px;
+  margin-left: 75px;
+  margin-right: 15px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s; }
 
@@ -392,13 +395,13 @@ a:hover {
     width: 250px; }
   .app-container.expanded .side-body {
     margin-left: 10px; }
-  .app-container .app-footer {
-    left: 0; } }
+  .app-container .app-footer .wrapper {
+    padding-left: 25px; } }
 
 /* Card */
 .card {
   background-color: #FFF;
-  border-radius: 3px;
+  border-radius: 1px;
   overflow: hidden;
   position: relative; }
   .card .card-body {
@@ -460,7 +463,7 @@ a:hover {
   padding: 0.5em 0.8em; }
 
 .panel {
-  border-radius: 3px; }
+  border-radius: 1px; }
   .panel .panel-heading {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px; }
@@ -475,15 +478,15 @@ a:hover {
 .btn {
   margin-top: 5px;
   margin-bottom: 5px;
-  border-radius: 3px;
+  border-radius: 1px;
   border-width: 1px;
   font-family: 'Roboto Condensed', sans-serif; }
 
 .btn-group-lg > .btn, .btn-group-lg > .btn-lg {
-  border-radius: 3px; }
+  border-radius: 1px; }
 
 .progress {
-  border-radius: 3px;
+  border-radius: 1px;
   box-shadow: none; }
   .progress .progress-bar {
     box-shadow: none; }
@@ -499,7 +502,7 @@ a:hover {
     border-bottom-right-radius: 3px; }
 
 .form-control {
-  border-radius: 3px;
+  border-radius: 1px;
   box-shadow: none; }
 
 .bs-example-modal .modal {
@@ -512,7 +515,7 @@ a:hover {
   .modal .modal-dialog .modal-header {
     font-family: 'Roboto Condensed', sans-serif; }
   .modal .modal-dialog .modal-content {
-    border-radius: 3px;
+    border-radius: 1px;
     box-shadow: none; }
   .modal .modal-dialog .modal-footer .btn {
     margin-top: 0;
@@ -526,10 +529,10 @@ a:hover {
 
 .alert {
   border-width: 0px;
-  border-radius: 3px; }
+  border-radius: 1px; }
 
 .list-group .badge {
-  border-radius: 3px; }
+  border-radius: 1px; }
 
 .list-group .list-group-item:last-child {
   border-bottom-right-radius: 3px;
@@ -559,10 +562,10 @@ a:hover {
   font-weight: normal; }
 
 .bootstrap-switch {
-  border-radius: 3px; }
+  border-radius: 1px; }
 
 .thumbnail {
-  border-radius: 3px;
+  border-radius: 1px;
   padding: 0; }
   .thumbnail .caption {
     padding: 0.5em 1.2em; }
@@ -596,17 +599,17 @@ body.login-page {
       font-size: 1.5em; }
     body.login-page .login-form .login-body {
       padding: 1.5em;
-      border-radius: 2px; }
+      border-radius: 1px; }
     body.login-page .login-form input {
       margin-bottom: 0.8em;
       margin-top: 0.5em;
       padding: 1.2em 1em;
       font-size: 1.1em;
-      border-radius: 2px; }
+      border-radius: 1px; }
   body.login-page .login-button .btn {
     padding: 0.5em 2em;
     font-size: 1.1em;
-    border-radius: 2px;
+    border-radius: 1px;
     margin-bottom: 0; }
   body.login-page .login-footer {
     padding-top: 8px;
@@ -905,7 +908,7 @@ body.login-page {
   width: 100%;
   height: 100%;
   z-index: 1001;
-  border-radius: 3px; }
+  border-radius: 1px; }
 
 .pricing-table .pt-header {
   text-align: center;
