@@ -8,31 +8,31 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
     <!-- CSS Libs -->
-    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../bower_components/animate.css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
-    <link rel="stylesheet" type="text/css" href="../../bower_components/checkbox3/dist/checkbox3.min.css">
-    <link rel="stylesheet" type="text/css" href="../../bower_components/DataTables/media/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="../../bower_components/datatables/media/css/dataTables.bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../../bower_components/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/bootstrap-switch.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/checkbox3.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/select2.min.css">
     <!-- CSS App -->
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/themes/flat-blue.css">
+    <link rel="stylesheet" type="text/css" href="../../css/themes/flat-green.css">
 </head>
-
 <body class="flat-blue">
     <div class="app-container">
         <div class="row content-container">
-            <nav class="navbar navbar-default navbar-fixed-top navbar-top">
+            <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-expand-toggle">
                             <i class="fa fa-bars icon"></i>
                         </button>
                         <ol class="breadcrumb navbar-breadcrumb">
-                            <li>Components</li>
-                            <li class="active">Chart.js</li>
+                            <li>UI Kits</li>
+                            <li class="active">Theming</li>
                         </ol>
                         <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
                             <i class="fa fa-th icon"></i>
@@ -106,7 +106,7 @@
                     </ul>
                 </div>
             </nav>
-            <div class="side-menu sidebar-inverse">
+            <div id="sidebar" class="side-menu sidebar-inverse">
                 <nav class="navbar navbar-default" role="navigation">
                     <div class="side-menu-container">
                         <div class="navbar-header">
@@ -124,7 +124,7 @@
                                     <span class="icon fa fa-tachometer"></span><span class="title">Dashboard</span>
                                 </a>
                             </li>
-                            <li class="panel panel-default dropdown">
+                            <li class="active panel panel-default dropdown">
                                 <a data-toggle="collapse" href="#dropdown-element">
                                     <span class="icon fa fa-desktop"></span><span class="title">UI Kits</span>
                                 </a>
@@ -132,6 +132,8 @@
                                 <div id="dropdown-element" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <ul class="nav navbar-nav">
+                                          <li><a href="../ui-kits/theming.html">Theming</a>
+                                          </li>
                                             <li><a href="../ui-kits/grid.html">Grid</a></li>
                                             <li><a href="../ui-kits/theming.html">Theming</a></li>
                                             </li>
@@ -189,7 +191,7 @@
                                 </div>
                             </li>
                             <!-- Dropdown-->
-                            <li class="active panel panel-default dropdown">
+                            <li class="panel panel-default dropdown">
                                 <a data-toggle="collapse" href="#component-example">
                                     <span class="icon fa fa-cubes"></span><span class="title">Components</span>
                                 </a>
@@ -250,101 +252,67 @@
                     <!-- /.navbar-collapse -->
                 </nav>
             </div>
-            <!-- Main Content -->
             <div class="container-fluid">
                 <div class="side-body">
                     <div class="page-title">
-                        <span class="title">Chart</span>
-                        <div class="description">Create chart with Chart.js</div>
+                        <span class="title">Theming</span>
+                        <div class="description">Color Scheme and Theme Layout Configuration</div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 col-xs-12">
+                        <div class="col-xs-12">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                        <div class="title">Line Chart</div>
-                                    </div>
-                                </div>
-                                <div class="card-body no-padding">
-                                    <canvas id="line-chart" class="chart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="card-title">
-                                        <div class="title">Bar Chart</div>
-                                    </div>
-                                </div>
-                                <div class="card-body no-padding">
-                                    <canvas id="bar-chart" class="chart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="card-title">
-                                        <div class="title">Radar Chart</div>
-                                    </div>
-                                </div>
-                                <div class="card-body no-padding">
-                                    <canvas id="radar-chart" class="chart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="card-title">
-                                        <div class="title">Polar Area Chart</div>
-                                    </div>
-                                </div>
-                                <div class="card-body no-padding">
-                                    <canvas id="polar-area-chart" class="chart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="card-title">
-                                        <div class="title">Pie & Doughnut Chart</div>
-                                    </div>
-                                </div>
-                                <div class="card-body no-padding">
-                                    <canvas id="pie-chart" class="chart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="page-title">
-                        <span class="title">Card Jumbotron</span>
-                        <div class="description">Chart.js in Jumbotron Header, recommend using in dashboard pages.</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="card-title">
-                                        <div class="title">Line Chart</div>
+                                        <div class="title">Theming</div>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="card primary">
-                                        <div class="card-jumbotron no-padding">
-                                            <canvas id="jumbotron-line-chart" class="chart no-padding"></canvas>
-                                        </div>
-                                        <div class="card-body">
-                                            <h4>Lorem Ipsum</h4>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                        </div>
+                                  <p>Choose your navbar and sidebar color pattern. Default or Inverse Color.</p>
+                                  <div class="sub-title">Navbar</div>
+                                  <div>
+                                    <div class="radio3 radio-check radio-inline">
+                                      <input type="radio" id="radio1" name="radio-navbar" value="default" checked="">
+                                      <label for="radio1">
+                                        Default
+                                      </label>
                                     </div>
+                                    <div class="radio3 radio-check radio-inline">
+                                      <input type="radio" id="radio2" name="radio-navbar" value="inverse">
+                                      <label for="radio2">
+                                        Inverse
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="sub-title">Sidebar</div>
+                                  <div>
+                                    <div class="radio3 radio-check radio-inline">
+                                      <input type="radio" id="radio3" name="radio-sidebar" value="default">
+                                      <label for="radio3">
+                                        Default
+                                      </label>
+                                    </div>
+                                    <div class="radio3 radio-check radio-inline">
+                                      <input type="radio" id="radio4" name="radio-sidebar" value="inverse" checked="">
+                                      <label for="radio4">
+                                        Inverse
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="sub-title">Color Scheme</div>
+                                  <div>
+                                    <div class="radio3 radio-check radio-inline">
+                                      <input type="radio" id="radio-blue" name="radio-color" value="blue" checked="">
+                                      <label for="radio-blue">
+                                        Blue (Default)
+                                      </label>
+                                    </div>
+                                    <div class="radio3 radio-check radio-success radio-inline">
+                                      <input type="radio" id="radio-green" name="radio-color" value="green">
+                                      <label for="radio-green">
+                                        Green
+                                      </label>
+                                    </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>
@@ -359,21 +327,22 @@
         </footer>
     <div>
     <!-- Javascript Libs -->
-    <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../bower_components/Chart.js/Chart.min.js"></script>
-    <script type="text/javascript" src="../../bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="../../lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../lib/js/Chart.min.js"></script>
+    <script type="text/javascript" src="../../lib/js/bootstrap-switch.min.js"></script>
 
-    <script type="text/javascript" src="../../bower_components/matchHeight/jquery.matchHeight-min.js"></script>
-    <script type="text/javascript" src="../../bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="../../bower_components/DataTables/media/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
-    <script type="text/javascript" src="../../bower_components/ace-builds/src/ace.js"></script>
-    <script type="text/javascript" src="../../bower_components/ace-builds/src/mode-html.js"></script>
-    <script type="text/javascript" src="../../bower_components/ace-builds/src/theme-github.js"></script>
+    <script type="text/javascript" src="../../lib/js/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="../../lib/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../../lib/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../lib/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="../../lib/js/ace/ace.js"></script>
+    <script type="text/javascript" src="../../lib/js/ace/mode-html.js"></script>
+    <script type="text/javascript" src="../../lib/js/ace/theme-github.js"></script>
     <!-- Javascript -->
     <script type="text/javascript" src="../../js/app.js"></script>
-    <script type="text/javascript" src="../../js/chartjs.js"></script>
+    <script type="text/javascript" src="../../js/theming.js"></script>
+    <!-- Javascript -->
 </body>
 
 </html>

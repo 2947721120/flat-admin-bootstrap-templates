@@ -52,8 +52,8 @@ gulp.task('build', function(cb) {
       }
     }
 
-    gulp.src("./js/*.js").pipe(gulp.dest('./dist/js'));
-    gulp.src("./css/*.css").pipe(gulp.dest('./dist/css'));
+    gulp.src("./js/**/*.js").pipe(gulp.dest('./dist/js'));
+    gulp.src("./css/**/*.css").pipe(gulp.dest('./dist/css'));
     gulp.src("./img/**/*").pipe(gulp.dest('./dist/img'));
 
     gulp.src(js_lib).pipe(gulp.dest('./dist/lib/js'));
