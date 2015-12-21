@@ -183,14 +183,14 @@ a:hover {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 65px;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
     font-size: 12px;
     font-family: 'Roboto Condensed', sans-serif; }
     .app-container .app-footer .wrapper {
       padding: 10px 35px;
-      padding-left: 90px;
+      padding-left: 25px;
       height: 50px;
       line-height: 50px;
       vertical-align: middle; }
@@ -296,6 +296,8 @@ a:hover {
 
 .app-container.expanded .app-footer {
   left: 250px; }
+  .app-container.expanded .app-footer .wrapper {
+    padding-left: 25px; }
 
 .app-container.expanded .content-container .navbar-top {
   padding-left: 250px; }
@@ -395,7 +397,7 @@ a:hover {
     width: 250px; }
   .app-container.expanded .side-body {
     margin-left: 10px; }
-  .app-container .app-footer .wrapper {
+  .app-container .app-footer .wrapper, .app-container.expanded .app-footer .wrapper {
     padding-left: 25px; } }
 
 /* Card */

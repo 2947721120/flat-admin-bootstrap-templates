@@ -273,7 +273,7 @@ a:hover {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 65px;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
     font-size: 12px;
@@ -281,7 +281,7 @@ a:hover {
 
     .wrapper {
       padding: 10px 35px;
-      padding-left: 90px;
+      padding-left: 25px;
       height: 50px;
       line-height: 50px;
       vertical-align: middle;
@@ -452,6 +452,9 @@ a:hover {
 .app-container.expanded {
   .app-footer {
     left: 250px;
+    .wrapper {
+      padding-left: 25px;
+    }
   }
 
   .content-container {
@@ -618,7 +621,7 @@ a:hover {
       margin-left: 10px;
     }
   }
-  .app-container {
+  .app-container, .app-container.expanded {
     .app-footer {
       .wrapper {
         padding-left: 25px;

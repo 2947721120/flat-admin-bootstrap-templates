@@ -1270,9 +1270,30 @@ $theme-danger-color: $color-red;
           background-color: transparent;
         }
       }
+      & > li {
+        border-left: 0px solid $color-light-grey;
+        & > a {
+          color: $color-white;
+        }
+      }
     }
     .navbar-collapse {
       border: 0;
+    }
+  }
+
+  .navbar.affix {
+    .navbar-nav {
+      & > li {
+        & > a {
+          color: $color-dark-blue;
+        }
+      }
+      & > li:hover {
+        & > a {
+          color: $color-blue;
+        }
+      }
     }
   }
 

@@ -638,8 +638,18 @@
   box-shadow: none; }
   .flat-blue.landing-page .navbar .navbar-nav > .active > a {
     background-color: transparent; }
+  .flat-blue.landing-page .navbar .navbar-nav > li {
+    border-left: 0px solid #F9F9F9; }
+    .flat-blue.landing-page .navbar .navbar-nav > li > a {
+      color: #FFF; }
   .flat-blue.landing-page .navbar .navbar-collapse {
     border: 0; }
+
+.flat-blue.landing-page .navbar.affix .navbar-nav > li > a {
+  color: #2C3E50; }
+
+.flat-blue.landing-page .navbar.affix .navbar-nav > li:hover > a {
+  color: #22A7F0; }
 
 @media (max-width: 768px) {
   .flat-blue.landing-page .navbar .navbar-collapse {
