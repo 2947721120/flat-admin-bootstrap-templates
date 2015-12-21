@@ -1,7 +1,8 @@
 # Flat Admin V.2 Bootstrap Templates
 
-#### Change log (v2.1.0)
+#### Change log (v2.1.1)
 
+* Fix some bugs
 * Fix sidebar bugs
 * change iCheck to [Checkbox3](https://github.com/tui2tone/checkbox3)
 * Add Theming to Navbar and Sidebar
@@ -26,7 +27,7 @@ Completely free bootstrap administrator templates with Bootstrap 3.
 - Build with Coffeescript and SASS
 - Easy for Theming
 
-#### [Download V2.1.0](https://github.com/tui2tone/flat-admin-bootstrap-templates/archive/v2.1.0.zip)
+#### [Download V2.1.1](https://github.com/tui2tone/flat-admin-bootstrap-templates/archive/v2.1.1.zip)
 
 ## Screenshot
 
