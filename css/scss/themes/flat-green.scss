@@ -58,7 +58,7 @@ $theme-danger-color: $color-red;
     color: $color-dark-blue-hover;
   }
   a:hover {
-    color: $color-darkest-blue;
+    color: $color-darkest-green-sea;
   }
   .app-footer {
     opacity: 0.7;
@@ -106,13 +106,13 @@ $theme-danger-color: $color-red;
       }
       & > li:hover {
         & > a {
-          color: $color-dark-blue-1;
+          color: $color-dark-green-sea;
         }
       }
       & > li.open {
         & > a {
           background-color: transparent;
-          color: $color-blue;
+          color: $color-darkest-green-sea;
         }
       }
       & > li.danger {
