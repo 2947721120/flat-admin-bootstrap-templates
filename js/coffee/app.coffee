@@ -27,3 +27,7 @@ $ ->
   $('.datatable').DataTable({
     "dom": '<"top"fl<"clear">>rt<"bottom"ip<"clear">>'
     });
+
+$ ->
+  $(".side-menu .nav .dropdown").on 'show.bs.collapse', ->
+    $(".side-menu .nav .dropdown .collapse").collapse('hide')

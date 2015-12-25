@@ -630,45 +630,45 @@
     background-color: #ffb8aa;
     color: #7c1a06; }
 
-.flat-blue.landing-page .navbar-inverse .navbar-toggle:focus, .flat-blue.landing-page .navbar-inverse .navbar-toggle:hover {
+.flat-green.landing-page .navbar-inverse .navbar-toggle:focus, .flat-green.landing-page .navbar-inverse .navbar-toggle:hover {
   background-color: transparent; }
 
-.flat-blue.landing-page .navbar {
+.flat-green.landing-page .navbar {
   background-color: transparent;
   box-shadow: none; }
-  .flat-blue.landing-page .navbar .navbar-nav > .active > a {
+  .flat-green.landing-page .navbar .navbar-nav > .active > a {
     background-color: transparent; }
-  .flat-blue.landing-page .navbar .navbar-nav > li {
+  .flat-green.landing-page .navbar .navbar-nav > li {
     border-left: 0px solid #F9F9F9; }
-    .flat-blue.landing-page .navbar .navbar-nav > li > a {
+    .flat-green.landing-page .navbar .navbar-nav > li > a {
       color: #FFF; }
-  .flat-blue.landing-page .navbar .navbar-collapse {
+  .flat-green.landing-page .navbar .navbar-collapse {
     border: 0; }
 
-.flat-blue.landing-page .navbar.affix .navbar-nav > li > a {
+.flat-green.landing-page .navbar.affix .navbar-nav > li > a {
   color: #2C3E50; }
 
-.flat-blue.landing-page .navbar.affix .navbar-nav > li:hover > a {
+.flat-green.landing-page .navbar.affix .navbar-nav > li:hover > a {
   color: #22A7F0; }
 
 @media (max-width: 768px) {
-  .flat-blue.landing-page .navbar .navbar-collapse {
+  .flat-green.landing-page .navbar .navbar-collapse {
     background-color: #333; }
-  .flat-blue.landing-page .navbar .navbar-right {
+  .flat-green.landing-page .navbar .navbar-right {
     background-color: transparent;
     color: #FFF; }
-  .flat-blue.landing-page .navbar.affix .navbar-nav > li > a {
+  .flat-green.landing-page .navbar.affix .navbar-nav > li > a {
     color: #FFF; } }
 
-.flat-blue.landing-page .navbar.affix .navbar-brand {
+.flat-green.landing-page .navbar.affix .navbar-brand {
   color: #2C3E50; }
 
-.flat-blue.landing-page .navbar.affix .navbar-toggle .icon-bar {
+.flat-green.landing-page .navbar.affix .navbar-toggle .icon-bar {
   background-color: #2C3E50; }
 
-.flat-blue.landing-page .app-header .app-btn {
+.flat-green.landing-page .app-header .app-btn {
   background-color: transparent;
   border: 2px solid #FFF; }
 
-.flat-blue.landing-page .app-content-a {
+.flat-green.landing-page .app-content-a {
   background-color: #EAEAEA; }
