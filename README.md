@@ -1,6 +1,6 @@
 # Flat Admin V.2 Bootstrap Templates
 
-#### Change log (v2.1.1)
+#### Change log (v2.1.2)
 
 * Fix some bugs
 * Fix sidebar bugs
@@ -27,7 +27,7 @@ Completely free bootstrap administrator templates with Bootstrap 3.
 - Build with Coffeescript and SASS
 - Easy for Theming
 
-#### [Download V2.1.1](https://github.com/tui2tone/flat-admin-bootstrap-templates/archive/v2.1.1.zip)
+#### [Download V2.1.2](https://github.com/tui2tone/flat-admin-bootstrap-templates/archive/v2.1.2.zip)
 
 ## Screenshot
 
