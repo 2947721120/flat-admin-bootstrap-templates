@@ -1,0 +1,57 @@
+{
+  "name": "awesome-bootstrap-checkbox",
+  "version": "0.3.6",
+  "description": "Font Awesome Bootstrap Checkboxes & Radios. Pure css way to make inputs look prettier.",
+  "main": "awesome-bootstrap-checkbox.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flatlogic/awesome-bootstrap-checkbox.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "font-awesome",
+    "scss",
+    "less"
+  ],
+  "author": {
+    "name": "contact@flatlogic.com",
+    "url": "http://flatlogic.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flatlogic/awesome-bootstrap-checkbox/issues"
+  },
+  "homepage": "https://github.com/flatlogic/awesome-bootstrap-checkbox",
+  "files": [
+    "demo",
+    "awesome-bootstrap-checkbox.css",
+    "awesome-bootstrap-checkbox.scss",
+    "awesome-bootstrap-checkbox.less",
+    "bower.json"
+  ],
+  "gitHead": "843d5a34398b51cc538ebba2cd3c8c7e4a252934",
+  "_id": "awesome-bootstrap-checkbox@0.3.6",
+  "_shasum": "01d8bd5b69a984b4c89758b206d390b81ec99cdc",
+  "_from": "awesome-bootstrap-checkbox@0.3.6",
+  "_npmVersion": "2.5.1",
+  "_nodeVersion": "0.12.0",
+  "_npmUser": {
+    "name": "okendoken",
+    "email": "philip@flatlogic.com"
+  },
+  "dist": {
+    "shasum": "01d8bd5b69a984b4c89758b206d390b81ec99cdc",
+    "tarball": "http://registry.npmjs.org/awesome-bootstrap-checkbox/-/awesome-bootstrap-checkbox-0.3.6.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "okendoken",
+      "email": "philip@flatlogic.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/awesome-bootstrap-checkbox/-/awesome-bootstrap-checkbox-0.3.6.tgz"
+}

@@ -1,0 +1,1019 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,300);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,300,500);
+html, body {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+*:focus {
+  outline: 0; }
+
+.no-p {
+  padding: 0 !important; }
+
+.no-pt {
+  padding-top: 0 !important; }
+
+.no-mb {
+  margin-bottom: 0 !important; }
+
+.no-br {
+  border-radius: 0 !important; }
+
+.app-container {
+  height: 100%;
+  min-height: 100%; }
+  .app-container .app-content-container {
+    padding-top: 70px;
+    padding-left: 280px;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll; }
+    .app-container .app-content-container .app-content-header .header {
+      display: block;
+      padding: 30px; }
+      .app-container .app-content-container .app-content-header .header .title {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 2em;
+        font-weight: 400; }
+      .app-container .app-content-container .app-content-header .header .description {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1em;
+        font-family: "Ubuntu", sans-serif;
+        margin-top: 3px; }
+      .app-container .app-content-container .app-content-header .header .description.indent {
+        text-indent: 20px; }
+    .app-container .app-content-container .app-content {
+      padding-top: 30px; }
+      .app-container .app-content-container .app-content .content-row {
+        padding: 0px 30px 0px 30px; }
+      .app-container .app-content-container .app-content .content-row.no-p {
+        padding: 0; }
+  .app-container .app-center-both {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.app-container.app-sidebar-collapse .app-content-container {
+  padding-left: 70px; }
+
+.app-container.app-sidebar-top .app-content-container {
+  padding-left: 0 !important;
+  padding-top: 125px; }
+
+@media (max-width: 767px) {
+  .app-container .app-content-container {
+    padding-left: 0px; }
+  .app-container.app-sidebar-collapse .app-content-container {
+    padding-left: 0px; } }
+
+.progress {
+  height: 16px;
+  border-radius: 2px; }
+
+.chart {
+  padding-top: 15px;
+  padding-right: 15px; }
+
+
+.form-control {
+  border-radius: 1px;
+  font-size: 12px;
+  box-shadow: none; }
+
+.form-horizontal .form-group {
+  margin-bottom: 20px; }
+
+.icons-list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0; }
+  .icons-list > li {
+    float: left;
+    text-align: center;
+    width: 80px;
+    max-height: 80px;
+    padding: 8px; }
+    .icons-list > li span {
+      display: block; }
+    .icons-list > li .glyphicon, .icons-list > li .fa {
+      font-size: 1.5em; }
+    .icons-list > li .glyphicon-class {
+      margin-top: 8px;
+      font-size: 0.75em; }
+  .icons-list > li:hover {
+    color: #36b846;
+    cursor: pointer; }
+
+.icons-list:after {
+  content: '';
+  display: block;
+  position: relative;
+  clear: both; }
+
+.signin-form .form-inline .btn {
+  margin-bottom: 0; }
+
+.signin-form .signin-footer {
+  margin-top: 1em; }
+
+
+table.table > thead > tr > th {
+  border-bottom: 1px solid #EEE; }
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  padding: 12px 16px; }
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #F9F9F9; }
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  border-top: 1px solid #EEE; }
+
+.btn {
+  border-bottom-width: 2px;
+  border-radius: 2px;
+  font-size: 12px;
+  padding: 7px 16px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  overflow: hidden; }
+  .btn .icon {
+    padding: 0px 12px;
+    height: 31px;
+    line-height: 31px;
+    vertical-align: top;
+    margin-right: 12px;
+    margin-left: -16px;
+    margin-top: -7px;
+    margin-bottom: -7px;
+    font-size: 16px;
+    border-right-width: 1px;
+    border-right-style: solid; }
+  .btn .icon.icon-full {
+    margin-left: -12px;
+    font-size: 40px;
+    vertical-align: middle;
+    padding: 0px 0px;
+    padding-top: 1px;
+    overflow: hidden;
+    border-right-width: 0px;
+    vertical-align: middle; }
+
+
+.row.example > [class*="col-"] > div {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 10px;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05); }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .row > [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px; }
+
+.panel .row {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .panel .row > [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px; }
+
+.row.no-gap {
+  margin-left: 0;
+  margin-right: 0; }
+  .row.no-gap > [class*="col-"] {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+.card {
+  width: 100%;
+  border-radius: 2px; }
+  .card .card-header {
+    font-family: "Roboto", sans-serif;
+    padding: 18px 30px;
+    border-bottom: 1px solid #F9F9F9;
+    font-size: 1.25em; }
+  .card .card-body {
+    overflow: hidden;
+    padding: 30px; }
+
+.card.card-summary {
+  width: 100%;
+  border-radius: 1px; }
+  .card.card-summary .card-body {
+    overflow: hidden;
+    padding: 0px; }
+    .card.card-summary .card-body .icon {
+      float: left;
+      font-size: 8.5em;
+      margin-top: -8px;
+      margin-bottom: -8px;
+      margin-left: 10px; }
+    .card.card-summary .card-body .content {
+      float: right;
+      text-align: right;
+      padding-right: 15px; }
+      .card.card-summary .card-body .content .counter {
+        font-family: "Oxygen", sans-serif;
+        font-size: 4em; }
+      .card.card-summary .card-body .content .title {
+        font-family: "Nunito", sans-serif;
+        font-size: 0.9em;
+        margin-top: -10px;
+        padding-right: 2px; }
+  .card.card-summary .card-body::after {
+    content: '';
+    position: relative;
+    display: block;
+    clear: both; }
+
+.panel {
+  margin-bottom: 30px;
+  border-radius: 1px; }
+  .panel .panel-heading {
+    font-size: 1.05em;
+    padding: 12px 16px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.05em;
+    font-weight: 500; }
+  .panel .panel-body {
+    padding: 20px; }
+    .panel .panel-body .sub-title {
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #EEE; }
+
+
+/*
+Navbar Stylesheet
+*/
+.app-container .app-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1006; }
+  .app-container .app-header .navbar.navbar-default {
+    min-height: 70px;
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1); }
+    .app-container .app-header .navbar.navbar-default > .container-fluid {
+      padding-left: 0px;
+      padding-right: 0px; }
+    .app-container .app-header .navbar.navbar-default .navbar-header {
+      overflow: hidden;
+      -webkit-transition: width 0.2s;
+      transition: width 0.2s; }
+      .app-container .app-header .navbar.navbar-default .navbar-header .navbar-brand {
+        margin-left: 0;
+        font-family: "Ubuntu", sans-serif;
+        padding: 0 15px;
+        height: 70px;
+        line-height: 70px;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: 400;
+        width: 280px;
+        -webkit-transition: width 0.2s;
+        transition: width 0.2s; }
+        .app-container .app-header .navbar.navbar-default .navbar-header .navbar-brand .brand-logo {
+          font-size: 1.5em;
+          display: none; }
+        .app-container .app-header .navbar.navbar-default .navbar-header .navbar-brand .brand-title {
+          display: block; }
+      .app-container .app-header .navbar.navbar-default .navbar-header .navbar-toggle-container {
+        border-radius: 0;
+        padding: 0;
+        float: left; }
+        .app-container .app-header .navbar.navbar-default .navbar-header .navbar-toggle-container ul.nav {
+          margin: 0;
+          float: left;
+          position: relative; }
+          .app-container .app-header .navbar.navbar-default .navbar-header .navbar-toggle-container ul.nav > li {
+            float: left; }
+            .app-container .app-header .navbar.navbar-default .navbar-header .navbar-toggle-container ul.nav > li .btn {
+              border-radius: 0;
+              border: 0px;
+              padding: 0 20px;
+              font-size: 15px;
+              height: 70px;
+              line-height: 70px;
+              margin: 0; }
+        .app-container .app-header .navbar.navbar-default .navbar-header .navbar-toggle-container ul.navbar-right {
+          float: right; }
+    .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav:not(.navbar-right) > li {
+      height: 70px;
+      line-height: 70px;
+      vertical-align: middle; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav:not(.navbar-right) > li .btn-search {
+        border: 0px;
+        padding: 0 20px;
+        font-size: 15px; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav:not(.navbar-right) > li ol.breadcrumb {
+        border-radius: 0;
+        padding: 0 20px;
+        margin-bottom: 0; }
+        .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav:not(.navbar-right) > li ol.breadcrumb > li {
+          font-size: 1em;
+          font-weight: 400;
+          font-family: "Ubuntu", sans-serif;
+          float: left; }
+          .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav:not(.navbar-right) > li ol.breadcrumb > li > a {
+            text-decoration: none;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300; }
+        .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav:not(.navbar-right) > li ol.breadcrumb > li + li:before {
+          font-family: 'FontAwesome';
+          content: "\f105";
+          padding: 0 13px 0 8px;
+          font-size: 15px;
+          height: 70px;
+          line-height: 70px;
+          position: relative;
+          float: left; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav:not(.navbar-right) > li ol.breadcrumb::after {
+        content: '';
+        clear: both;
+        display: block; }
+    .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li .dropdown-menu {
+      font-size: 12px;
+      padding: 0;
+      border-radius: 1px;
+      min-width: 280px; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li .dropdown-menu > li.title {
+        padding: 10px;
+        font-family: "Ubuntu", sans-serif; }
+    .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify > a {
+      width: 70px;
+      text-align: center; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify > a i.fa {
+        font-size: 1.75em; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify > a .badge {
+        position: absolute;
+        top: 0;
+        right: 16px;
+        height: 14px;
+        line-height: 14px;
+        min-width: 14px;
+        padding: 0 5px;
+        vertical-align: middle;
+        font-size: 8px;
+        top: 35px;
+        margin-top: -16px; }
+    .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify .dropdown-menu {
+      margin-top: 2px; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify .dropdown-menu ul.notifications {
+        margin-bottom: 0; }
+        .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify .dropdown-menu ul.notifications > li {
+          padding: 0;
+          border: 0;
+          overflow: hidden; }
+          .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify .dropdown-menu ul.notifications > li > a {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border: 0;
+            font-size: 12px;
+            line-height: 20px;
+            vertical-align: middle; }
+            .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify .dropdown-menu ul.notifications > li > a .icon {
+              font-size: 2.5em;
+              margin-top: -10px;
+              margin-bottom: -18px;
+              margin-left: -10px;
+              width: 40px;
+              height: 36px;
+              text-align: center;
+              vertical-align: middle; }
+            .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify .dropdown-menu ul.notifications > li > a .badge {
+              float: right;
+              font-size: 10px;
+              height: 20px;
+              line-height: 20px;
+              min-width: 20px;
+              padding: 0 5px; }
+          .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify .dropdown-menu ul.notifications > li > a::after {
+            clear: both;
+            content: '';
+            display: block; }
+        .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav > li.notify .dropdown-menu ul.notifications > li.message {
+          text-align: center;
+          font-size: 9px; }
+    .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li > a {
+      font-family: "Ubuntu", sans-serif;
+      height: 70px;
+      line-height: 70px;
+      padding: 0 20px; }
+    .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li.profile {
+      font-weight: 400;
+      font-family: "Ubuntu", sans-serif; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li.profile > a {
+        display: inline-block; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li.profile > a:after {
+        font-family: 'FontAwesome';
+        content: "\f107";
+        display: inline-block;
+        margin-left: 10px; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li.profile .dropdown-profile {
+        padding: 0;
+        border-radius: 1px;
+        width: 280px;
+        animation-name: dropdown-animate;
+        -webkit-animation-name: dropdown-animate;
+        -webkit-animation-duration: 0.2s; }
+        .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li.profile .dropdown-profile .profile-img {
+          padding: 40px;
+          text-align: center; }
+          .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li.profile .dropdown-profile .profile-img img {
+            width: 100px;
+            height: auto;
+            border-radius: 75px;
+            border: 2px solid #FFF;
+            padding: 0; }
+        .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li.profile .dropdown-profile .profile-info {
+          text-align: center;
+          margin-top: -36px;
+          margin-bottom: 20px; }
+        .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li.profile .dropdown-profile .profile-footer {
+          text-align: center;
+          padding: 15px; }
+          .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li.profile .dropdown-profile .profile-footer .btn {
+            margin-bottom: 0; }
+      .app-container .app-header .navbar.navbar-default .navbar-collapse ul.nav.navbar-right > li.profile .dropdown-profile::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        margin-top: -10px;
+        right: 40px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom-width: 10px;
+        border-bottom-style: solid; }
+
+.app-container.app-sidebar-collapse .app-header .navbar.navbar-default .navbar-header .navbar-brand {
+  width: 70px; }
+  .app-container.app-sidebar-collapse .app-header .navbar.navbar-default .navbar-header .navbar-brand .brand-logo {
+    display: block; }
+  .app-container.app-sidebar-collapse .app-header .navbar.navbar-default .navbar-header .navbar-brand .brand-title {
+    display: none; }
+
+@media (max-width: 767px) {
+  .app-container .app-header .navbar.navbar-default > .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .app-container .app-header .navbar.navbar-default .navbar-header .navbar-brand {
+    width: auto; }
+    .app-container .app-header .navbar.navbar-default .navbar-header .navbar-brand .brand-logo {
+      display: none; }
+    .app-container .app-header .navbar.navbar-default .navbar-header .navbar-brand .brand-title {
+      display: block; }
+  .app-container .app-header .navbar.navbar-default .navbar-header .navbar-toggle-container {
+    float: none; } }
+
+@media (max-width: 480px) {
+  .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li > a .icon {
+    width: 60px; } }
+
+@keyframes dropdown-animate {
+  from {
+    top: 90px;
+    opacity: 0; }
+  to {
+    top: 70px;
+    opacity: 1; } }
+
+/*
+Sidebar Stylesheet
+*/
+.app-container .app-sidebar {
+  width: 280px;
+  height: auto;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  padding-top: 70px;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+  z-index: 1000;
+  overflow-y: visible; }
+  .app-container .app-sidebar ul.sidebar-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 10px 0px; }
+    .app-container .app-sidebar ul.sidebar-menu > li > a {
+      display: block;
+      text-decoration: none;
+      height: 55px;
+      line-height: 55px;
+      vertical-align: middle;
+      font-family: "Nunito", sans-serif;
+      white-space: nowrap;
+      position: relative; }
+      .app-container .app-sidebar ul.sidebar-menu > li > a .icon {
+        font-size: 1.5em;
+        vertical-align: middle;
+        text-align: center;
+        width: 68px;
+        height: 55px;
+        line-height: 55px; }
+      .app-container .app-sidebar ul.sidebar-menu > li > a .title {
+        vertical-align: middle;
+        padding-right: 5px;
+        height: 55px;
+        line-height: 55px; }
+      .app-container .app-sidebar ul.sidebar-menu > li > a .badge {
+        position: absolute;
+        right: 20px;
+        height: 20px;
+        line-height: 20px;
+        min-width: 20px;
+        padding: 0 5px;
+        vertical-align: middle;
+        font-size: 10px;
+        top: 27.5px;
+        margin-top: -10px;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s; }
+    .app-container .app-sidebar ul.sidebar-menu > li > a.sidebar-toggle .badge {
+      right: 40px; }
+    .app-container .app-sidebar ul.sidebar-menu > li.dropdown {
+      position: relative;
+      display: block; }
+      .app-container .app-sidebar ul.sidebar-menu > li.dropdown > a .badge {
+        right: 40px; }
+      .app-container .app-sidebar ul.sidebar-menu > li.dropdown > a::after {
+        font-family: FontAwesome;
+        content: "\f107";
+        position: absolute;
+        right: 20px;
+        height: 20px;
+        line-height: 20px;
+        top: 27.5px;
+        margin-top: -10px;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        opacity: 1; }
+      .app-container .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 0;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        width: 100%;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s; }
+        .app-container .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu > li > a {
+          display: block;
+          text-decoration: none;
+          height: 40px;
+          line-height: 40px;
+          vertical-align: middle;
+          font-family: "Nunito", sans-serif;
+          white-space: nowrap;
+          padding: 0; }
+          .app-container .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu > li > a .icon {
+            font-size: 0.6em;
+            padding-left: 5px;
+            vertical-align: middle;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            width: 68px; }
+          .app-container .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu > li > a .title {
+            vertical-align: middle;
+            padding-right: 5px;
+            padding-left: 2px;
+            font-size: 12px;
+            font-weight: 400;
+            height: 40px;
+            line-height: 40px; }
+    .app-container .app-sidebar ul.sidebar-menu > li.dropdown::after {
+      clear: both;
+      content: '';
+      position: relative;
+      display: block; }
+    .app-container .app-sidebar ul.sidebar-menu > li.dropdown.open > a::after {
+      -ms-transform: rotate(180deg);
+      /* IE 9 */
+      -webkit-transform: rotate(180deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(180deg); }
+    .app-container .app-sidebar ul.sidebar-menu > li.header {
+      font-family: "Nunito", sans-serif;
+      padding: 5px 25px;
+      font-size: 0.9em; }
+    .app-container .app-sidebar ul.sidebar-menu > li.line {
+      height: 2px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      margin-right: 0; }
+
+.app-container.app-sidebar-collapse .app-sidebar {
+  width: 70px; }
+  .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li {
+    position: relative; }
+    .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li > a .title {
+      display: none; }
+    .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li > a .badge {
+      position: absolute;
+      right: 18px;
+      height: 14px;
+      line-height: 14px;
+      min-width: 14px;
+      padding: 0 5px;
+      vertical-align: middle;
+      font-size: 8px;
+      top: 27.5px;
+      margin-top: -14px; }
+  .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li.dropdown > a::after {
+    display: none;
+    opacity: 0; }
+  .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu {
+    animation-name: sidebar-sub-menu-show;
+    -webkit-animation-name: sidebar-sub-menu-show;
+    -webkit-animation-duration: 0.2s;
+    position: absolute;
+    display: none;
+    top: 0;
+    width: 230px;
+    margin-left: 70px;
+    padding: 0px;
+    border-radius: 1px;
+    overflow: visible;
+    height: auto !important; }
+    .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu > li > a .icon {
+      width: 40px; }
+    .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu > li > a .title {
+      font-family: "Nunito", sans-serif; }
+    .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu > li > a .badge {
+      position: absolute;
+      right: 20px;
+      height: 14px;
+      line-height: 14px;
+      min-width: 14px;
+      padding: 0 5px;
+      vertical-align: middle;
+      font-size: 8px;
+      top: 27.5px;
+      margin-top: -10px; }
+  .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    display: block;
+    margin-left: -10px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right-width: 10px;
+    border-right-style: solid; }
+  .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li.dropdown:hover ul.dropdown-menu {
+    display: block; }
+  .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li.header {
+    display: none; }
+
+.app-container.app-sidebar-top .app-sidebar {
+  width: 100%;
+  height: 125px;
+  min-height: 125px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+  z-index: 1000;
+  overflow-y: visible;
+  overflow-x: scroll;
+  white-space: nowrap; }
+  .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu {
+    height: 100%;
+    padding: 0px;
+    position: relative; }
+    .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      float: none;
+      width: 70px; }
+      .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li > a .icon {
+        width: 70px; }
+      .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li > a .title {
+        display: none; }
+      .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li > a .badge {
+        position: absolute;
+        right: 18px;
+        height: 14px;
+        line-height: 14px;
+        min-width: 14px;
+        padding: 0 5px;
+        vertical-align: middle;
+        font-size: 8px;
+        top: 27.5px;
+        margin-top: -14px; }
+    .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.dropdown > a::after {
+      display: none;
+      opacity: 0; }
+    .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu {
+      animation-name: top-menu-dropdown;
+      -webkit-animation-name: top-menu-dropdown;
+      -webkit-animation-duration: 0.2s;
+      position: fixed;
+      display: none;
+      width: 230px;
+      margin-left: 15px;
+      margin-top: 55px;
+      padding: 0px;
+      border-radius: 1px;
+      overflow: visible;
+      height: auto !important; }
+      .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu > li > a .icon {
+        width: 40px; }
+      .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu > li > a .title {
+        font-family: "Nunito", sans-serif;
+        font-weight: bold; }
+      .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu > li > a .badge {
+        position: absolute;
+        right: 20px;
+        height: 14px;
+        line-height: 14px;
+        min-width: 14px;
+        padding: 0 5px;
+        vertical-align: middle;
+        font-size: 8px;
+        top: 27.5px;
+        margin-top: -10px; }
+    .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu::before {
+      display: none; }
+    .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.dropdown ul.dropdown-menu::after {
+      content: '';
+      position: absolute;
+      display: block;
+      margin-left: 10px;
+      top: -10px;
+      width: 0;
+      height: 0;
+      border-top: none;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom-width: 10px;
+      border-bottom-style: solid; }
+    .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.dropdown:hover ul.dropdown-menu {
+      display: block; }
+    .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.header {
+      display: none; }
+    .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.line {
+      width: 2px;
+      margin-top: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 0;
+      height: 55px; }
+    .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li.dropdown > a::after {
+      display: none; }
+
+@media (max-width: 767px) {
+  .app-container.app-sidebar-collapse .app-sidebar {
+    width: 0px; }
+    .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu {
+      display: none; }
+      .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li > a {
+        width: 68px; }
+        .app-container.app-sidebar-collapse .app-sidebar ul.sidebar-menu > li > a .icon {
+          width: 68px; } }
+
+@media (max-width: 480px) {
+  .app-container .app-sidebar {
+    width: 100%; }
+  .app-container.app-sidebar-top .app-sidebar {
+    width: 100%; }
+    .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li {
+      width: 60px; }
+      .app-container.app-sidebar-top .app-sidebar ul.sidebar-menu > li > a .icon {
+        width: 60px; } }
+
+@keyframes sidebar-sub-menu-show {
+  from {
+    left: 20px;
+    opacity: 0; }
+  to {
+    left: 0;
+    opacity: 1; } }
+
+@keyframes sidebar-expand {
+  from {
+    left: 20px;
+    opacity: 0; }
+  to {
+    left: 0;
+    opacity: 1; } }
+
+@keyframes top-menu-dropdown {
+  from {
+    margin-top: 75px;
+    opacity: 0; }
+  to {
+    margin-top: 55px;
+    opacity: 1; } }
+
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox],
+.radio input[type=radio],
+.radio-inline input[type=radio] {
+  position: relative;
+  margin-right: 5px; }
+
+.checkbox-io input {
+  position: absolute;
+  left: -9999px; }
+
+.checkbox-io label {
+  display: block;
+  position: relative;
+  padding: 11px 0 11px 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-top: -4px; }
+
+.checkbox-io label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+  width: 20px;
+  height: 19px;
+  line-height: 18px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  transition: background-color 0.2s;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center; }
+
+.checkbox-io label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+  width: 18px;
+  height: 17px;
+  border: 12px solid #fff;
+  margin: 1px;
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  opacity: 0; }
+
+.checkbox-io input:checked + label::before {
+  font-family: FontAwesome;
+  background-color: #36b846;
+  border: 1px solid #36b846;
+  color: #fff; }
+
+.checkbox-io input:checked + label::after {
+  border: 2px solid #fff;
+  opacity: 1; }
+
+.checkbox-io.checkbox-lg label {
+  padding: 15px 0 15px 38px; }
+
+.checkbox-io.checkbox-lg label::before {
+  width: 28px;
+  height: 27px;
+  line-height: 24px; }
+
+.checkbox-io.checkbox-lg label::after {
+  width: 26px;
+  height: 25px; }
+
+.checkbox-io.no-label label {
+  padding: 11px 0 11px 4px; }
+
+.radio-io input {
+  position: absolute;
+  left: -9999px; }
+
+.radio-io label {
+  display: block;
+  position: relative;
+  padding: 11px 0 11px 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-top: -4px; }
+
+.radio-io label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 20px;
+  line-height: 18px;
+  border: 1px solid #ccc;
+  border-radius: 28px;
+  transition: background-color 0.2s;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center; }
+
+.radio-io label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 18px;
+  border-radius: 26px;
+  border: 12px solid #fff;
+  margin: 1px;
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  opacity: 0; }
+
+.radio-io input:checked + label::before {
+  font-family: FontAwesome;
+  background-color: #36b846;
+  border: 1px solid #36b846;
+  color: #fff; }
+
+.radio-io input:checked + label::after {
+  border: 2px solid #fff;
+  opacity: 1; }
+
+.radio-io.radio-lg label {
+  padding: 15px 0 15px 40px; }
+
+.radio-io.radio-lg label::before {
+  width: 28px;
+  line-height: 24px; }
+
+.radio-io.radio-lg label::after {
+  width: 18px; }
+
+.checkbox-io.checkbox-inline, .radio-io.radio-inline {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0; }
+  .checkbox-io.checkbox-inline input[type=checkbox], .checkbox-io.checkbox-inline input[type=radio], .radio-io.radio-inline input[type=checkbox], .radio-io.radio-inline input[type=radio] {
+    position: absolute; }
+
+.checkbox-io.checkbox-inline + .checkbox-io.checkbox-inline
+, .radio-io.radio-inline + .radio-io.radio-inline {
+  margin-left: 20px; }
+
+.form-horizontal .checkbox-io label::before, .form-horizontal .checkbox-io label::after, .form-horizontal .radio-io label::before, .form-horizontal .radio-io label::after {
+  top: 10px;
+  bottom: 10px; }
+
+input.form-control {
+  border-radius: 2px; }

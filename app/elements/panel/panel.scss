@@ -1,0 +1,26 @@
+
+$font: 'Roboto', sans-serif;
+
+.panel {
+  margin-bottom: 30px;
+  border-radius: 1px;
+  .panel-heading {
+    font-size: 1.05em;
+    padding: 12px 16px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-family: $font;
+    font-size: 1.05em;
+    font-weight: 500;
+  }
+
+  .panel-body {
+    padding: 20px;
+
+    .sub-title {
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #EEE;
+    }
+  }
+}

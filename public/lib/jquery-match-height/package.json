@@ -1,0 +1,48 @@
+{
+  "name": "jquery-match-height",
+  "version": "0.6.0",
+  "license": "MIT",
+  "homepage": "http://brm.io/jquery-match-height/",
+  "author": {
+    "name": "Liam Brummitt",
+    "email": "liam@brm.io",
+    "url": "http://brm.io/"
+  },
+  "description": "a responsive equal heights plugin for jQuery",
+  "main": "jquery.matchHeight.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liabru/jquery-match-height.git"
+  },
+  "keywords": [
+    "matchHeight",
+    "equal",
+    "match",
+    "height",
+    "equalize",
+    "columns"
+  ],
+  "bugs": {
+    "url": "https://github.com/liabru/jquery-match-height/issues"
+  },
+  "_id": "jquery-match-height@0.6.0",
+  "_shasum": "3c93066ca672415a9ac7f641cf1d12228a5ae6f1",
+  "_from": "jquery-match-height@0.6.0",
+  "_npmVersion": "1.4.9",
+  "_npmUser": {
+    "name": "liabru",
+    "email": "liam@brm.io"
+  },
+  "maintainers": [
+    {
+      "name": "liabru",
+      "email": "liam@brm.io"
+    }
+  ],
+  "dist": {
+    "shasum": "3c93066ca672415a9ac7f641cf1d12228a5ae6f1",
+    "tarball": "http://registry.npmjs.org/jquery-match-height/-/jquery-match-height-0.6.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/jquery-match-height/-/jquery-match-height-0.6.0.tgz"
+}

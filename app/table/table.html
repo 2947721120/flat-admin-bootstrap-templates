@@ -1,0 +1,316 @@
+@@include('../include/header/header.html',{ "path": "../.." }) @@include('../include/navbar/navbar.html', { "breadcrumb": { "level2": "Table", "level1": "Static Table" } }) @@include('../include/sidebar/sidebar.html')
+<div class="app-content-container">
+  <div class="app-content-header">
+    <div class="header">
+      <div class="title">Static Table</div>
+      <div class="description">A bootstrap table for display list of data.</div>
+    </div>
+  </div>
+  <div class="app-content">
+    <div class="content-row">
+      <div class="panel panel-default">
+        <div class="panel-heading">Todo List</div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th  style="width: 30px;"></th>
+              <th>Task</th>
+              <th>Deadline</th>
+              <th>Owner</th>
+              <th>Work Progress</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox2" checked>
+                  <label for="checkbox2"></label>
+                </div>
+              </td>
+              <td>
+                <del>Design</del>
+              </td>
+              <td>2016/06/15</td>
+              <td>Lowell	Blair</td>
+              <td>
+                <div class="progress no-mb">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                    <span class="sr-only">100%</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox3">
+                  <label for="checkbox3"></label>
+                </div>
+              </td>
+              <td>Serverside Implementation</td>
+              <td>2016/07/25</td>
+              <td>Laverne	Lawrence</td>
+              <td>
+                <div class="progress no-mb">
+                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                    <span class="sr-only">70% Complete (success)</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox6">
+                  <label for="checkbox6"></label>
+                </div></td>
+              <td>Frontend Implementation</td>
+              <td>2016/08/12</td>
+              <td>Amy	Reyes</td>
+              <td>
+                <div class="progress no-mb">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                    <span class="sr-only">50% Complete (success)</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox4">
+                  <label for="checkbox4"></label>
+                </div></td>
+              <td>Testing</td>
+              <td>2016/08/25</td>
+              <td>Sara	Pearson</td>
+              <td>
+                <div class="progress no-mb">
+                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                    <span class="sr-only">20% Complete (success)</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox5">
+                  <label for="checkbox5"></label>
+                </div></td>
+              <td>Deploy</td>
+              <td>2016/09/08</td>
+              <td>Jeffery	Becker</td>
+              <td>
+                <div class="progress no-mb">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                    <span class="sr-only">0% Complete (success)</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="content-row">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Table</div>
+        <!-- Table -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Office</th>
+              <th>Age</th>
+              <th>Start date</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>Garrett Winters</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>63</td>
+              <td>2011/07/25</td>
+              <td>$170,750</td>
+            </tr>
+            <tr>
+              <td>Ashton Cox</td>
+              <td>Junior Technical Author</td>
+              <td>San Francisco</td>
+              <td>66</td>
+              <td>2009/01/12</td>
+              <td>$86,000</td>
+            </tr>
+            <tr>
+              <td>Cedric Kelly</td>
+              <td>Senior Javascript Developer</td>
+              <td>Edinburgh</td>
+              <td>22</td>
+              <td>2012/03/29</td>
+              <td>$433,060</td>
+            </tr>
+            <tr>
+              <td>Airi Satou</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>33</td>
+              <td>2008/11/28</td>
+              <td>$162,700</td>
+            </tr>
+            <tr>
+              <td>Brielle Williamson</td>
+              <td>Integration Specialist</td>
+              <td>New York</td>
+              <td>61</td>
+              <td>2012/12/02</td>
+              <td>$372,000</td>
+            </tr>
+            <tr>
+              <td>Herrod Chandler</td>
+              <td>Sales Assistant</td>
+              <td>San Francisco</td>
+              <td>59</td>
+              <td>2012/08/06</td>
+              <td>$137,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="content-row">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Datatable Style</div>
+        <!-- Table -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th style="width: 30px;"></th>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Office</th>
+              <th>Age</th>
+              <th>Start date</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox10">
+                  <label for="checkbox10"></label>
+                </div>
+              </td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox11">
+                  <label for="checkbox11"></label>
+                </div>
+              </td>
+              <td>Garrett Winters</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>63</td>
+              <td>2011/07/25</td>
+              <td>$170,750</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox12">
+                  <label for="checkbox12"></label>
+                </div>
+              </td>
+              <td>Ashton Cox</td>
+              <td>Junior Technical Author</td>
+              <td>San Francisco</td>
+              <td>66</td>
+              <td>2009/01/12</td>
+              <td>$86,000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox13">
+                  <label for="checkbox13"></label>
+                </div>
+              </td>
+              <td>Cedric Kelly</td>
+              <td>Senior Javascript Developer</td>
+              <td>Edinburgh</td>
+              <td>22</td>
+              <td>2012/03/29</td>
+              <td>$433,060</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox14">
+                  <label for="checkbox14"></label>
+                </div>
+              </td>
+              <td>Airi Satou</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>33</td>
+              <td>2008/11/28</td>
+              <td>$162,700</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox15">
+                  <label for="checkbox15"></label>
+                </div>
+              </td>
+              <td>Brielle Williamson</td>
+              <td>Integration Specialist</td>
+              <td>New York</td>
+              <td>61</td>
+              <td>2012/12/02</td>
+              <td>$372,000</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox-io no-label">
+                  <input type="checkbox" id="checkbox16">
+                  <label for="checkbox16"></label>
+                </div>
+              </td>
+              <td>Herrod Chandler</td>
+              <td>Sales Assistant</td>
+              <td>San Francisco</td>
+              <td>59</td>
+              <td>2012/08/06</td>
+              <td>$137,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('../include/footer/footer.html',{ "path": "../.." })

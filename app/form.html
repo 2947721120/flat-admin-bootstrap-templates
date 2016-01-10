@@ -1,0 +1,17 @@
+@@include('./include/header/header.html',{"path": ".."})
+@@include('./include/navbar/navbar.html', {
+  "breadcrumb": {
+    "level2": "",
+    "level1": "Form"
+  }
+})
+@@include('./include/sidebar/sidebar.html')
+<div class="app-content-container">
+  @@include('./pages/form.html')
+</div>
+@@include('./include/footer/footer.html',{
+    "path": "..",
+    "context": {
+        "form_js": true
+    }
+  })

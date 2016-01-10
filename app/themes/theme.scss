@@ -1,0 +1,576 @@
+$color-white: #fff;
+$color-white-smoke: #f9f9f9;
+$color-white-grey: #eee;
+$color-light-grey: #ddd;
+$color-grey: #ccc;
+$color-dark-grey: #aaa;
+$color-green: #36b846;
+$color-green-dark: #18a328;
+$color-green-darkest: #0f8e1e;
+$color-green-light-bg: lighten($color-green-dark, 57%);
+$color-yellow: #ffb400;
+$color-yellow-dark: #ff9c00;
+$color-yellow-darkest: #f18403;
+$color-yellow-light-bg: lighten($color-yellow-dark, 47%);
+$color-orange: #e75926;
+$color-light-blue: #2caef5;
+$color-light-blue-dark: #1599e1;
+$color-light-blue-darkest: #098bd3;
+$color-light-blue-light-bg: lighten($color-light-blue-dark, 47%);
+$color-blue: #4183d7;
+$color-blue-dark: #2368bf;
+$color-blue-darkest: #1659ae;
+$color-blue-light-bg: lighten($color-blue-dark, 52%);
+$color-red: #e50011;
+$color-red-dark: #c1000e;
+$color-red-darkest: #a4000c;
+$color-red-light-bg: lighten($color-red-dark, 60%);
+$color-lighter-black: #666;
+$color-light-black: #464646;
+$color-black: #212121;
+$color-black-dark: #121212;
+$color-black-light-dark: #1a1a1a;
+.flatio-green {
+  background-color: $color-white-grey;
+  .app-container {
+    background-color: $color-white-grey;
+    .app-header {
+      .navbar.navbar-default {
+        background-color: $color-white;
+        .navbar-header {
+          .navbar-brand {
+            background-color: $color-green;
+            color: $color-white;
+          }
+          .navbar-toggle-container {
+            .btn {
+              background-color: $color-white;
+            }
+          }
+        }
+        .navbar-collapse {
+          ul.nav {
+            & > li {
+              .btn-search,
+              ol.breadcrumb {
+                background-color: $color-white;
+              }
+              ol.breadcrumb {
+                & > li {
+                  color: $color-black;
+                  & > a {
+                    color: $color-black;
+                  }
+                }
+                & > li+li:before {
+                  color: $color-black;
+                }
+                & > li.active {
+                  color: $color-green-dark;
+                }
+              }
+            }
+          }
+        }
+        ul.nav {
+          & > li {
+            & > a {
+              color: $color-light-black;
+            }
+          }
+          & > li.notify {
+            & > a {
+              .badge {
+                background-color: $color-green;
+              }
+            }
+          }
+          & > li.br {
+            border-right: 1px solid $color-white-smoke;
+          }
+          & > li.bl {
+            border-left: 1px solid $color-white-smoke;
+          }
+          & > li.dropdown {
+            .dropdown-menu {
+              border: 0;
+              -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+              -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+              box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+              & > li.title {
+                border-bottom: 1px solid $color-white-smoke;
+                background-color: transparent;
+              }
+            }
+          }
+          & > li.dropdown.open {
+            & > a {
+              background-color: $color-white;
+            }
+          }
+          & > li.dropdown.notify {
+            .dropdown-menu {
+              ul.notifications {
+                & > li {
+                  border-bottom: 1px solid $color-white-smoke;
+                  background-color: transparent;
+                  & > a {
+                    color: $color-light-black;
+                  }
+                  & > a:hover {
+                    background-color: $color-white-smoke;
+                    color: $color-green;
+                  }
+                }
+              }
+            }
+          }
+        }
+        ul.nav.navbar-right {
+          & > li.profile {
+            .dropdown-profile {
+              border: 0;
+              -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+              -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+              box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+              .profile-img {
+                background: $color-green;
+                background: -moz-linear-gradient(top, $color-green 0%, $color-green 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, $color-green), color-stop(50%, $color-green), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+                background: -webkit-linear-gradient(top, $color-green 0%, $color-green 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+                background: -o-linear-gradient(top, $color-green 0%, $color-green 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+                background: -ms-linear-gradient(top, $color-green 0%, $color-green 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+                background: linear-gradient(to bottom, $color-green 0%, $color-green 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+                filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0 );
+              }
+              .profile-footer {
+                background-color: $color-white-smoke;
+              }
+            }
+            .dropdown-profile::before {
+              border-bottom-color: $color-green;
+            }
+          }
+          & > li.profile.open {
+            & > a {
+              background-color: $color-white;
+              color: $color-black;
+            }
+          }
+        }
+      }
+    }
+    .app-sidebar {
+      background-color: $color-black;
+      -webkit-box-shadow: 1px 0 2px 0 rgba(0,0,0,0.1);
+      -moz-box-shadow: 1px 0 2px 0 rgba(0,0,0,0.1);
+      box-shadow: 1px 0 2px 0 rgba(0,0,0,0.1);
+      ul.sidebar-menu {
+        & > li {
+          & > a {
+            border-left: 2px solid transparent;
+            border-bottom: 0;
+            color: $color-white;
+            .badge {
+              color: $color-white;
+              background-color: $color-green;
+            }
+          }
+          & > a:hover {
+            color: $color-green;
+          }
+        }
+        & > li.dropdown {
+          ul.dropdown-menu {
+            background-color: rgba(255,255,255,0.05);
+            & > li {
+              & > a {
+                color: $color-white;
+              }
+              & > a:hover {
+                color: $color-green;
+              }
+            }
+          }
+        }
+        & > li.active {
+          & > a {
+            background-color: rgba(0,0,0,0.3);
+            border-left: 2px solid $color-green;
+            color: $color-green;
+          }
+        }
+        & > li.header {
+          color: $color-white;
+          opacity: 0.5;
+        }
+        & > li.line {
+          background-color: $color-black-light-dark;
+        }
+      }
+    }
+    .app-content-container {
+      .app-content-header {
+        background-color: $color-white-smoke;
+
+        -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.08);
+        -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.08);
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.08);
+      }
+    }
+  }
+  .app-container.app-sidebar-collapse {
+    .app-sidebar {
+      ul.sidebar-menu {
+        & > li.dropdown {
+          ul.dropdown-menu {
+            background-color: $color-white;
+            -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.15);
+            -moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.15);
+            box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.15);
+            & > li {
+              border-bottom: 1px solid $color-white-smoke;
+              & > a {
+                color: $color-black;
+              }
+              & > a:hover {
+                color: $color-green;
+              }
+            }
+          }
+          ul.dropdown-menu::before {
+            border-right-color: $color-white;
+          }
+        }
+        & > li.active {
+          background-color: rgba(0,0,0,0.3);
+        }
+      }
+    }
+  }
+  .app-container.app-sidebar-top {
+    .app-sidebar {
+      ul.sidebar-menu {
+        & > li {
+          & > a {
+            border-left: 0;
+            border-bottom: 2px solid transparent;
+          }
+        }
+        & > li.active {
+          border-bottom: 2px solid $color-green;
+        }
+        & > li.dropdown {
+          ul.dropdown-menu {
+            background-color: $color-white;
+            -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.15);
+            -moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.15);
+            box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.15);
+            & > li {
+              border-bottom: 1px solid $color-white-smoke;
+              & > a {
+                color: $color-black;
+              }
+              & > a:hover {
+                color: $color-green;
+              }
+            }
+          }
+          ul.dropdown-menu::after {
+            border-bottom-color: $color-white;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .app-container {
+      .app-header {
+        .navbar.navbar-default {
+          .navbar-header {
+            background-color: $color-green;
+            .navbar-toggle-container {
+              ul.nav {
+                & > li {
+                  .btn {
+                    color: $color-white;
+                    background-color: $color-green;
+                  }
+                }
+              }
+            }
+          }
+          ul.nav {
+            & > li.br {
+              border-right: 1px solid rgba(0,0,0,0.15);
+            }
+            & > li.bl {
+              border-left: 1px solid rgba(0,0,0,0.15);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Card Styles
+.card {
+  background-color: $color-white;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+}
+
+// Card Summary
+.card.card-summary {
+  color: $color-green;
+  background-color: $color-white;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  .title {
+    color: $color-lighter-black;
+  }
+}
+.card.card-summary.card-green {
+  background-color: $color-green;
+  color: $color-white;
+}
+.card.card-summary.card-yellow {
+  background-color: $color-yellow;
+  color: $color-white;
+  .title {
+    color: $color-white;
+  }
+}
+.card.card-summary.card-orange {
+  background-color: $color-orange;
+  color: $color-white;
+}
+.card.card-summary.card-red {
+  background-color: $color-yellow;
+  color: $color-white;
+}
+.card.card-summary.card-blue {
+  background-color: $color-blue;
+  color: $color-white;
+}
+.card.card-summary.card-inverse {
+  background-color: $color-light-black;
+  color: $color-white;
+}
+.card.card-summary.card-green-inverse {
+  background-color: $color-light-black;
+  color: $color-green;
+}
+.card.card-summary.card-yellow-inverse {
+  background-color: $color-light-black;
+  color: $color-yellow;
+}
+.card.card-summary.card-orange-inverse {
+  background-color: $color-light-black;
+  color: $color-orange;
+}
+.card.card-summary.card-red-inverse {
+  background-color: $color-light-black;
+  color: $color-red;
+}
+.card.card-summary.card-light-green {
+  background-color: $color-white;
+  color: $color-green;
+}
+.card.card-summary.card-light-yellow {
+  background-color: $color-white;
+  color: $color-yellow;
+}
+.card.card-summary.card-light-orange {
+  background-color: $color-white;
+  color: $color-orange;
+}
+.card.card-summary.card-light-red {
+  background-color: $color-white;
+  color: $color-red;
+}
+.card.card-summary.card-light-blue {
+  background-color: $color-white;
+  color: $color-blue;
+}
+.card.card-summary.card-blue-inverse {
+  background-color: $color-light-black;
+  color: $color-blue;
+}
+.card.card-summary.card-success.card-light {
+  background-color: $color-white;
+  color: $color-green;
+}
+
+// Button
+.btn {
+  .icon {
+    border-right-color: rgba(0,0,0,0.08);
+  }
+}
+.btn-default {
+  border-color: $color-grey;
+}
+.btn-default:hover {
+  background-color: $color-white-smoke;
+  border-color: $color-dark-grey;
+}
+.btn-primary {
+  background-color: $color-blue;
+  border-color: $color-blue-dark;
+}
+.btn-primary:hover {
+  background-color: $color-blue-dark;
+  border-color: $color-blue-darkest;
+}
+.btn-primary.btn-light {
+  color: $color-blue;
+  border-color: $color-blue;
+}
+.btn-primary.btn-light:hover {
+  background-color: $color-blue-light-bg;
+}
+.btn-success {
+  background-color: $color-green;
+  border-color: $color-green-dark;
+}
+.btn-success:hover {
+  background-color: $color-green-dark;
+  border-color: $color-green-darkest;
+}
+.btn-success.btn-light {
+  color: $color-green-dark;
+  border-color: $color-green-dark;
+}
+.btn-success.btn-light:hover {
+  background-color: $color-green-light-bg;
+}
+.btn-warning {
+  background-color: $color-yellow;
+  border-color: $color-yellow-dark;
+}
+.btn-warning:hover {
+  background-color: $color-yellow-dark;
+  border-color: $color-yellow-darkest;
+}
+.btn-warning.btn-light {
+  color: $color-yellow-dark;
+  border-color: $color-yellow-dark;
+}
+.btn-warning.btn-light:hover {
+  background-color: $color-yellow-light-bg;
+}
+.btn-danger {
+  background-color: $color-red;
+  border-color: $color-red-dark;
+}
+.btn-danger:hover {
+  background-color: $color-red-dark;
+  border-color: $color-red-darkest;
+}
+.btn-danger.btn-light {
+  color: $color-red;
+  border-color: $color-red;
+}
+.btn-danger.btn-light:hover {
+  background-color: $color-red-light-bg;
+}
+.btn-info {
+  background-color: $color-light-blue;
+  border-color: $color-light-blue-dark;
+}
+.btn-info:hover {
+  background-color: $color-light-blue-dark;
+  border-color: $color-light-blue-darkest;
+}
+.btn-info.btn-light {
+  color: $color-light-blue-dark;
+  border-color: $color-light-blue-dark;
+}
+.btn-info.btn-light:hover {
+  background-color: $color-light-blue-light-bg;
+}
+.btn-link {
+  color: $color-blue-dark;
+}
+.btn-light {
+  background-color: $color-white;
+}
+
+// Badge Color
+.badge.badge-dafault {
+
+}
+.badge.badge-success {
+  background-color: $color-green !important;
+}
+.badge.badge-danger {
+  background-color: $color-red !important;
+}
+.badge.badge-warning {
+  background-color: $color-yellow !important;
+}
+.badge.badge-primary {
+  background-color: $color-blue !important;
+}
+.badge.badge-info {
+  background-color: $color-light-blue !important;
+}
+
+// Progress Bar
+.progress {
+  .progress-bar-success {
+    background-color: $color-green;
+  }
+}
+.panel.panel-default {
+  .panel-heading {
+    background-color: $color-white-smoke;
+    border-bottom: 1px solid $color-white-grey;
+  }
+}
+
+// Input
+.has-success {
+  .form-control {
+    box-shadow: none;
+    border-color:  $color-green-dark;
+  }
+  .form-control:focus {
+    border-color: $color-green-darkest;
+    box-shadow: none;
+  }
+  .checkbox, .checkbox-inline, .control-label, .help-block, .radio {
+      color: $color-green-dark;
+  }
+}
+
+.has-warning {
+  .form-control {
+    box-shadow: none;
+    border-color:  $color-yellow-dark;
+  }
+  .form-control:focus {
+    border-color: $color-yellow-darkest;
+    box-shadow: none;
+  }
+  .checkbox, .checkbox-inline, .control-label, .help-block, .radio {
+      color: $color-yellow-dark;
+  }
+}
+.has-error {
+  .form-control {
+    box-shadow: none;
+    border-color:  $color-red;
+  }
+  .form-control:focus {
+    border-color: $color-red-darkest;
+    box-shadow: none;
+  }
+  .checkbox, .checkbox-inline, .control-label, .help-block, .radio {
+      color: $color-red;
+  }
+}

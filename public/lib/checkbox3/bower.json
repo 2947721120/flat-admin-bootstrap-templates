@@ -1,0 +1,32 @@
+{
+  "name": "checkbox3",
+  "description": "CSS3 Style for Checkbox and Radio Button",
+  "main": [
+    "checkbox3.sass",
+    "dist/checkbox3.css",
+    "dist/checkbox3.min.css"
+  ],
+  "keywords": [
+    "checkbox",
+    "radio",
+    "css"
+  ],
+  "dependencies": {
+    "jquery": "2.1.0",
+    "bootstrap": "3.3.5",
+    "fontawesome": "4.4.0"
+  },
+  "license": "MIT",
+  "authors": [
+    "Tui2Tone <tui2tone@gmail.com>"
+  ],
+  "ignore": [
+    "gulpfile.js",
+    "package.json",
+    "bower.json",
+    ".gitignore",
+    "node_modules",
+    "bower_components",
+    "public"
+  ]
+}

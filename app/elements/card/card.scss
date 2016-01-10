@@ -1,0 +1,16 @@
+$font: 'Roboto', sans-serif;
+
+.card {
+  width: 100%;
+  border-radius: 2px;
+  .card-header {
+    font-family: $font;
+    padding: 18px 30px;
+    border-bottom: 1px solid #F9F9F9;
+    font-size: 1.25em;
+  }
+  .card-body {
+    overflow: hidden;
+    padding: 30px;
+  }
+}

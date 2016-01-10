@@ -1,14 +1,32 @@
 {
-  "name": "flat-admin-bootstrap-templates",
+  "name": "flatio-admin-templates",
+  "dependencies": {
+    "jquery": "2.1.4",
+    "bootstrap": "3.3.5",
+    "font-awesome": "4.4.0",
+    "chartist": "0.9.4",
+    "datatables": "1.10.8",
+    "awesome-bootstrap-checkbox": "0.3.6",
+    "jquery-match-height": "0.6.0"
+  },
   "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-coffee": "2.3.1",
+    "gulp-sass": "2.0.4",
+    "gulp-inject": "*",
+    "require-dir": "*",
+    "run-sequence": "*",
+    "gulp-util": "*",
+    "gulp-usemin": "*",
+    "gulp-uglify": "1.4.1",
+    "gulp-minify-css": "1.2.1",
+    "gulp-minify-html": "*",
+    "gulp-rev": "*",
     "browser-sync": "*",
-    "gulp": "*",
-    "gulp-coffee": "*",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
-    "gulp-sass": "*",
-    "main-bower-files": "^2.9.0",
-    "rimraf": "^2.4.4"
+    "gulp-notify": "*",
+    "gulp-file-include": "*",
+    "gulp-plumber": "*",
+    "gulp-concat": "*"
   },
   "private": true
 }

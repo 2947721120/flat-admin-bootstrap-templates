@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,300);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,300,500);
+
+$navbar-height: 70px;
+$sizebar-width: 280px;
+$sizebar-collapse-width: 70px;
+$menu-item-height: 55px;
+
+$font: 'Ubuntu', sans-serif;
+
+html, body {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  font-size: 12px;
+  font-family: $font;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+// Global Class
+// Row
+
+.no-p {
+  padding: 0 !important;
+}
+
+.no-pt{
+  padding-top: 0 !important
+}
+
+.no-mb {
+  margin-bottom: 0 !important;
+}
+
+.no-br {
+  border-radius: 0 !important;
+}
+
+// App
+.app-container {
+  height: 100%;
+  min-height: 100%;
+
+  .app-content-container {
+    padding-top: $navbar-height;
+    padding-left: $sizebar-width;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    .app-content-header {
+      .header {
+        display: block;
+        padding: 30px;
+        .title {
+          font-family: $font;
+          font-size: 2em;
+          font-weight: 400;
+        }
+        .description {
+          font-family: $font;
+          font-size: 1em;
+          font-family: $font;
+          margin-top: 3px;
+        }
+        .description.indent {
+          text-indent: 20px;
+        }
+      }
+    }
+
+    .app-content {
+      padding-top: 30px;
+      .content-row {
+        padding: 0px 30px 0px 30px;
+      }
+      .content-row.no-p {
+        padding: 0;
+      }
+    }
+  }
+
+  .app-center-both {
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.app-container.app-sidebar-collapse {
+  .app-content-container {
+    padding-left: $sizebar-collapse-width;
+  }
+}
+
+.app-container.app-sidebar-top {
+  .app-content-container {
+    padding-left: 0 !important;
+    padding-top: $navbar-height + $menu-item-height;
+  }
+}
+
+
+@media (max-width: 767px) {
+  $sizebar-collapse-width: 0px;
+  .app-container {
+    .app-content-container {
+      padding-left: $sizebar-collapse-width;
+    }
+  }
+  .app-container.app-sidebar-collapse {
+    .app-content-container {
+      padding-left: $sizebar-collapse-width;
+    }
+  }
+}
+
+// Global
+// Progress Bar
+.progress {
+  height: 16px;
+  border-radius: 2px;
+}

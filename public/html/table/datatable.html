@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- BEGIN Include Stylesheet Libs -->
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/datatables/media/css/jquery.dataTables.min.css">
+    <!-- End Include Stylesheet Libs -->
+
+    <!-- BEGIN Include Theme Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/theme.css">
+    <!-- End Include Theme Stylesheet -->
+
+  </head>
+  <body class="flatio-green">
+    <div class="app-container app-sidebar-collapse">
+
+<div class="app-header">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <div class="brand-logo"><i class="fa fa-shopping-cart"></i></div>
+          <div class="brand-title">FLATIO ADMIN</div>
+        </a>
+        <div class="navbar-toggle-container">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="bl">
+              <button class="btn btn-toggle-sidebar"><i class="fa fa-outdent"></i></button>
+            </li>
+            <li class="bl">
+              <button class="btn navbar-toggle" data-toggle="collapse" data-target="#navbar"><i class="fa fa-chevron-down"></i></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="br bl">
+            <button class="btn-search"><i class="fa fa-search"></i></button>
+          </li>
+          <li class="hidden-xs">
+            <ol class="breadcrumb">
+              
+                
+                  <li>Table</li>
+                
+              
+              <li class="active">Datatable</li>
+            </ol>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown notify">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-commenting"></i>
+              <span class="badge badge-danger">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="title">
+                Notification
+              </li>
+              <li>
+                <ul class="list-group notifications">
+                  <li class="list-group-item list-group-item-success">
+                    <a href="#">
+                      <span class="badge">1</span> <i class="fa fa-hand-o-up icon"></i> new registration
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="badge badge-success">1</span> <i class="fa fa-paper-plane-o icon"></i> new orders
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="badge badge-danger">2</span> customers messages
+                    </a>
+                  </li>
+                  <li class="list-group-item message">
+                    <a href="#">view all</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown profile bl">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Emily Hart</a>
+            <div class="dropdown-menu dropdown-profile animated fadeInDown">
+              <div class="profile-img">
+                <img src="/img/profile.jpg">
+              </div>
+
+              <div class="profile-info">
+                <h4 class="username">Emily Hart</h4>
+                <p>emily_hart@email.com</p>
+              </div>
+              <div class="profile-footer">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">Profile</button>
+                  <button type="button" class="btn btn-default">Logout</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<aside class="app-sidebar">
+  <ul class="sidebar-menu">
+    <li class="header">Dashboard</li>
+    <li class="active">
+      <a href="/">
+        <i class="icon fa fa-th-large"></i>
+        <span class="title">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a href="/html/inbox.html">
+        <i class="icon fa fa-inbox"></i>
+        <span class="title">Inbox</span>
+        <span class="badge">4</span>
+      </a>
+    </li>
+    <li class="line"></li>
+    <li class="header">Components</li>
+    <li class="dropdown">
+      <a href="#" data-toggle="dropdown">
+        <i class="icon fa fa-cubes"></i>
+        <span class="title">UI Kits</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="/html/uikits/customize.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Customize</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/grid.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Grid</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/button.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Button</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/card.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Card</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/tabs.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Tabs & Step</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/loader.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Loader</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/pricing_table.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Pricing Table</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" data-toggle="dropdown">
+        <i class="icon fa fa-table"></i>
+        <span class="title">Table</span>
+        <span class="badge badge-primary">10</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="/html/table/table.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Table Static</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/table/datatable.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Datatable</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/table/responsive.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Responsive Table</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/table/infinite-scroll.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Infinite Scroll Table</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+      <li>
+        <a href="/html/form.html">
+          <i class="icon fa fa-pencil-square-o"></i>
+          <span class="title">Form</span>
+        </a>
+      </li>
+      <li>
+        <a href="/html/icon.html">
+          <i class="icon fa fa-archive"></i>
+          <span class="title">Icons</span>
+        </a>
+      </li>
+      <li>
+        <a href="/html/chart.html">
+          <i class="icon fa fa-area-chart"></i>
+          <span class="title">Chart</span>
+        </a>
+      </li>
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown">
+          <i class="icon fa fa-file-o"></i>
+          <span class="title">Pages</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="/html/pages/signin.html">
+              <i class="icon fa fa-circle"></i>
+              <span class="title">Signin</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/table/datatable.html">
+              <i class="icon fa fa-circle"></i>
+              <span class="title">Signup</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/table/datatable.html">
+              <i class="icon fa fa-circle"></i>
+              <span class="title">Forgot Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/table/responsive.html">
+              <i class="icon fa fa-circle"></i>
+              <span class="title">404 Not Found</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+  </ul>
+</aside>
+
+<div class="app-content-container">
+  <div class="app-content-header">
+    <div class="header">
+      <div class="title">Datatable</div>
+    </div>
+  </div>
+  <div class="app-content">
+    <div class="content-row">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Table</div>
+        <!-- Table -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Office</th>
+              <th>Age</th>
+              <th>Start date</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>Garrett Winters</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>63</td>
+              <td>2011/07/25</td>
+              <td>$170,750</td>
+            </tr>
+            <tr>
+              <td>Ashton Cox</td>
+              <td>Junior Technical Author</td>
+              <td>San Francisco</td>
+              <td>66</td>
+              <td>2009/01/12</td>
+              <td>$86,000</td>
+            </tr>
+            <tr>
+              <td>Cedric Kelly</td>
+              <td>Senior Javascript Developer</td>
+              <td>Edinburgh</td>
+              <td>22</td>
+              <td>2012/03/29</td>
+              <td>$433,060</td>
+            </tr>
+            <tr>
+              <td>Airi Satou</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>33</td>
+              <td>2008/11/28</td>
+              <td>$162,700</td>
+            </tr>
+            <tr>
+              <td>Brielle Williamson</td>
+              <td>Integration Specialist</td>
+              <td>New York</td>
+              <td>61</td>
+              <td>2012/12/02</td>
+              <td>$372,000</td>
+            </tr>
+            <tr>
+              <td>Herrod Chandler</td>
+              <td>Sales Assistant</td>
+              <td>San Francisco</td>
+              <td>59</td>
+              <td>2012/08/06</td>
+              <td>$137,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <!-- BEGIN Include Javascript Libs -->
+  <script src="../../lib/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="../../lib/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="../../lib/chartist/dist/chartist.min.js" charset="utf-8"></script>
+  <script src="../../lib/jquery-match-height/jquery.matchHeight-min.js" charset="utf-8"></script>
+  <script src="../../lib/datatables/media/js/jquery.dataTables.min.js" charset="utf-8"></script>
+  <!-- END Include Javascript Libs -->
+
+  <!-- BEGIN Include Javascript Files -->
+  <script src="../../js/app.js" charset="utf-8"></script>
+  
+  
+    <script src="../../js/datatable.js" charset="utf-8"></script>
+  
+  <!-- END Include Javascript Files -->
+
+  </body>
+</html>
+

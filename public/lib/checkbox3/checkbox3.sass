@@ -1,0 +1,345 @@
+$color-green: #36b846
+$color-blue: #4183d7
+$color-yellow: #ff9c00
+$color-light-blue: #2caef5
+$color-red: #e50011
+$color-black: #444
+$color-grey: #CCC
+$color-white: #FFF
+
+.checkbox3
+  position: relative
+  input
+    position: absolute
+    left: -9999px
+  label
+    display: block
+    position: relative
+    padding: 11px 0 11px 30px
+    white-space: nowrap
+    cursor: pointer
+    font-size: 12px
+    margin-bottom: 0
+    margin-top: -4px
+  label::before
+    content: ''
+    display: block
+    position: absolute
+    top: 10px
+    bottom: 10px
+    left: 0
+    width: 21px
+    height: 21px
+    border: 1px solid $color-grey
+    border-radius: 1px
+    transition: background-color 0.2s
+    overflow: hidden
+    vertical-align: middle
+    text-align: center
+  label::after
+    content: ''
+    display: block
+    position: absolute
+    top: 10px
+    bottom: 10px
+    left: 0
+    width: 19px
+    height: 19px
+    border: 12px solid $color-white
+    margin: 1px
+    -webkit-transition: all 0.05s
+    transition: all 0.05s
+    opacity: 0
+  input:checked + label::before
+    font-family: FontAwesome
+    border-width: 1px
+    border-style: solid
+    background-color: $color-black
+    border-color: $color-black
+    color: #fff
+  input:checked + label::after
+    border: 3px solid $color-white
+    opacity: 1
+
+// Sizing
+.checkbox3.checkbox-sm
+  label
+    padding: 8px 0 8px 22px
+  label::before
+    width: 14px
+    height: 14px
+    line-height: 14px
+  label::after
+    width: 12px
+    height: 12px
+
+
+.checkbox3.checkbox-lg
+  label
+    padding: 15px 0 15px 40px
+  label::before
+    width: 28px
+    height: 27px
+    line-height: 24px
+  label::after
+    width: 26px
+    height: 25px
+
+.checkbox3.checkbox-inline, .radio3.radio-inline
+  padding-top: 0
+  padding-left: 0
+  padding-right:0
+  margin-left: 0
+
+  input[type=checkbox], input[type=radio]
+    position: absolute
+
+.checkbox3.checkbox-inline,.radio3.radio-inline
+  margin-right: 20px
+
+// Style Checkbox
+.checkbox3.checkbox-check
+  label::after , input:checked + label::after
+    border: 0
+  label::after
+    content: "\f00c"
+    font-family: FontAwesome
+    color: $color-white
+    width: 19px
+    height: 20px
+    line-height: 20px
+    vertical-align: middle
+    text-align: center
+    border-width: 0
+
+.checkbox3.checkbox-check.checkbox-light
+  label::after
+    color: $color-black
+
+.checkbox3.checkbox-circle
+  label::before , label::after
+    border-radius: 20px
+
+.checkbox3.checkbox-round
+  label::before , label::after
+    border-radius: 4px
+
+.checkbox3.checkbox-s1
+  label::before , label::after
+    border-radius: 4px
+
+.checkbox3.checkbox-light
+  label::before
+    background-color: transparent
+  input:checked + label::before
+    background-color: transparent
+    border-color: $color-black
+
+.checkbox3.checkbox-toggle
+
+
+// Color
+.checkbox3.checkbox-info
+  input:checked + label::before
+    background-color: $color-light-blue
+    border-color: $color-light-blue
+
+.checkbox3.checkbox-primary
+  input:checked + label::before
+    background-color: $color-blue
+    border-color: $color-blue
+
+.checkbox3.checkbox-success
+  input:checked + label::before
+    background-color: $color-green
+    border-color: $color-green
+
+.checkbox3.checkbox-warning
+  input:checked + label::before
+    background-color: $color-yellow
+    border-color: $color-yellow
+
+.checkbox3.checkbox-danger
+  input:checked + label::before
+    background-color: $color-red
+    border-color: $color-red
+
+.checkbox3.checkbox-primary.checkbox-light
+  input:checked + label::before
+    background-color: transparent
+    border-color: $color-blue
+  input:checked + label::after
+    color: $color-blue
+
+.checkbox3.checkbox-info.checkbox-light
+  input:checked + label::before
+    background-color: transparent
+    border-color: $color-light-blue
+  input:checked + label::after
+    color: $color-light-blue
+
+.checkbox3.checkbox-success.checkbox-light
+  input:checked + label::before
+    background-color: transparent
+    border-color: $color-green
+  input:checked + label::after
+    color: $color-green
+
+.checkbox3.checkbox-warning.checkbox-light
+  input:checked + label::before
+    background-color: transparent
+    border-color: $color-yellow
+  input:checked + label::after
+    color: $color-yellow
+
+.checkbox3.checkbox-danger.checkbox-light
+  input:checked + label::before
+    background-color: transparent
+    border-color: $color-red
+  input:checked + label::after
+    color: $color-red
+
+// Radio Button
+.radio3
+  position: relative
+  input
+    position: absolute
+    left: -9999px
+  label
+    display: block
+    position: relative
+    padding: 11px 0 11px 30px
+    white-space: nowrap
+    cursor: pointer
+    font-size: 12px
+    margin-bottom: 0
+    margin-top: -4px
+  label::before
+    content: ''
+    display: block
+    position: absolute
+    top: 10px
+    bottom: 10px
+    left: 0
+    width: 21px
+    height: 21px
+    border: 1px solid $color-grey
+    border-radius: 1px
+    transition: background-color 0.2s
+    overflow: hidden
+    vertical-align: middle
+    text-align: center
+  label::after
+    content: ''
+    display: block
+    position: absolute
+    top: 10px
+    bottom: 10px
+    left: 0
+    width: 19px
+    height: 19px
+    border: 12px solid $color-white
+    margin: 1px
+    -webkit-transition: all 0.05s
+    transition: all 0.05s
+    opacity: 0
+  input:checked + label::before
+    font-family: FontAwesome
+    border-width: 1px
+    border-style: solid
+    background-color: $color-black
+    border-color: $color-black
+    color: #fff
+  input:checked + label::after
+    border: 3px solid $color-white
+    opacity: 1
+  label::before , label::after
+    border-radius: 20px
+
+.radio3.radio-check
+  label::after
+    content: "\f00c"
+    font-family: FontAwesome
+    color: $color-white
+    width: 19px
+    height: 20px
+    line-height: 20px
+    vertical-align: middle
+    text-align: center
+    border-width: 0
+  input:checked + label::after
+    border-width: 0
+
+.radio3.radio-check-light
+  label::after
+    content: "\f00c"
+    font-family: FontAwesome
+    color: $color-white
+    width: 19px
+    height: 20px
+    line-height: 20px
+    vertical-align: middle
+    text-align: center
+    border-width: 0
+  input:checked + label::before
+    background-color: transparent
+  input:checked + label::after
+    border-width: 0
+    color: $color-black
+
+// Color
+.radio3.radio-primary
+  input:checked + label::before
+    background-color: $color-blue
+    border-color: $color-blue
+
+.radio3.radio-info
+  input:checked + label::before
+    background-color: $color-light-blue
+    border-color: $color-light-blue
+
+.radio3.radio-success
+  input:checked + label::before
+    background-color: $color-green
+    border-color: $color-green
+
+.radio3.radio-warning
+  input:checked + label::before
+    background-color: $color-yellow
+    border-color: $color-yellow
+
+.radio3.radio-danger
+  input:checked + label::before
+    background-color: $color-red
+    border-color: $color-red
+
+
+.radio3.radio-primary.radio-check-light
+  input:checked + label::before
+    background-color: transparent
+  input:checked + label::after
+    color: $color-blue
+
+.radio3.radio-info.radio-check-light
+  input:checked + label::before
+    background-color: transparent
+  input:checked + label::after
+    color: $color-light-blue
+
+.radio3.radio-success.radio-check-light
+  input:checked + label::before
+    background-color: transparent
+  input:checked + label::after
+    color: $color-green
+
+.radio3.radio-warning.radio-check-light
+  input:checked + label::before
+    background-color: transparent
+  input:checked + label::after
+    color: $color-yellow
+
+.radio3.radio-danger.radio-check-light
+  input:checked + label::before
+    background-color: transparent
+  input:checked + label::after
+    color: $color-red

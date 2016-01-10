@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- BEGIN Include Stylesheet Libs -->
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/datatables/media/css/jquery.dataTables.min.css">
+    <!-- End Include Stylesheet Libs -->
+
+    <!-- BEGIN Include Theme Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/theme.css">
+    <!-- End Include Theme Stylesheet -->
+
+  </head>
+  <body class="flatio-green">
+    <div class="app-container app-sidebar-collapse">
+
+<div class="app-header">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <div class="brand-logo"><i class="fa fa-shopping-cart"></i></div>
+          <div class="brand-title">FLATIO ADMIN</div>
+        </a>
+        <div class="navbar-toggle-container">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="bl">
+              <button class="btn btn-toggle-sidebar"><i class="fa fa-outdent"></i></button>
+            </li>
+            <li class="bl">
+              <button class="btn navbar-toggle" data-toggle="collapse" data-target="#navbar"><i class="fa fa-chevron-down"></i></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="br bl">
+            <button class="btn-search"><i class="fa fa-search"></i></button>
+          </li>
+          <li class="hidden-xs">
+            <ol class="breadcrumb">
+              
+                
+              
+              <li class="active">Form</li>
+            </ol>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown notify">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-commenting"></i>
+              <span class="badge badge-danger">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="title">
+                Notification
+              </li>
+              <li>
+                <ul class="list-group notifications">
+                  <li class="list-group-item list-group-item-success">
+                    <a href="#">
+                      <span class="badge">1</span> <i class="fa fa-hand-o-up icon"></i> new registration
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="badge badge-success">1</span> <i class="fa fa-paper-plane-o icon"></i> new orders
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="badge badge-danger">2</span> customers messages
+                    </a>
+                  </li>
+                  <li class="list-group-item message">
+                    <a href="#">view all</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown profile bl">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Emily Hart</a>
+            <div class="dropdown-menu dropdown-profile animated fadeInDown">
+              <div class="profile-img">
+                <img src="/img/profile.jpg">
+              </div>
+
+              <div class="profile-info">
+                <h4 class="username">Emily Hart</h4>
+                <p>emily_hart@email.com</p>
+              </div>
+              <div class="profile-footer">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">Profile</button>
+                  <button type="button" class="btn btn-default">Logout</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<aside class="app-sidebar">
+  <ul class="sidebar-menu">
+    <li class="header">Dashboard</li>
+    <li class="active">
+      <a href="/">
+        <i class="icon fa fa-th-large"></i>
+        <span class="title">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a href="/html/inbox.html">
+        <i class="icon fa fa-inbox"></i>
+        <span class="title">Inbox</span>
+        <span class="badge">4</span>
+      </a>
+    </li>
+    <li class="line"></li>
+    <li class="header">Components</li>
+    <li class="dropdown">
+      <a href="#" data-toggle="dropdown">
+        <i class="icon fa fa-cubes"></i>
+        <span class="title">UI Kits</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="/html/uikits/customize.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Customize</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/grid.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Grid</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/button.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Button</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/card.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Card</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/tabs.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Tabs & Step</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/loader.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Loader</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/uikits/pricing_table.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Pricing Table</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" data-toggle="dropdown">
+        <i class="icon fa fa-table"></i>
+        <span class="title">Table</span>
+        <span class="badge badge-primary">10</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="/html/table/table.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Table Static</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/table/datatable.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Datatable</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/table/responsive.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Responsive Table</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/table/infinite-scroll.html">
+            <i class="icon fa fa-circle"></i>
+            <span class="title">Infinite Scroll Table</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+      <li>
+        <a href="/html/form.html">
+          <i class="icon fa fa-pencil-square-o"></i>
+          <span class="title">Form</span>
+        </a>
+      </li>
+      <li>
+        <a href="/html/icon.html">
+          <i class="icon fa fa-archive"></i>
+          <span class="title">Icons</span>
+        </a>
+      </li>
+      <li>
+        <a href="/html/chart.html">
+          <i class="icon fa fa-area-chart"></i>
+          <span class="title">Chart</span>
+        </a>
+      </li>
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown">
+          <i class="icon fa fa-file-o"></i>
+          <span class="title">Pages</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="/html/pages/signin.html">
+              <i class="icon fa fa-circle"></i>
+              <span class="title">Signin</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/table/datatable.html">
+              <i class="icon fa fa-circle"></i>
+              <span class="title">Signup</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/table/datatable.html">
+              <i class="icon fa fa-circle"></i>
+              <span class="title">Forgot Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/table/responsive.html">
+              <i class="icon fa fa-circle"></i>
+              <span class="title">404 Not Found</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+  </ul>
+</aside>
+
+<div class="app-content-container">
+  
+  <div class="app-content-header">
+    <div class="header">
+      <div class="title">Form</div>
+      <div class="description">Form Elements</div>
+    </div>
+  </div>
+  <div class="app-content">
+    <div class="content-row">
+      <div class="panel panel-default">
+        <div class="panel-heading">Form Elements</div>
+        <div class="panel-body"><form class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Input</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Help Text</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" placeholder="">
+      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Disable Input</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" placeholder="Disable Input" disabled="true">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Form Static Label</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">email@example.com</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Textarea</label>
+    <div class="col-sm-10">
+      <textarea name="name" rows="8" class="form-control"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Checkbox</label>
+    <div class="col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value=""> Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+      <div class="checkbox disabled">
+        <label>
+          <input type="checkbox" value="" disabled> Option two is disabled
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Radio Button</label>
+    <div class="col-sm-10">
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
+      <div class="radio disabled">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled> Option three is disabled
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Inline Checkbox</label>
+    <div class="col-sm-10">
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Inline Radio</label>
+    <div class="col-sm-10">
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Custom Styles Checkbox</label>
+    <div class="col-sm-10">
+      <div class="checkbox-io">
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">
+          .checkbox-io
+        </label>
+      </div>
+      <div class="checkbox-io checkbox-sm">
+        <input type="checkbox" id="checkbox3" checked>
+        <label for="checkbox3">
+          .checkbox-sm
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Custom Checkbox inline</label>
+    <div class="col-sm-10">
+      <div class="checkbox-io checkbox-sm checkbox-inline">
+        <input type="checkbox" id="checkbox5">
+        <label for="checkbox5">
+          Option 1
+        </label>
+      </div>
+      <div class="checkbox-io checkbox-sm  checkbox-inline">
+        <input type="checkbox" id="checkbox6" checked>
+        <label for="checkbox6">
+          Option 2
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Custom Styles Radio</label>
+    <div class="col-sm-10">
+      <div class="radio-io">
+        <input type="radio" id="radio1" name="radio2" value="option1">
+        <label for="radio1">
+          .radio-io
+        </label>
+      </div>
+      <div class="radio-io radio-sm">
+        <input type="radio" id="radio2" name="radio2" value="option2">
+        <label for="radio2">
+          .radio-sm
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Custom Radio inline</label>
+    <div class="col-sm-10">
+      <div class="radio-io radio-sm radio-inline">
+        <input type="radio" id="radio4" name="radio3" value="option1">
+        <label for="radio4">
+          Option 1
+        </label>
+      </div>
+      <div class="radio-io radio-sm radio-inline">
+        <input type="radio" id="radio5" name="radio3" value="option2">
+        <label for="radio5">
+          Option 2
+        </label>
+      </div>
+      <div class="radio-io radio-sm radio-inline">
+        <input type="radio" id="radio6" name="radio3" value="option3">
+        <label for="radio6">
+          Option 3
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group has-success">
+    <label class="col-sm-2 control-label">Input Success</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" placeholder="">
+    </div>
+  </div>
+  <div class="form-group has-warning">
+    <label class="col-sm-2 control-label">Input Warning</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" placeholder="">
+    </div>
+  </div>
+  <div class="form-group has-error">
+    <label class="col-sm-2 control-label">Input Error</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" placeholder="">
+      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Input Sizing</label>
+    <div class="col-sm-10">
+      <input class="form-control input-lg" type="text" placeholder=".input-lg">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" placeholder="normal">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+      <input class="form-control input-sm" type="text" placeholder=".input-sm">
+    </div>
+  </div>
+
+</form>
+</div>
+      </div>
+    </div>
+      <div class="content-row">
+        <div class="panel panel-default">
+          <div class="panel-heading">Advanced Elements</div>
+          <div class="panel-body"></div>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+  <!-- BEGIN Include Javascript Libs -->
+  <script src="../lib/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="../lib/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="../lib/chartist/dist/chartist.min.js" charset="utf-8"></script>
+  <script src="../lib/jquery-match-height/jquery.matchHeight-min.js" charset="utf-8"></script>
+  <script src="../lib/datatables/media/js/jquery.dataTables.min.js" charset="utf-8"></script>
+  <!-- END Include Javascript Libs -->
+
+  <!-- BEGIN Include Javascript Files -->
+  <script src="../js/app.js" charset="utf-8"></script>
+  
+  
+  <!-- END Include Javascript Files -->
+
+  </body>
+</html>
+

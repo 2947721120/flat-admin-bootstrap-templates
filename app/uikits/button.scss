@@ -1,0 +1,33 @@
+.btn {
+  border-bottom-width: 2px;
+  border-radius: 2px;
+  font-size: 12px;
+  padding: 7px 16px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  overflow: hidden;
+
+  .icon {
+    padding: 0px 12px;
+    height: 31px;
+    line-height: 31px;
+    vertical-align: top;
+    margin-right: 12px;
+    margin-left: -16px;
+    margin-top: -7px;
+    margin-bottom: -7px;
+    font-size: 16px;
+    border-right-width: 1px;
+    border-right-style: solid;
+  }
+  .icon.icon-full {
+    margin-left: -12px;
+    font-size: 40px;
+    vertical-align: middle;
+    padding: 0px 0px;
+    padding-top: 1px;
+    overflow: hidden;
+    border-right-width: 0px;
+    vertical-align: middle;
+  }
+}
